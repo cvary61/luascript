@@ -7,7 +7,7 @@ HH = gg.alert("              ╔═.✵.══════════╗\n     
 
 function HOME()
 MN=gg.choice({
- '🛡️ ⫸ AntiBan_q (Kore)',
+ '🛡️ ⫸ AntiBan (Kore)',
  '🛡️ ⫸ AntiBan (Global)',
  '🧱 ⫸ Duvar Hilesi',
  '🎨 ⫸ Renk Hilesi',
