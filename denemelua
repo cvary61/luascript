@@ -3,6 +3,6 @@ PS = gg.prompt({'🔒 Input password: '},{[1]=''},{[1]='text'})
 if not PS the﻿n os.exit() 
 end 
 if PS[1] == Password then 
-gg.toast('✔️ Password correct❕')
+gg.alert('✔️ Password correct❕','Devam ↪️')
 else 
 gg.alert('❌ Wr﻿ong Password ❕') os.exit() end
