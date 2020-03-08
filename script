@@ -588,7 +588,7 @@ MN5=gg.choice({
  '🏃  ⫸ Orta Hız[🎮]',
  '🐎  ⫸ Flash Hız[🎮]',
  ' 👁️‍🗨️ ⫸ ESP Player[🎮]',
- '🎐 Paraşüt[🎮]',
+ '🎐  ⫸ Hızlı İnme (7.000km/h)[🎮]',
  '🔙 Geri'
    },nil,"😈[ABG] - Oyun Menüsü 🇹🇷")
  if MN5 == nil then 
