@@ -1,5 +1,5 @@
-Password﻿ = '9876'
-PS = gg.PROT_READ({'🔒 Input password: '},{[1]=''},{[1]='string'})
+Password﻿ = 'Ahmetuli'
+PS = gg.prompt {'🔒 Input password: '},{[1]=''},{[1]='text'})
 if not PS the﻿n os.exit() 
 end 
 if PS[1] == Password then 
