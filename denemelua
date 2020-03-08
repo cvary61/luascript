@@ -1,4 +1,4 @@
-Password﻿ = 'roro'
+Password﻿ = '9876'9876''
 PS = gg.prompt({'🔒 Input password: '},{[1]=''},{[1]='number'})
 if not PS the﻿n os.exit() 
 end 
