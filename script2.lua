@@ -681,7 +681,7 @@ gg.setValues({[1]={address = tt[1].address -136,flags = 16,value = 999999}})
 gg.setValues({[1]={address = tt[1].address -132,flags = 16,value = 999999}})
 gg.setValues({[1]={address = tt[1].address -128,flags = 16,value = 999999}})
 gg.toast("@CHINAPUBGMOBILEHACKS")
-
+end
 end
 
 --Oyun Hileler Kodları
