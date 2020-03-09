@@ -111,7 +111,7 @@ function wallexmenu()
   '👁️ ⫸ Exynos 9610',
   '🔙 ⫸ Geri'
   })
-if exmenu == Nil then
+if exmenu == nil then
 else
 if exmenu == 1 then otherdevicesall() end
 if exmenu == 2 then exynos7420() end
@@ -136,7 +136,7 @@ end
 	  '👁️ ⫸ Snapdragon 855',
 	  '🔙 ⫸ Geri',
 	  })
-	if wallsdm == nil then
+	if wallsdmn == nil then
 	  else
 	if wallsdmn == 1 then wallsnapdrangonall() end
 	if wallsdmn == 2 then wallsnapdrangonallv2() end
@@ -151,7 +151,6 @@ end
 
 --Wall Snapdragon 
 function wallsnapdrangonall()
-gg.clearResults()
 gg.setRanges(gg.REGION_BAD)
 gg.searchNumber('135,215D;4,140D;3.7615819e-37;2::', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber('2', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -211,6 +210,7 @@ gg.getResults(6)
 gg.editAll("6444", gg.TYPE_FLOAT)
 gg.toast("🇹🇷 Wallhack All Snapdragon 🇹🇷")
 end
+
 function WH710()
 gg.clearResults()
 gg.setRanges(gg.REGION_BAD)
