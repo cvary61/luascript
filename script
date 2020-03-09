@@ -1,9 +1,15 @@
 --ARAP BÜKEN GENÇ TARAFINDAN KODLANMIŞTIR**
-
+Password = '1900'
+PS = gg.prompt({'🔒 Lütfen Şifreyi Giriniz: '},{[1]=''},{[1]='text'})
+if not PS then os.exit() 
+end 
+if PS[1] == Password then 
+gg.alert('✔️ Şifre Doğru❕','Devam ↪️')
 
 gg.setVisible(true)
-HH = gg.alert("░█████╗░██████╗░░██████╗░\n██╔══██╗██╔══██╗██╔════╝░\n███████║██████╦╝██║░░██╗░\n██╔══██║██╔══██╗██║░░╚██╗\n██║░░██║██████╦╝╚██████╔╝\n╚═╝░░╚═╝╚═════╝░░╚═════╝░\n   █▀ █▀▀ █▀█ █ █▀█ ▀█▀\n   ▄█ █▄▄ █▀▄ █ █▀▀ ░█░\n\n\n      █░█ ▄█ ░ █▀█\n      ▀▄▀ ░█ ▄ █▄█\n","Devam Et✔️")
-HH = gg.alert("              ╔═.✵.══════════╗\n               [ABG] - Script Alfa v1.0\n              ╚══════════.✵.═╝\nHile kullanımındaki tüm sorumluluk size aittir.\nHileler güvenli kodlardan oluşmakta ve ban yemenizi en az saviyede tasarlanmıştır.\nHile ile alkalı bilgi ve öneriler için iletişime geçebilirsiniz.\n\nTelegram: @arapbukengenc\n\nCoder: CVaRy","Başlat 🔘")
+HH = gg.alert("░█████╗░██████╗░░██████╗░\n██╔══██╗██╔══██╗██╔════╝░\n███████║██████╦╝██║░░██╗░\n██╔══██║██╔══██╗██║░░╚██╗\n██║░░██║██████╦╝╚██████╔╝\n╚═╝░░╚═╝╚═════╝░░╚═════╝░\n   █▀ █▀▀ █▀█ █ █▀█ ▀█▀\n   ▄█ █▄▄ █▀▄ █ █▀▀ ░█░","Devam Et➡️")
+HH = gg.alert("█░█ ▄█ ░ ▄█\n▀▄▀ ░█ ▄ ░█\n\n+ 📃 Hızlı Düşme Yenilendi\n+ 🔐 Şifre Sistemi Geldi\n+ 📃 Exynos Wall Güncellemesi\n+ 📃 One Kill Hilesi Eklendi\n+ 📃 Görünmezlik Hilesi Eklendi\n","Devam Et ➡️")
+HH = gg.alert("              ╔═.✵.══════════╗\n               [ABG] - Script Alfa v1.1\n              ╚══════════.✵.═╝\nHile kullanımındaki tüm sorumluluk size aittir.\nHileler güvenli kodlardan oluşmakta ve ban yemenizi en az saviyede tasarlanmıştır.\nHile ile alkalı bilgi ve öneriler için iletişime geçebilirsiniz.\n\nTelegram: @arapbukengenc\n\nCoder: CVaRy","Başlat 🔘")
 
 function HOME()
 MN=gg.choice({
@@ -194,6 +200,8 @@ function wallexmenu()
   '👁️ ⫸ Exynos 7570',
   '👁️ ⫸ Exynos 7880',
   '👁️ ⫸ Exynos 7885',
+  '👁️ ⫸ Exynos 8890',
+  '👁️ ⫸ Exynos 9610',
   '🔙 ⫸ Geri'
   })
 if exmenu == 1 then otherdevicesall() end
@@ -201,7 +209,9 @@ if exmenu == 2 then exynos7420() end
 if exmenu == 3 then exynos7570() end
 if exmenu == 4 then exynos7880() end
 if exmenu == 5 then exynos7885() end
-if exmenu == 6 then wallmenu() end
+if exmenu == 6 then exynos8890() end
+if exmenu == 7 then exynos7420() end
+if exmenu == 8 then wallmenu() end
 end
   
   
@@ -245,7 +255,7 @@ gg.searchNumber("8,196D;8,192D;8,200D::", 4, false, 536870912, 0, -1)
 gg.searchNumber("8200", 4, false, 536870912, 0, -1)
 gg.getResults(10)
 gg.editAll("6", 4)
-gg.clearResults() gg.toast("https://t.me/LSGPUBGMHACKS\nhttps://t.me/LEON_SQUAD_GAMING")
+gg.clearResults() gg.toast("HİLE AÇILIYOR...")
   gg.clearResults()
 end
 function wallsnapdrangonallv2()
@@ -319,7 +329,7 @@ end
 --Wall Exynos 
 function otherdevicesall()
 gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("200744D;4140D;277889028D;2;135215D;65541D;1074790401D", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("200744D;4140D;27728D;2;135215D;65541D;1074790401D", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.refineAddress("504", -1, gg.TYPE_FLOAT, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(100)
@@ -374,7 +384,42 @@ gg.editAll("\"36\"", gg.TYPE_QWORD)
 gg.clearResults()
 gg.toast("🇹🇷 Wallhack Exynos 7885 🇹🇷") 
 
+end
+
+function exynos8890()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("9.70070386e-38;4.59177481e-40;9.70070386e-38;3.13890856e-43;1.40129846e-45;2.80259693e-45;0.5:441", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+  for _FORV_3_, _FORV_4_ in ipairs((gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil))) do
+    if _FORV_4_.flags == gg.TYPE_FLOAT then
+      _FORV_4_.value = "0"
+      _FORV_4_.freeze = true
+    end
   end
+end
+
+function exynos9610()
+gg.clearList()
+  gg.clearResults()
+  gg.setRanges(4)
+  gg.searchNumber("0.5;1.098618e-42;2.80259693e-45;1.40129846e-45;4.48415509e-44;2.80259693e-45;2.2958874e-41;7.00649232e-45::", gg.TYPE_FLOAT)
+gg.searchNumber("0.5", gg.TYPE_FLOAT)
+z = gg.getResults(9)
+  x = gg.getResultCount()
+  for _FORV_3_ = 1, x do
+    y = z[_FORV_3_].address
+    gg.addListItems({
+      [1] = {
+        address = y,
+        flags = 16,
+        freeze = true,
+        value = 2
+      }
+    })
+  gg.tost("Exynos 9610 Aktif Edildi.")
+  end
+end
 --Wall Exynos
 	
 -- Silah Menü	
@@ -528,11 +573,6 @@ gg.clearResults()
   end
 end
 
-
-
-
-
-
 function ultraaim()
   gg.clearResults()
   gg.setRanges(gg.REGION_C_DATA)
@@ -588,7 +628,7 @@ MN5=gg.choice({
  '🏃  ⫸ Orta Hız[🎮]',
  '🐎  ⫸ Flash Hız[🎮]',
  ' 👁️‍🗨️ ⫸ ESP Player[🎮]',
- '🎐  ⫸ Hızlı İnme (7.000km/h)[🎮]',
+ '🎐  ⫸ Hızlı İnme (7.000km/h) [🎮]',
  '🔙 Geri'
    },nil,"😈[ABG] - Oyun Menüsü 🇹🇷")
  if MN5 == nil then 
@@ -707,16 +747,18 @@ end
 
 function parasut()
 gg.clearResults()
-  gg.setRanges(gg.REGION_C_BSS)
-  gg.searchNumber('2048D;4D;1F;1F;1D:30', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  if gg.getResultCount() >= 1 then
-   else
-gg.clearResults()
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber('3000;5000;1024;1000::', gg.TYPE_FLOAT,false, gg.SIGN_EQUAL,0,-1)
-gg.getResults(6284)
-gg.editAll('999999', gg.TYPE_FLOAT)
-gg.clearResults()
+  gg.setRanges(32)
+    gg.searchNumber("0.64999997616;200.0;55.0;30.0;36.0;6.0;55.0;1.0;360,000.0;3.5873241e-43::45", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+ if gg.getResultCount() == 0 then
+ gg.toast("Lütfen Bekle")
+ else
+gg.searchNumber("360,000.0", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+tt=gg.getResults(999)
+gg.setValues({[1]={address = tt[1].address -140,flags = 16,value = 999999}})
+gg.setValues({[1]={address = tt[1].address -136,flags = 16,value = 999999}})
+gg.setValues({[1]={address = tt[1].address -132,flags = 16,value = 999999}})
+gg.setValues({[1]={address = tt[1].address -128,flags = 16,value = 999999}})
+gg.toast("Hile Aktif.")
 end
 end
 
@@ -728,8 +770,12 @@ end
 function digermenu()
   digerhack=gg.choice({
     '🎁 FlareGun 🎁 [🎮]',
+    '👻 Görünmezlik [🎮]',
+    '💥 One Shot [🎮]',
+    '🔙 Geri'
   })
 if digerhack == 1 then flareanten() end
+if digerhack == 2 then gorunmez() end
 end
 --Diğer Oyun Hileleri Menü
 
@@ -744,6 +790,102 @@ gg.clearResults()
   gg.editAll("99999", gg.TYPE_FLOAT)
   gg.toast(" 💝 Flare Gun Anten Aktif Edildi! 💝")
 end
+
+function gorunmez()
+  gg.clearResults()
+  gg.setRanges(4)
+  gg.searchNumber("1E~200000E;1E;1E;0E;0F;0E;0F;-120D;-120D;0D;0F;-120D;-120D;-120D;-120D::93", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.toast("Görünmezlik 18%...")
+  gg.searchNumber("0", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(1500)
+  gg.editAll("1", gg.TYPE_DWORD)
+  gg.toast("Görünmezlik 32%...")
+  gg.clearResults()
+  gg.setRanges(4)
+  gg.searchNumber("-120;1E~300000E;-120D;-120D;-120D;0E;0F;1E~300000E;0E;0F;0D;0F;0.01E~100000E::101", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.toast("Görünmezlik 47%...")
+  gg.searchNumber("0", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(1000)
+  gg.editAll("1", gg.TYPE_DWORD)
+  gg.toast("Görünmezlik 64%...")
+  gg.clearResults()
+  gg.setRanges(4)
+  gg.searchNumber("1078034432D;0F;-1074790400D;-123;0F;1074266112D;-120;-120;0F;1072693,248D;0D;0.01E~1.9E::73", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.toast("Görünmezlik 81%...")
+  gg.searchNumber("0", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(2000)
+  gg.editAll("16777216", gg.TYPE_DWORD)
+  gg.toast("👻 Görünmezlik Aktif 👻")
+  gg.clearResults()
+  
+end
+
+function onekill()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("71500", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("71500", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("500000", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("AKM - Hile Aktif.")
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("88000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("88000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("500000", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("M416 - Hile Aktif.")
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("90000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("90000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("500000", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("M16 - Hile Aktif")
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("40000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("40000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(800)
+  gg.editAll("500000", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("冲锋枪子弹开启成功")
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("91000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("91000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("500000", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("AWM - Hile Aktif.")
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("76000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("76000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("500000", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("98K - Aktif Edildi.")
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("79000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(105)
+  gg.editAll("500000", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("M24 - Aktif Edildi.")
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("33000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("33000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("500000", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("VSS - Aktif Edildi.")
+
+  end
 
 --Diğer Oyun Hileleri Kodları
 
@@ -763,3 +905,5 @@ os.exit()
     HOME()
   end
   end
+else 
+gg.alert('❌  Şifre Yanlış Lütfen Kontrol Ediniz ❕') os.exit() end
