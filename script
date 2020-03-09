@@ -13,8 +13,7 @@ HH = gg.alert("              ╔═.✵.══════════╗\n     
 
 function HOME()
 MN=gg.choice({
- '🛡️ ⫸ AntiBan (Kore)',
- '🛡️ ⫸ AntiBan (Global)',
+ '🛡️ ⫸ AntiBan',
  '🧱 ⫸ Duvar Hilesi',
  '🎨 ⫸ Renk Hilesi',
  '🔫 ⫸ Silah Hileleri',
@@ -25,114 +24,22 @@ MN=gg.choice({
 )
  if MN == nil then 
  else
-if MN == 1 then antibankore() end
-if MN == 2 then antibanglobal() end
-if MN == 3 then wallmenu() end
-if MN == 4 then wallsnapdrangonall() end
-if MN == 5 then silahhack() end 
-if MN == 6 then oyunhilemenu() end
-if MN == 7 then digermenu() end
-if MN == 8 then exit() end
+if MN == 1 then antibantr() end
+if MN == 2 then wallmenu() end
+if MN == 3 then wallsnapdrangonall() end
+if MN == 4 then silahhack() end 
+if MN == 5 then oyunhilemenu() end
+if MN == 6 then digermenu() end
+if MN == 7 then exit() end
 end
 PUBGMH = -1
 end
---Anti-Ban Kore
-function antibankore()
-gg.clearResults() gg.setRanges(gg.REGION_C_ALLOC) gg.searchNumber("16384;16384;16384;16384;16384;4451", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  if gg.getResultsCount() > 1 then gg.toast("🔐 Value found")
-  gg.refineNumber("4451", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  revert = gg.getResults(100)
-  local t = gg.getResults(100)
-  for i, v in ipairs(t) do
-   if v.flags == gg.TYPE_DWORD then
-    v.value = "227"
-    v.freeze = true
-   end
-  end
-  gg.addListItems(t)
-  t = nil
-  gg.clearResults()
-  gg.sleep(1700)
-  gg.alert("🛡️ANTİBAN AKTİF🛡️")
-  else
-  gg.toast("🛡️ANTİBAN AKTİF 🛡️")
-  end
-end
---Anti-Ban Kore
-
---Anti-Ban Global
-function antibanglobal()
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber('4502', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)        
-gg.refineNumber('4502', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(999)
-gg.editAll('4311', gg.TYPE_DWORD)
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber('16384;4448', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber('4448', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(99900000)
-gg.editAll('4311', gg.TYPE_DWORD)
-if
-gg.getResultCount() == 0
-then
-gg.alert('Başarılı🔰')
-gg.alert('İşlem başarılı🔰')
-os.exit()
-else
-gg.alert('BYPASS AÇIK YARGI MODE ON🔥')
-gg.getResults(99900000)
-gg.editAll('4311', gg.TYPE_DWORD)
-gg.getResults(99900000)
-local t = gg.getResults(99900000)
-for i, v in ipairs(t) do
-	if v.flags == gg.TYPE_DWORD then
-		v.value = '1334'
-		v.freeze = true
-gg.addListItems(t)
-t = nil
-    end
-  end
-end
-
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber('4502', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)                                                             
-
-gg.refineNumber('4502', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(999)
-gg.editAll('4311', gg.TYPE_DWORD)
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber('16384;4448', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)                                                                                                      
-gg.refineNumber('4448', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(99900000)
-gg.editAll('4311', gg.TYPE_DWORD)
-if
-gg.getResultCount() == 0
-then
-gg.alert('İşlem başarılı 🔰')
-gg.alert('İşlem başarılı 🔰')
-os.exit()
-else
-gg.alert('ARAP BÜKMEK İÇİN HAZIRSINIZ💎')
-gg.getResults(99900000)
-gg.editAll('4311', gg.TYPE_DWORD)
-gg.getResults(99900000)
-local t = gg.getResults(99900000)
-for i, v in ipairs(t) do
-	if v.flags == gg.TYPE_DWORD then
-		v.value = '1334'
-		v.freeze = true
-gg.addListItems(t)
-t = nil
-    end
-  end
-end
+--Anti-Ban
+function antibantr()
 
 end
---Anti-Ban Global
+--Anti-Ban
+
 
 --Wall Menü
 function wallmenu()
@@ -204,6 +111,8 @@ function wallexmenu()
   '👁️ ⫸ Exynos 9610',
   '🔙 ⫸ Geri'
   })
+if exmenu == Nil then
+else
 if exmenu == 1 then otherdevicesall() end
 if exmenu == 2 then exynos7420() end
 if exmenu == 3 then exynos7570() end
@@ -213,7 +122,8 @@ if exmenu == 6 then exynos8890() end
 if exmenu == 7 then exynos7420() end
 if exmenu == 8 then wallmenu() end
 end
-  
+  PUBGMH = -1
+end
   
 --Wall Exynos Menü
 
@@ -226,11 +136,15 @@ end
 	  '👁️ ⫸ Snapdragon 855',
 	  '🔙 ⫸ Geri',
 	  })
+	if wallsdm == nil then
+	  else
 	if wallsdmn == 1 then wallsnapdrangonall() end
 	if wallsdmn == 2 then wallsnapdrangonallv2() end
 	if wallsdmn == 3 then WH710() end
 	if wallsdmn == 4 then WH855()	end
 	if wallsdmn == 5 then wallmenu() end
+	end
+	PUBGMH = -1
 	end
 --Wall Snapdragon Menü
 
@@ -258,6 +172,7 @@ gg.editAll("6", 4)
 gg.clearResults() gg.toast("HİLE AÇILIYOR...")
   gg.clearResults()
 end
+
 function wallsnapdrangonallv2()
 gg.setRanges(gg.REGION_BAD)
 gg.searchNumber("5.6447121e21;-8.3252823e-40;4.9252852e21::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -457,8 +372,8 @@ gg.searchNumber("88.50576019287F;87.27782440186F;1F", gg.TYPE_FLOAT, false, gg.S
 gg.getResults(6) 
 gg.editAll("1.96875;1.96875;999;1.96875;1.96875;999", gg.TYPE_FLOAT) 
 gg.clearResults() 
-gg.toast("📡 [ABG] - Anten Aktif Edildi📡") 
-  end
+gg.toast("📡 [ABG] - Anten Aktif Edildi📡")
+end
 
 function kafa()
   gg.clearResults()
@@ -477,8 +392,12 @@ MN6=gg.multiChoice({
 	'🎯 - Sekmeme [%50][🏡]',
 	
 	},nil,"[ABG] - Script \n Sekmeme Oranını Seçiniz")
+	if MN6 == nil then 
+	  else
 	if MN6 == 1 then norecoil100() end
 	if MN6 == 2 then norecoil50() end
+end
+PUBGMH = -1
 end
 
 function nolessrecoil()
@@ -650,9 +569,13 @@ function espmenu()
     '❌ ⫸ ESP Player [KAPALI]',
     '🔙 ⫸ Geri'
   })
+if espp ==  nil then 
+  else
 if espp[1] == true then espaktif() end
 if espp[2] == true then espkapali() end
 if espp[3] == true then oyunhilemenu() end
+end
+PUBGMH = -1
 end
 
 function espaktif()
@@ -718,9 +641,13 @@ function ortahiz()
     '❌  ⫸ Orta Hız [KAPALI]',
     '🔙  ⫸ Geri'
   })
+if ortahizmenu == nil then
+  else
 if ortahizmenu[1] == true then ortahizaktif() end
 if ortahizmenu[2] == true then ortahizkapali() end
 if ortahizmenu[3] == true then oyunhilemenu() end
+end
+PUBGMH = -1
 end
 
 function ortahizaktif()
@@ -774,8 +701,12 @@ function digermenu()
     '💥 One Shot [🎮]',
     '🔙 Geri'
   })
+if digerhack == nil then
+  else
 if digerhack == 1 then flareanten() end
 if digerhack == 2 then gorunmez() end
+end
+PUBGMH = -1
 end
 --Diğer Oyun Hileleri Menü
 
@@ -904,6 +835,6 @@ os.exit()
   if PUBGMH == 1 then
     HOME()
   end
-  end
+ end
 else 
 gg.alert('❌  Şifre Yanlış Lütfen Kontrol Ediniz ❕') os.exit() end
