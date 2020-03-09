@@ -668,11 +668,11 @@ gg.toast("🏃 Orta hız Kapatıldı ! ❎ ")
 end
 
 function parasut()
-gg.clearResults()
+ gg.clearResults()
   gg.setRanges(32)
     gg.searchNumber("0.64999997616;200.0;55.0;30.0;36.0;6.0;55.0;1.0;360,000.0;3.5873241e-43::45", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
  if gg.getResultCount() == 0 then
- gg.toast("Lütfen Bekle")
+ gg.toast("WAIT")
  else
 gg.searchNumber("360,000.0", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 tt=gg.getResults(999)
@@ -680,8 +680,8 @@ gg.setValues({[1]={address = tt[1].address -140,flags = 16,value = 999999}})
 gg.setValues({[1]={address = tt[1].address -136,flags = 16,value = 999999}})
 gg.setValues({[1]={address = tt[1].address -132,flags = 16,value = 999999}})
 gg.setValues({[1]={address = tt[1].address -128,flags = 16,value = 999999}})
-gg.toast("Hile Aktif.")
-end
+gg.toast("@CHINAPUBGMOBILEHACKS")
+
 end
 
 --Oyun Hileler Kodları
