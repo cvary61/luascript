@@ -1,4 +1,4 @@
-Password﻿ = '6100'
+Password﻿ = '6131'
 PS = gg.prompt({'🔒 Şifre Giriniz: '},{[1]=''},{[1]='text'})
 if not PS the﻿n os.exit() 
 end 
