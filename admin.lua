@@ -1,1 +1,2267 @@
+--ARAP BÜKEN GENÇ TARAFINDAN KODLANMIŞTIR**
+
+
+gg.setVisible(true)
+HH = gg.alert([[
+░█████╗░██████╗░░██████╗░
+██╔══██╗██╔══██╗██╔════╝░
+███████║██████╦╝██║░░██╗░
+██╔══██║██╔══██╗██║░░╚██╗
+██║░░██║██████╦╝╚██████╔╝
+╚═╝░░╚═╝╚═════╝░░╚═════╝░
+
+█▀ █▀▀ █▀█ █ █▀█ ▀█▀
+▄█ █▄▄ █▀▄ █ █▀▀ ░█░
+]],
+"Devam Et➡️")
+HH = gg.alert([[
+█░█ ▀█ ░ █▀█
+▀▄▀ █▄ ▄ █▄█]],"Devam Et ➡️")
+HH = gg.alert("              ╔═.✵.══════════╗\n               [ABG] - Script Alfa v1.2\n              ╚══════════.✵.═╝\nHile kullanımındaki tüm sorumluluk size aittir.\nHileler güvenli kodlardan oluşmakta ve ban yemenizi en az saviyede tasarlanmıştır.\nHile ile alkalı bilgi ve öneriler için iletişime geçebilirsiniz.\n\nTelegram: @arapbukengenc\n\nCoder: CVaRy","Başlat 🔘")
+
+function HOME()
+MN=gg.choice({
+ '🛡️⫸ AntiBan',
+ '🧱⫸ Duvar Hilesi',
+ '🎨⫸ Renk Hilesi',
+ '🔫⫸ Silah Hileleri',
+ '👾⫸ Oyun Hileleri',
+ '🎮⫸ Diğer Hileler',
+ '🔒⫸ Çıkış'
+   },nil,"                  ┏━━━━•❅•°•❈•°•❅•━━━━┓\n                                        A⃨B⃨G⃨\n                  ┗━━━━•❅•°•❈•°•❅•━━━━┛\n")
+ if MN == nil then
+else
+if MN == 1 then antibantr() end
+if MN == 2 then wallmenu() end
+if MN == 3 then renkmenu() end
+if MN == 4 then silahhack() end 
+if MN == 5 then oyunhilemenu() end
+if MN == 6 then digermenu() end
+if MN == 7 then exit() end
+end
+PUBGMH = -1
+end
+
+--AntiBan TR
+function antibantr()
+	antiban1 = gg.multiChoice({
+	"Obb Şifreleme"
+	"Global"
+	"Kore"
+	})
+	if antiban1 == nil then
+	else
+	if antiban1 == 1 then obbmenu() end
+	if antiban1 == 2 then globalantiban() end
+	if antiban1 == 3 then koreantiban() end
+	end
+	PUBGMH = -1
+	end
+
+function koreantiban()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("16384;4449", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("4448", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(99900000)
+gg.editAll("2225", gg.TYPE_DWORD)
+if gg.getResultCount() == 0 then
+gg.alert("ᴠᴀʟᴜᴇ ɴᴏᴛ ғᴏᴜɴᴅ\nᴀɴᴛɪ-ʙᴀɴ ɴᴏᴛ ᴀᴄᴛɪᴠᴀᴛᴇᴅ")
+os.print("ʀᴇsᴛᴀʀᴛ ᴛʜᴇ ɢᴀᴍᴇ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ")
+gg.processKill()
+os.exit()
+else
+gg.alert("ᴠᴀʟᴜᴇ ғᴏᴜɴᴅ!\nᴀɴᴛɪ-ʙᴀɴ ᴀᴄᴛɪᴠᴀᴛᴇᴅ!")
+gg.getResults(99900000)
+gg.editAll("1337", gg.TYPE_DWORD)
+gg.getResults(99900000)
+for i, i in ipairs((gg.getResults(99900000))) do
+if i.flags == gg.TYPE_DWORD then
+gg.addListItems((gg.getResults(99900000)))
+end
+end
+end
+gg.toast("☬ Bypass Activated ☬")
+end
+
+function globalantiban()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("16384;4448", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("4448", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(99900000)
+gg.editAll("2225", gg.TYPE_DWORD)
+if gg.getResultCount() == 0 then
+gg.alert("ᴠᴀʟᴜᴇ ɴᴏᴛ ғᴏᴜɴᴅ\nᴀɴᴛɪ-ʙᴀɴ ɴᴏᴛ ᴀᴄᴛɪᴠᴀᴛᴇᴅ")
+os.print("ʀᴇsᴛᴀʀᴛ ᴛʜᴇ ɢᴀᴍᴇ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ")
+gg.processKill()
+os.exit()
+else
+gg.alert("ᴠᴀʟᴜᴇ ғᴏᴜɴᴅ!\nᴀɴᴛɪ-ʙᴀɴ ᴀᴄᴛɪᴠᴀᴛᴇᴅ!")
+gg.getResults(99900000)
+gg.editAll("1337", gg.TYPE_DWORD)
+gg.getResults(99900000)
+for i, i in ipairs((gg.getResults(99900000))) do
+if i.flags == gg.TYPE_DWORD then
+gg.addListItems((gg.getResults(99900000)))
+end
+end
+end
+gg.toast("☬ Bypass Activated ☬")
+end
+
+
+function obbmenu()
+	obbmenu1 = gg.choice({
+	"Obb Aç"
+	"Obb Kapat"
+	"Geri"
+	})
+	if obbmenu1 == nil then
+	else
+	if obbmenu1 == 1 then obbon() end
+	if obbmenu1 == 2 then obboff() end
+	if obbmenu1 == 3 then antibantr() end
+	end
+	PUBGMH = -1
+	end
+
+function obboff()
+gg.clearResults()
+os.rename("main.11090.com.vng.pubgmobile.obbGILANGFAISAL", "main.11090.com.vng.pubgmobile.obb")
+os.rename("/main.11090.com.vng.pubgmobile.obbGILANGFAISAL", "/main.11090.com.vng.pubgmobile.obb")
+os.rename("com.vng.pubgmobile", "com.vng.pubgmobile")
+os.rename("/storage/emulated/0/Android/obb/com.vng.pubgmobile/main.11090.com.vng.pubgmobile.obbGILANGFAISAL", "/storage/emulated/0/Android/obb/com.vng.pubgmobile/main.11090.com.vng.pubgmobile.obb")
+os.rename("main.11090.com.tencent.ig.obbGILANGFAISAL", "main.11090.com.tencent.ig.obb")
+os.rename("/main.11090.com.tencent.ig.obbGILANGFAISAL", "/main.11090.com.tencent.ig.obb")
+os.rename("com.tencent.ig", "com.tencent.ig")
+os.rename("/storage/emulated/0/Android/obb/com.tencent.ig/main.11090.com.tencent.ig.obbGILANGFAISAL", "/storage/emulated/0/Android/obb/com.tencent.ig/main.11090.com.tencent.ig.obb")
+os.rename("main.11090.com.pubg.krmobile.obb", "main.11090.com.pubg.krmobile.obb")
+os.rename("/main.11090.com.pubg.krmobile.obbGILANGFAISAL", "/main.11090.com.pubg.krmobile.obb")
+os.rename("com.pubg.krmobile", "com.pubg.krmobile")
+os.rename("/storage/emulated/0/Android/obb/com.pubg.krmobile/main.11090.com.pubg.krmobile.obbGILANGFAISAL", "/storage/emulated/0/Android/obb/com.pubg.krmobile/main.11090.com.pubg.krmobile.obb")
+gg.clearResults()
+gg.toast("☬ Rename Back Obb ☬")
+end
+	
+function obbon()
+gg.clearResults()
+os.rename("/sdcard/emulated/0/Android/obb/com.vng.pubgmobile/main.11090.com.vng.pubgmobile.obb", "/sdcard/emulated/0/Android/obb/com.vng.pubgmobile/main.11090.com.vng.pubgmobile.obbGILANGFAISAL")
+os.rename("/storage/emulated/0/Android/obb/com.vng.pubgmobile/main.11090.com.vng.pubgmobile.obb", "/storage/emulated/0/Android/obb/com.vng.pubgmobile/main.11090.com.vng.pubgmobile.obbGILANGFAISAL")
+os.rename("/mnt/shell/0/emulated/Android/obb/com.vng.pubgmobile/main.11090.com.vng.pubgmobile.obb", "/mnt/shell/0/emulated/Android/obb/com.vng.pubgmobile/main.11090.com.vng.pubgmobile.obbGILANGFAISAL")
+os.rename("/sdcard/emulated/0/Android/obb/com.tencent.ig/main.11090.com.tencent.ig.obb", "/sdcard/emulated/0/Android/obb/com.tencent.ig/main.11090.com.tencent.ig.obbGILANGFAISAL")
+os.rename("/storage/emulated/0/Android/obb/com.tencent.ig/main.11090.com.tencent.ig.obb", "/storage/emulated/0/Android/obb/com.tencent.ig/main.11090.com.tencent.ig.obbGILANGFAISAL")
+os.rename("/mnt/shell/0/emulated/Android/obb/com.tencent.ig/main.11090.com.tencent.ig.obb", "/mnt/shell/0/emulated/Android/obb/com.tencent.ig/main.11090.com.tencent.ig.obbGILANGFAISAL")
+os.rename("/sdcard/emulated/0/Android/obb/com.pubg.krmobile/main.11090.com.pubg.krmobile.obb", "/sdcard/emulated/0/Android/obb/com.pubg.krmobile/main.11090.com.pubg.krmobile.obbGILANGFAISAL")
+os.rename("/storage/emulated/0/Android/obb/com.pubg.krmobile/main.11090.com.pubg.krmobile.obb", "/storage/emulated/0/Android/obb/com.pubg.krmobile/main.11090.com.pubg.krmobile.obbGILANGFAISAL")
+os.rename("/mnt/shell/0/emulated/Android/obb/com.pubg.krmobile/main.11090.com.pubg.krmobile.obb", "/mnt/shell/0/emulated/Android/obb/com.pubg.krmobile/main.11090.com.pubg.krmobile.obbGILANGFAISAL")
+gg.clearResults()
+gg.toast("☬ Rename Obb ☬")
+end
+--AntiBan TR
+
+
+--Wall Menü
+function wallmenu()
+MN2=gg.choice({
+  '📂⫸ Diğer Cihazlar',
+	'📂⫸ Snapdragon',
+	'📂⫸ Exynos',
+	'📂⫸ MediaTek',
+	'📂⫸ Kirin',
+	'📂⫸ Huawei',
+	'📂⫸ Oppo',
+	'🔙⫸ Geri'
+	},nil,"😈[ABG]-Wall Menü")
+	if MN2 == nil then
+	  else
+	if MN2 == 1 then otherdevicesall() end
+	if MN2 == 2 then wallsdmenu() end
+	if MN2 == 3 then wallexmenu() end
+	if MN2 == 4 then mediatekmenu() end
+   if MN2 == 5 then kirinmenu() end 
+	if MN2 == 6 then wallhuawei() end
+	if MN2 == 7 then oppo() end
+	if MN2 == 8 then HOME() end
+	end
+	PUBGMH = -1
+	end
+--Wall Menü
+
+--Wall Huawei ve Oppo Kodu
+function wallhuawei()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("2;1.1204989e-19;1.6815582e-44;1.5414283e-44", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("2;4.7408166e21;5.6896623e-29;4.7961574e21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("2;4.8699472e21;2.718519e-43;1.3912525e-19", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("2;3.2363458e-17;7.3900417e-40;5.3249342e-44", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(40)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("2;4.9252829e21;2.718519e-43;1.3912552e-19", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("1;4.8699472e21;2.718519e-43;1.3912525e-19", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(50)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("1;4.9252829e21;2.718519e-43;1.3912552e-19", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(50)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.toast("🇹🇷 Wallhack Huawei 🇹🇷")
+end
+
+function oppo()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("2.0;4.7961574e21;4.7408166e21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("2.0; 4.8699472e21;4.8699466e21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("2.0;4.7777152e21;4.7777146e21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("2.0;4.7961574e21;4.7408166e21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("2.0;4.8699472e21;4.8699466e21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("2.0; 4.7777152e21;4.7777146e21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.toast("🇹🇷 Wallhack Oppo 🇹🇷")
+end
+--Wall Huawei ve Oppo Kodu
+
+
+--Kiri Wall Menü Başlangıç
+function kirinmenu()
+kirinmenu1=gg.choice({
+    '📱⫸ Kirin 650',
+    '📱⫸ Kirin 655',
+    '📱⫸ Kirin 658',
+    '📱⫸ Kirin 659',
+    '📱⫸ Kirin 710',
+    '📱⫸ Kirin 955',
+    '📱⫸ Kirin 970',
+    '📱⫸ Kirin 980',
+    '🔙⫸ Geri'
+  },nil,"😈[ABG]-Kirin Wall Menü🇹🇷")
+if kirinmenu1 == nil then 
+  else
+if kirinmenu1 == 1 then kirin650() end
+if kirinmenu1 == 2 then kirin655() end
+if kirinmenu1 == 3 then kirin658() end
+if kirinmenu1 == 4 then kirin659() end
+if kirinmenu1 == 5 then kirin710() end
+if kirinmenu1 == 6 then kirin955() end
+if kirinmenu1 == 7 then kirin970() end
+if kirinmenu1 == 8 then kirin980() end
+if kirinmenu1 == 9 then wallmenu() end
+end
+PUBGMH = -1
+end
+--Kiri  Wall Başlangıç
+function kirin650()
+gg.clearResults()
+gg.searchNumber("8.4077908e-45;4.2038954e-45;1.5694543e-43;1.4012985e-45;2.8025969e-45;268.0;480.0;0.5:149", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+revert = gg.getResults(1000, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, i in ipairs((gg.getResults(1000, nil, nil, nil, nil, nil, nil, nil, nil))) do
+if i.flags == gg.TYPE_FLOAT then
+end
+end
+gg.addListItems((gg.getResults(1000, nil, nil, nil, nil, nil, nil, nil, nil)))
+gg.toast("🇹🇷 Wallhack Kirin 650 🇹🇷")
+end
+
+function kirin655()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("8.5077908e-45;4.2038954e-45;2.8025969e-45;0.5;0.5;2.8025969e-45;1.4012985e-45;7.0064923e-45:337", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+revert = gg.getResults(999, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, i in ipairs((gg.getResults(999, nil, nil, nil, nil, nil, nil, nil, nil))) do
+if i.flags == gg.TYPE_FLOAT then
+end
+end
+gg.addListItems((gg.getResults(999, nil, nil, nil, nil, nil, nil, nil, nil)))
+gg.toast("50%")
+gg.searchNumber("56;64;80;16;80:93", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("56", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+revert = gg.getResults(999, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, i in ipairs((gg.getResults(999, nil, nil, nil, nil, nil, nil, nil, nil))) do
+if i.flags == gg.TYPE_FLOAT then
+end
+end
+gg.addListItems((gg.getResults(999, nil, nil, nil, nil, nil, nil, nil, nil)))
+gg.toast("🇹🇷 Wallhack Kirin 655 🇹🇷")
+end
+
+function kirin658()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("0.5;1.4012985e-45;1.4012985e-45;3.8115318e-43;2.8025969e-45;2.2958874e-41:125", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+revert = gg.getResults(10, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, i in ipairs((gg.getResults(10, nil, nil, nil, nil, nil, nil, nil, nil))) do
+if i.flags == gg.TYPE_FLOAT then
+end
+end
+gg.addListItems((gg.getResults(10, nil, nil, nil, nil, nil, nil, nil, nil)))
+gg.toast("🇹🇷 Wallhack Kirin 658 🇹??")
+end
+
+function kirin659()
+gg.searchNumber("0.5;1.4012985e-45;4.7083628e-43;2.8025969e-45;2.2958874e-41::109", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.addListItems()
+gg.toast("🇹🇷 Wallhack Kirin 659 🇹🇷")
+end
+
+function kirin710()
+gg.clearResults()
+gg.searchNumber("1.8367379e-40;4.5917748e-40;4.2038954e-45;1.4012985e-45;1.793662e-43;1.4012985e-45;2.8025969e-45;1.1210388e-44;0.5:281", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+revert = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+for i, i in ipairs((gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil))) do
+if i.flags == gg.TYPE_FLOAT then
+end
+end
+gg.addListItems((gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)))
+gg.toast("🇹🇷 Wallhack Kirin 710 🇹🇷")
+end
+
+function kirin955()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("4.2038954e-45;1.4012985e-45;1.5694543e-43;1.4012985e-45;2.8025969e-45;0.5:109", gg.TYPE_FLOAT, false, gg.SIGN_FUZZY_EQUAL, 0, -1)
+gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_FUZZY_EQUAL, 0, -1)
+var = gg.getResults(4)
+gg.editAll("1", gg.TYPE_FLOAT)
+var = gg.getResults(22)
+gg.addListItems(var)
+gg.clearResults()
+gg.toast("🇹🇷 Wallhack Kirin 955 🇹🇷")
+end
+
+
+
+
+
+--Kirin Wall Bitiş
+
+
+--MediaTek Wall Menü
+function mediatekmenu()
+  mediatekmenu1=gg.choice({
+    '📱⫸ Mediatek 6765',
+    '📱⫸ Mediatek G90T',
+    '📱⫸ Mediatek P10',
+    '📱⫸ Mediatek P22',
+    '📱⫸ Mediatek P23',
+    '📱⫸ Mediatek P35',
+    '📱⫸ Mediatek P60',
+    '📱⫸ Mediatek P65',
+    '📱⫸ Mediatek P70',
+    '📱⫸ Mediatek X20',
+    '📱⫸ Mediatek X25',
+    '🔙⫸ Geri'
+  },nil,"😈[ABG]-Mediatek Wall Menüsü🇹🇷")
+if mediatekmenu1 == nil then
+  else
+if mediatekmenu1 == 1 then mediatek6765() end
+if mediatekmenu1 == 2 then mediatekg90t() end
+if mediatekmenu1 == 3 then mediatekp10() end
+if mediatekmenu1 == 4 then mediatekp22() end
+if mediatekmenu1 == 5 then mediatekp23() end
+if mediatekmenu1 == 6 then mediatekp35() end
+if mediatekmenu1 == 7 then mediatekp60() end
+if mediatekmenu1 == 8 then mediatekp65() end
+if mediatekmenu1 == 9 then mediatekp70() end
+if mediatekmenu1 == 10 then mediatekx20() end
+if mediatekmenu1 == 11 then mediatekx25() end
+if mediatekmenu1 == 12 then wallmenu() end
+end
+PUBGMH = -1
+end
+--MediaTek Wall Menü Bitiş
+
+--Mediatek Wall kodlar Başlangıç
+function mediatek6765()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("9.63412312e-38F;56D:229", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("56", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+revert = gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("56;54", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("🇹🇷 Wallhack Mediatek 6750 🇹🇷")
+end
+
+function mediatekg90t()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("3.5873241e-43;1.1210388e-44;0.5", gg.TYPE_FLOAT, false, gg.SIGN_FUZZY_EQUAL, 0, -1)
+gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_FUZZY_EQUAL, 0, -1)
+var = gg.getResults(20)
+gg.editAll("2", gg.TYPE_FLOAT)
+var = gg.getResults(100)
+gg.addListItems(var)
+gg.clearResults()
+gg.toast("🇹🇷 Wallhack Mediatek G90T 🇹🇷")
+end
+
+function mediatekp10()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("304D;328D;328D;64D;3,552D:100", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("64", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("61", gg.TYPE_DWORD)
+for i, i in ipairs((gg.getResults(10))) do
+end
+gg.addListItems((gg.getResults(10)))
+gg.toast("🇹🇷 Wallhack Mediatek P10 🇹🇷")
+end
+
+function mediatekp22()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("2;6;5;1;0;0;3;4::569", gg.TYPE_FLOAT, false, gg.SIGN_FUZZY_EQUAL, 0, -1)
+gg.searchNumber("3", gg.TYPE_FLOAT, false, gg.SIGN_FUZZY_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("140", gg.TYPE_FLOAT)
+var = gg.getResults(43)
+gg.addListItems(var)
+gg.clearResults()
+gg.toast("🇹🇷 Wallhack Mediatek P22 🇹🇷")
+end
+
+function mediatekp23()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("0.5;0.27913400531;1.0:57", gg.TYPE_FLOAT, false, gg.SIGN_FUZZY_EQUAL, 0, -1)
+gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_FUZZY_EQUAL, 0, -1)
+var = gg.getResults(20)
+gg.editAll("2", gg.TYPE_FLOAT)
+var = gg.getResults(100)
+gg.addListItems(var)
+gg.clearResults()
+gg.toast("🇹🇷 Wallhack Mediatek P23 🇹🇷")
+end
+
+function mediatekp35()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("5;3;1;5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("3", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  t = gg.getResults(100)
+  for i = 1, #t do
+  end
+  gg.addListItems(t)
+  gg.clearResults()
+  gg.setVisible(false)
+  gg.sleep(150)
+  for i = 1, 3 do
+    for i = 1, 15 do
+      gg.toast("Loading" .. (""):rep(i) .. "•••" .. (" "):rep(15 - i) .. "⟬𝐑𝐁⟭ 𝐋𝐄𝐀𝐃𝐄𝐑")
+      gg.sleep(70)
+    end
+  end
+  gg.toast("🇹🇷 Mediatek P35 🇹🇷")
+end
+
+function mediatekp60()
+gg.clearResults()
+setRanges(gg.REGION_C_ALLOC)
+gg.clearResults()
+searchNumber("5.1567783e-43;3.5873241e-43;3.2229865e-44;0.5", gg.TYPE_FLOAT, false, gg.SIGN_FUZZY_EQUAL, 0, -1)
+gg.clearResults()
+searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_FUZZY_EQUAL, 0, -1)
+var = gg.getResults(20)
+gg.clearResults()
+editAll("2", gg.TYPE_FLOAT)
+var = gg.getResults(100)
+gg.clearResults()
+addListItems(var)
+gg.clearResults()
+clearResults()
+gg.toast("🇹🇷 Wallhack Mediatek P60 🇹🇷")
+end
+
+function mediatekp65()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("1.793662e-43;3.5873241e-43;1.1210388e-44;0.5", gg.TYPE_FLOAT, false, gg.SIGN_FUZZY_EQUAL, 0, -1)
+gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_FUZZY_EQUAL, 0, -1)
+var = gg.getResults(20)
+gg.editAll("2", gg.TYPE_FLOAT)
+var = gg.getResults(100)
+gg.addListItems(var)
+gg.clearResults()
+gg.toast("🇹🇷 Wallhack Mediatek P65 🇹🇷")
+end
+
+function mediatekp70()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("1.793662e-43;3.5873241e-43;1.1210388e-44;0.5", gg.TYPE_FLOAT, false, gg.SIGN_FUZZY_EQUAL, 0, -1)
+gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_FUZZY_EQUAL, 0, -1)
+var = gg.getResults(20)
+gg.editAll("2", gg.TYPE_FLOAT)
+var = gg.getResults(100)
+gg.addListItems(var)
+gg.clearResults()
+gg.toast("🇹🇷 Wallhack Mediatek P70 🇹🇷")
+end
+
+function mediatekx20()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("0.5;360;640;1;1;1;-640;360::", gg.POINTER_WRITABLE, false, gg.SIGN_FUZZY_EQUAL, 0, -1)
+gg.searchNumber("0.5", gg.POINTER_WRITABLE, false, gg.SIGN_FUZZY_EQUAL, 0, -1)
+var = gg.getResults(20)
+gg.editAll("0", gg.POINTER_WRITABLE)
+var = gg.getResults(100)
+gg.addListItems(var)
+gg.clearResults()
+gg.clearResults()
+gg.searchNumber("56;64;48::35", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("56", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("47", gg.TYPE_DWORD)
+gg.toast("🇹🇷 Wallhack Mediatek X20 🇹🇷")
+end
+
+function mediatekx25()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("640.0;360;0.5;0;640;360;0.5;12000;0.27913400531;0.56855899096::", gg.POINTER_WRITABLE, false, gg.SIGN_FUZZY_EQUAL, 0, -1)
+gg.searchNumber("0.5", gg.POINTER_WRITABLE, false, gg.SIGN_FUZZY_EQUAL, 0, -1)
+var = gg.getResults(20)
+gg.editAll("2", gg.POINTER_WRITABLE)
+var = gg.getResults(100)
+gg.addListItems(var)
+gg.clearResults()
+gg.toast("🇹🇷 Wallhack Mediatek X25 🇹🇷")
+end
+
+
+--Mediatek Wall kodlar Bitiş
+
+
+
+
+--Wall Exynos Menü
+function wallexmenu()
+  exmenu=gg.choice({
+  '📱⫸ Exynos 7420',
+  '📱⫸ Exynos 7570',
+  '📱⫸ Exynos 7880',
+  '📱⫸ Exynos 7885',
+  '📱⫸ Exynos 8890',
+  '📱⫸ Exynos 8895',
+  '📱⫸ Exynos 9610',
+  '🔙⫸ Geri'
+  },nil,"[😈]-Exynos Wall Menüsü🇹🇷")
+if exmenu == nil then
+  else
+if exmenu == 1 then exynos7420() end
+if exmenu == 2 then exynos7570() end
+if exmenu == 3 then exynos7880() end
+if exmenu == 4 then exynos7885() end
+if exmenu == 5 then exynos8890() end
+if exmenu == 6 then exynos8895() end
+if exmenu == 7 then exynos9610() end
+if exmenu == 8 then wallmenu() end
+end
+ PUBGMH = -1
+ end
+  
+--Wall Exynos Menü
+
+--Wall Snapdragon Menü
+	function wallsdmenu()
+	  wallsdmn=gg.choice({
+	  '📱⫸ Snapdragon All Devices',
+	  '📱⫸ Snapdragon All Devices v2',
+	  '📱⫸ Snapdragon 600',
+	  '📱⫸ Snapdrago 610',
+	  '📱⫸ Snapdragon 615',
+	  '📱⫸ Snapdragon 630',
+	  '📱⫸ Snapdragon 650',
+	  '📱⫸ Snapdragon 660',
+	  '📱⫸ Snapdragon 670',
+	  '📱⫸ Snapdragon 710',
+	  '📱⫸ Snapdragon 800',
+	  '📱⫸ Snapdragon 810',
+	  '📱⫸ Snapdragon 820',
+	  '📱⫸ Snapdragon 835',
+	  '📱⫸ Snapdragon 855',
+	  '🔙⫸ Geri'
+	  },nil,"😈[ABG]-Snapdragon Wall Menüsü🇹🇷")
+	if wallsdmn == nil then 
+	  else 
+	if wallsdmn == 1 then wallsnapdrangonall() end
+	if wallsdmn == 2 then wallsnapdrangonallv2() end
+	if wallsdmn == 3 then wh600() end
+	if wallsdmn == 4 then wh610() end
+	if wallsdmn == 5 then wh615() end
+	if wallsdmn == 6 then wh630() end
+	if wallsdmn == 7 then wh650() end
+	if wallsdmn == 8 then wh660() end
+	if wallsdmn == 9 then wh670() end
+	if wallsdmn == 10 then WH710() end
+	if wallsdmn == 11 then wh800() end
+	if wallsdmn == 12 then wh810() end
+	if wallsdmn == 13 then wh820() end
+	if wallsdmn == 14 then wh835() end
+	if wallsdmn == 15 then WH855()	end
+	if wallsdmn == 16 then wallmenu() end
+	end
+	PUBGMH = -1
+	end
+	
+--Wall Snapdragon Menü
+
+
+--Wall Snapdragon 
+function wallsnapdrangonall()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber('135,215D;4,140D;3.7615819e-37;2::', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('2', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll('130', gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber('194D;3.7615819e-37;2;-1;1;-127::', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('2', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll('130', gg.TYPE_FLOAT)
+gg.clearResults()
+gg.clearResults()
+gg.searchNumber("8,196D;8,192D;8,200D::", 4, false, 536870912, 0, -1)
+gg.searchNumber("8200", 4, false, 536870912, 0, -1)
+gg.getResults(10)
+gg.editAll("6", 4)
+gg.clearResults() gg.toast("HİLE AÇILIYOR...")
+gg.clearResults()
+end
+
+function wallsnapdrangonallv2()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("5.6447121e21;-8.3252823e-40;4.9252852e21::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-8.3252823e-40", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("6444", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("4.9068373e21;-3.5875931e-39;4.8699618e21::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-3.5875931e-39", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("6444", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("5.0544113e21;-3.4039221e-39;4.8699607e21::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-3.4039221e-39", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("6444", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("5.6447206e21;-1.0161992e-39;4.9068396e21::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-1.0161992e-39", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("6444", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("4.7223665e21;-8.3246237e-40;4.8330515e21::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-8.3246237e-40", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("6444", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("4.7408149e21;-5.5695588e-40;4.814603e21::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-5.5695588e-40", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(6)
+gg.editAll("6444", gg.TYPE_FLOAT)
+gg.toast("🇹🇷 Wallhack All Snapdragon 🇹🇷")
+end
+
+function wh600()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("4,140D;4.7408166e21F;4.7223665e21;0D;0D;0D;0D;0D;0D;-0.0F;2.0F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("2.718519e-43;2.0F;-1.0F;1.0F;-127F;0.24022650719F;-0.0", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("☬ Wallhack 600 ☬")
+end
+
+function wh610()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("4,140D;4.7408166e21F;4.7223665e21;0D;0D;0D;0D;0D;0D;-0.0F;2.0F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("2.718519e-43;2.0F;-1.0F;1.0F;-127F;0.24022650719F;-0.0", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("🇹🇷 Wallhack 610 🇹🇷")
+end
+
+function wh615()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_HEAP)
+gg.searchNumber("3.3631163e-44;2.0;3.5032462e-44;-1.0;3.643376e-44;3.7835059e-44;-1.0;3.9236357e-44;4.0637655e-44;1.0;-127.0:129", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("3.1809475e-43;3.1949605e-43;2.0;3.2089735e-43:53", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("🇹🇷 Wallhack 615 🇹🇷")
+end
+
+function wh630()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("2;1.8947657e-40;5.8013756e-42", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("504")
+gg.getResults(20)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("2.718519e-43;3.7615819e-37;2;-1;1;-127", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("900")
+gg.getResults(20)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("🇹🇷 Wallhack 630 🇹🇷")
+end
+
+function wh650()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;-1.0F;1.0F;-127.0F;0.00999999978F::200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("🇹🇷 Wallhack 650 🇹🇷")
+end
+
+function wh660()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("4,140D;4.7408166e21;5.6896623e-29;4.7961574e21;3.7615819e-37;2:", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(3)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("200,866D;0.24022650719;0.69314718246;0.00999999978;1;-1;2;-127:", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(2)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("32,770D;0.01799999923;0.29907226562;-1;2:", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(4)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("50,331,648D;0.01799999923;0.29907226562;0.5869140625;0.11401367188;-1;2:", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(2)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("50,331,648D;0.04000854492;0.11999511719;-0.02749633789;-0.57177734375;-1;2:", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("266,400D;0.24022650719;0.69314718246;0.00999999978;1;-1;-127;2:", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("50,331,648D;0.04000854492;0.11999511719;-0.02749633789;-0.57177734375;-1;2:", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(2)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("4,140D;4.7408149e21;-5.5695588e-40;4.814603e21;3.7615819e-37;2:", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.toast("🇹🇷 Wallhack 660 🇹🇷")
+end
+
+function wh670()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("200")
+gg.getResults(999)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("930")
+gg.getResults(999)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("🇹🇷 Wallhack 670 🇹🇷")
+end
+
+function wh800()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("5.1097599e21;2.0;1.6623071e-19;3.6734297e-39;1.66433e10::17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("2.0;-1.0;0.0;1.0;-127.0::17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("🇹🇷 Wallhack 800 🇹🇷")
+end
+
+function wh810()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("2;1.8947657e-40;5.8013756e-42", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("2.718519e-43;3.7615819e-37;2;-1;1;-127", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("🇹🇷 Wallhack 810 🇹🇷")
+end
+
+function wh820()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("2;1.8947657e-40;5.8013756e-42", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("2.718519e-43;3.7615819e-37;2;-1;1;-127", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("🇹🇷 Wallhack 820 🇹🇷")
+end
+
+function wh835()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;0.00999999978F::200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("7.1746481e-43;1.0842022e-19;94.015625;7.0776718e-15;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(5)
+gg.editAll("9999", gg.TYPE_FLOAT)
+gg.toast("🇹🇷 Wallhack 835 🇹🇷")
+end
+
+function WH710()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("274,677,779D;2.25000452995;2;1.6623054e-19", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll("130", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("218D;3.7615819e-37;2;-1;1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("130", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("95D;2;9.2194229e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(15)
+gg.editAll("130", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("206D;3.7615819e-37;2;-1;1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("130", gg.TYPE_FLOAT)
+gg.toast("🇹🇷 Wallhack 710 🇹🇷")
+end
+
+function wh855()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("8200;8201;62", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll("11", gg.TYPE_DWORD)
+gg.toast("Ok")
+  gg.clearResults()
+  gg.searchNumber("206D;3.7615819e-37;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+ gg.clearResults()
+  gg.searchNumber("5.4049168e21;95D;2;9.2194229e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+gg.toast("🇹🇷 Snapdragon 855 🇹🇷")
+end
+
+--Wall Snapdragon
+
+--Wall Exynos 
+function otherdevicesall()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("200744D;4140D;27728D;2;135215D;65541D;1074790401D", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("504", -1, gg.TYPE_FLOAT, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("130", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("900", -1, gg.TYPE_FLOAT, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("130", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("🇹🇷 Wallhack All Device 🇹🇷")
+end
+
+function exynos7420()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("360;0;0;0;-640;1;1;1;0;0;0;0;1;360;640;0.5;0;0;0;0.5;1;1;0;0;0;0;0;1;1;1;1;1,098618e-48:373", gg.TYPE_FLOAT)
+gg.searchNumber("0.5", gg.TYPE_FLOAT)
+t = gg.getResults(10)
+gg.editAll("50", gg.TYPE_FLOAT)
+print("addListItems: ", gg.addListItems(t))
+gg.toast("🇹🇷 Wallhack Exynos 7420 🇹🇷")
+end
+
+function exynos7570()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("360;0;0;0;-640;1;1;1;0;0;0;0;1;360;640;0.5;0;0;0;0.5;1;1;0;0;0;0;0;1;1;1;1;1,098618e-48:373", gg.TYPE_FLOAT)
+gg.searchNumber("0.5", gg.TYPE_FLOAT)
+t = gg.getResults(10)
+gg.editAll("50", gg.TYPE_FLOAT)
+print("addListItems: ", gg.addListItems(t))
+gg.toast("🇹🇷 Wallhack Exynos 7570 🇹🇷")
+end
+
+function exynos7885()
+ gg.setRanges(gg.REGION_C_ALLOC)
+gg.clearResults()
+gg.searchNumber("\"3162688022693019688Q;4915678994331860992Q:2293\"", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("\"4915678994331860992\"", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.getResults(10, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.addListItems({ -- table(2f04c33)
+})
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.clearResults()
+gg.searchNumber("\"1.5694543e-43F;3162688022693019688Q;1.6209256e-12F;4.4841551e-44F;6.7262326e-44F;2.2420775e-44F::177\"", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.processResume()
+gg.refineNumber("\"3162688022693019688\"", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.processResume()
+gg.getResults(10, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("\"36\"", gg.TYPE_QWORD)
+gg.clearResults()
+gg.toast("🇹🇷 Wallhack Exynos 7885 🇹🇷") 
+
+end
+
+function exynos8890()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("9.70070386e-38;4.59177481e-40;9.70070386e-38;3.13890856e-43;1.40129846e-45;2.80259693e-45;0.5:441", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
+  for _FORV_3_, _FORV_4_ in ipairs((gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil))) do
+    if _FORV_4_.flags == gg.TYPE_FLOAT then
+      _FORV_4_.value = "0"
+      _FORV_4_.freeze = true
+    end
+  end
+end
+
+function exynos8895()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("40;32;16;2::37", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("40", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(9)
+  gg.editAll("38", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("1.067767e-39;0.5::257", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(9)
+  gg.getResultsCount()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("1.251438e-39;0.5::273", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(9)
+  gg.getResultsCount()
+  gg.clearResults()
+  gg.searchNumber("573.70306396484;0.05499718333.1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("1.0", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(1200)
+  gg.editAll("-999", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("56; 64; 48: 35", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("56", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("58", gg.TYPE_DWORD)
+  gg.toast("🇹🇷 Color + Wall Exynos 8895 🇹🇷")
+end
+
+function exynos9610()
+gg.clearList()
+  gg.clearResults()
+  gg.setRanges(4)
+  gg.searchNumber("0.5;1.098618e-42;2.80259693e-45;1.40129846e-45;4.48415509e-44;2.80259693e-45;2.2958874e-41;7.00649232e-45::", gg.TYPE_FLOAT)
+gg.searchNumber("0.5", gg.TYPE_FLOAT)
+z = gg.getResults(9)
+  x = gg.getResultCount()
+  for _FORV_3_ = 1, x do
+    y = z[_FORV_3_].address
+    gg.addListItems({
+      [1] = {
+        address = y,
+        flags = 16,
+        freeze = true,
+        value = 2
+      }
+    })
+  gg.tost("Exynos 9610 Aktif Edildi.")
+  end
+end
+--Wall Exynos
+
+--Renk Menüsü
+function renkmenu()
+	renkmenu1=gg.choice({
+	"Tüm Cihazlar Renk",
+	"Snapdragon Renk",
+	"Exynos Renk",
+	"Kirin Renk",
+	"Mediatek Renk",
+	"Geri",
+	},nil,"😈 [ABG] - Renk Menü")
+
+end
+
+
+-- Tüm Renkler Menüsü
+function tumcihazrenk()
+	tumcihazrenk1=gg.choice({
+	"Mavi",
+	"Yeşil",
+	"Turuncu",
+	"Pembe",
+	"Gökkuşağı",
+	"Kırmızı",
+	"Beyaz",
+	"Sarı",
+	"Geri"
+	},nil,"😈 [ABG] - Tüm Cihaz Renk")
+if tumcihazrenk1 == nil then else
+if tumcihazrenk1 == 1 then devicesallcolor1() end
+if tumcihazrenk1 == 2 then devicesallcolor2() end
+if tumcihazrenk1 == 3 then devicesallcolor3() end
+if tumcihazrenk1 == 4 then devicesallcolor4() end
+if tumcihazrenk1 == 5 then devicesallcolor5() end
+if tumcihazrenk1 == 6 then devicesallcolor6() end
+if tumcihazrenk1 == 7 then devicesallcolor7() end
+if tumcihazrenk1 == 8 then devicesallcolor8() end
+if tumcihazrenk1 == 9 then renkmenu()end
+end
+PUBGMH = -1
+end
+-- Tüm Renkler Menü Kodları
+
+function devicesallcolor1()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("256;655370;128;8200;16;243;201;539246603:129", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("3", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("🇹🇷 Tüm Cihazlar Mavi 🇹🇷")
+end
+
+function devicesallcolor2()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("69,780;147457;69707", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("147457", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(5)
+gg.editAll("65555", gg.TYPE_DWORD)
+gg.toast("🇹🇷 Tüm Cihazlar Yeşil 🇹🇷")
+end
+
+function devicesallcolor3()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("1.1490647e-41;1.0863203e-19::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1.0863203e-19", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("1.0863203e-25", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("🇹🇷 Tüm Cihazlar Renk Turuncu 🇹🇷")
+end
+
+function devicesallcolor4()
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("4641040797046013952", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.sleep(140)
+gg.refineNumber("4641040797046013952", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.sleep(140)
+gg.refineAddress("720", -1, gg.TYPE_QWORD, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("4641040797046013952", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1401)
+gg.editAll("4641040797046013935", gg.TYPE_QWORD)
+gg.clearResults()
+gg.toast("☬ Color All Device Pink ☬")
+end
+
+function devicesallcolor5()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("4.5926155869782e-41;1.0863202718415e-19", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1.0863202718415e-19", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("1.0863202718415e-25", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("☬ Color All Device Rainbow ☬")
+end
+
+function devicesallcolor6()
+gg.clearResults()
+gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+gg.searchNumber("2305913412317609997", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2305913412317609997", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("0C0", -1, gg.TYPE_QWORD, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2305913412317609997", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1401)
+gg.editAll("2305913412317609996", gg.TYPE_QWORD)
+gg.clearResults()
+gg.searchNumber("7169730606773899507", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("7169730606773899507", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("0C8", -1, gg.TYPE_QWORD, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("7169730606773899507", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1401)
+gg.editAll("7169730606773831033", gg.TYPE_QWORD)
+gg.clearResults()
+gg.toast("Color All Device Red")
+end
+
+function devicesallcolor7()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("8,192D;256D;8200D", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll("4", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("☬ Color All Device White ☬")
+end
+
+function devicesallcolor8()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("8.200A;1.194.380.045A;786.443A:9::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("098", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("6", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("☬ Color All Device Yellow ☬")
+end
+
+-- Tüm Renkler Kodları Bitiş
+
+-- Snapdragon Renk Menü
+function snaprenk()
+snaprenk1=gg.choice({
+	"Snapdragon 600",
+	"Snapdragon 610",
+	"Snapdragon 615",
+	"Snapdragon 630",
+	"Snapdragon 650",
+	"Snapdragon 660",
+	"Snapdragon 670",
+	"Snapdragon 710",
+	"Snapdragon 800",
+	"Snapdragon 810",
+	"Snapdragon 820",
+	"Snapdragon 835",
+	"Snapdragon 855",
+	"Geri"
+	},nil,"Snapdragon Renk")
+if snaprenk1 == nil then
+else
+if snaprenk1 == 1 then snpcolor600() end
+if snaprenk1 == 2 then snpcolor600() end
+if snaprenk1 == 3 then snpcolor600() end
+if snaprenk1 == 4 then snpcolor600() end
+if snaprenk1 == 5 then snpcolor600() end
+if snaprenk1 == 6 then snpcolor600() end
+if snaprenk1 == 7 then snpcolor600() end
+if snaprenk1 == 8 then snpcolor600() end
+if snaprenk1 == 9 then snpcolor600() end
+if snaprenk1 == 10 then snpcolor600() end
+if snaprenk1 == 11 then snpcolor600() end
+if snaprenk1 == 12 then snpcolor600() end
+if snaprenk1 == 13 then snpcolor600() end
+if snaprenk1 == 14 then renkmenu() end
+-- Snapdragon Renk Kodlar
+
+function snpcolor600()
+	snpcolor6001 = gg.multiChoice({
+	"Kırmızı",
+	"Sarı",
+	"Beyaz",
+	"Geri"
+	})
+if snpcolor6001 == nil then
+else
+if snpcolor6001[1] == true then
+crl6101()
+end
+if snpcolor6001[2] == true then
+crl6101()
+end
+if snpcolor6001[3] == true then
+crl6103()
+if snpcolor6001[4] == true then
+renkmenu()
+end
+end
+PUBGMH = -1
+end
+-- Snapdragon 600 ve 610 Renk Kodları
+function crl6101()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("1,080,033,292D;786,441D;8,200D::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("7", gg.TYPE_DWORD)
+gg.toast("☬ COLOR 610 Red ☬")
+end
+
+function crl6102()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("1,080,033,292D;786,441D;8,200D::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("6", gg.TYPE_DWORD)
+gg.toast("☬ COLOR 610 Yellow ☬")
+end
+
+function crl6103()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("1,080,033,292D;786,441D;8,200D::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("9", gg.TYPE_DWORD)
+gg.toast("☬ COLOR 610 White ☬")
+end
+-- Snapdragon 600 ve 610 Renk Kodları
+
+function snpcolor615()
+snpcolor6151 = gg.multiChoice({
+"Snap 615 Mavi",
+"Snap 615 Cyan",
+"Snap 615 Yeşil",
+"Snap 615 Kırmızı",
+"Snap 615 Sarı",
+"Geri"
+}})
+if snpcolor6151 == nil then
+else
+if snpcolor6151[1] == true then
+crl6151()
+end
+if snpcolor6151[2] == true then
+crl6152()
+end
+if snpcolor6151[3] == true then
+crl6153()
+end
+if snpcolor6151[4] == true then
+crl6154()
+end
+if snpcolor6151[5] == true then
+crl6155()
+end
+if snpcolor6151[6] == true then
+renkmenu()
+end
+end
+PUBGMH = -1
+end
+-- Snapdragon 615 Renk Kodları
+
+function crl6151()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("R_R({5,159,46,192,78,222,123,7,151,45,189,79,229,110,5,148,47,185,81,221,110,255,150,45,181,79,222,112,252,150,42,179,70,215})", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.processResume()
+gg.refineNumber("R_R({5,159,46,192,76,230})", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+revert = gg.getResults(10, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("R_R({5,159,46,192,77,230})", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("☬ COLOR 615 Blue ☬")
+end
+
+function crl6152()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("1,669,398,531;1,280;196,608;1,310,720;268,435,456:45", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("196608", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("196619", gg.TYPE_DWORD)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("1,280;196,619;1,310,720;268,435,456;1,212,416;393,216;196,608:421", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("196608", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("196619", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("☬ COLOR 615 Cyan ☬")
+end
+
+function crl6153()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("R_R({5,159,46,192,78,222,123,7,151,45,189,79,229,110,5,148,47,185,81,221,110,255,150,45,181,79,222,112,252,150,42,179,70,215})", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.processResume()
+gg.refineNumber("R_R({5,159,46,192,76,230})", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+revert = gg.getResults(10, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("R_R({5,159,46,192,77,231})", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("☬ COLOR 615 Green ☬")
+end
+
+function crl6154()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("R_R({5,159,46,192,78,222,123,7,151,45,189,79,229,110,5,148,47,185,81,221,110,255,150,45,181,79,222,112,252,150,42,179,70,215})", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.processResume()
+gg.refineNumber("R_R({5,159,46,192,76,230})", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+revert = gg.getResults(10, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("R_R({5,159,46,192,78,222})", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("☬ COLOR 615 Red ☬")
+end
+
+function crl6155()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("8,192D;256D;65,540D;12D;8200D", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("6", gg.TYPE_DWORD)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("8,192D;256D;65,540D;12D;8200D", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("6", gg.TYPE_DWORD)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("8,192D;256D;65,540D;12D;8200D", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("6", gg.TYPE_DWORD)
+gg.toast("☬ COLOR 615 Yellow ☬")
+end
+
+-- Snapdragon 636 Renk Kodları
+function snpcolor636()
+CLRSNAP6361 = gg.multiChoice({
+"Snap 636 Yeşil",
+"Snap 636 Kırmızı",
+"Snap 636 Sarı",
+"Snap 636 Beyaz",
+"Geri"
+})
+if CLRSNAP6361 == nil then
+else
+if CLRSNAP6361[1] == true then
+crl6361()
+end
+if CLRSNAP6361[2] == true then
+crl6362()
+end
+if CLRSNAP6361[3] == true then
+crl6363()
+end
+if CLRSNAP6361[4] == true then
+crl6364()
+end
+if CLRSNAP6361[5] == true then
+renkmenu()
+end
+end
+PUBGMH = -1
+end
+
+function crl6361()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber(""1669332992;536887297;536887305:25"", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.processResume()
+revert = gg.getResults(10, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll(""9999"", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("☬ COLOR 636 Green ☬")
+end
+
+function crl6362()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("8,200D;1,194,380,045D;786,443D:9", ggTYPE_DWORD, false, ggSIGN_EQUAL, 0, -1)
+gg.searchNumber("8200", ggTYPE_DWORD, false, ggSIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll("6", ggTYPE_DWORD)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("B({50,46,52,57,48,51,49,52,55,101,50,49,70,59,56,50,48,48,68,59,52,53,50,53,57,46,48,54,50,53,70,58,49,55})", ggTYPE_DWORD, false, ggSIGN_EQUAL, 0, -1)
+gg.refineNumber("B({56,50,48,48})", ggTYPE_DWORD, false, ggSIGN_EQUAL, 0, -1)
+revert = gg.getResults(10, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("B({55})", ggTYPE_DWORD)
+gg.toast("☬ COLOR 636 Red ☬")
+end
+
+function crl6363()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("8192;256;6;8200:129", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.processResume()
+gg.refineNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("6", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("☬ COLOR 636 Yellow ☬")
+end
+
+function crl6364()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("256D;8,200D;13D", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResultsCount()
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll("8198", gg.TYPE_DWORD)
+gg.toast("☬ COLOR 636 White ☬")
+end
+
+-- Snapdrago 653 Renk Kodları
+function snpcolor653()
+CLRSNAP6531 = gg.multiChoice({
+"Snap 653 Sarı",
+"Geri"}")
+if CLRSNAP6531 == nil then
+else
+if CLRSNAP6531[1] == true then
+crl6531()
+end
+if CLRSNAP6531[2] == true then
+renkmenu()
+end
+end
+PUBGMH = -1
+end
+
+function crl6531()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("8,192D;256D;65,540D;12D;8200D", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("6", gg.TYPE_DWORD)
+gg.toast("☬ COLOR 653 Yellow ☬")
+end
+
+
+-- Snapdragon 660 Renk Kod
+function snpcolor660()
+CLRSNAP6601 = gg.multiChoice({
+"Snap 660 Yeşil",
+"Snap 660 Kırmızı",
+"Snap 660 Sarı",
+"Geri"
+})
+if CLRSNAP6601 == nil then
+else
+if CLRSNAP6601[1] == true then
+crl6601()
+end
+if CLRSNAP6601[2] == true then
+crl6602()
+end
+if CLRSNAP6601[3] == true then
+crl6603()
+end
+if CLRSNAP6601[4] == true then
+renkmenu()
+end
+end
+PUBGMH = -1
+end
+
+function crl6601()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("32769", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("32769", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("518")
+gg.getResults(9999)
+gg.editAll("32772", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("☬ COLOR 660 Green ☬")
+end
+
+function crl6602()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("96D;8200;196,615", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("7", gg.TYPE_DWORD)
+gg.toast("☬ COLOR 660 Red ☬")
+end
+
+function crl6603()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("8,200D;1,194,380,045D;786,443D:9", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll("6", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("☬ COLOR 660 Yellow ☬")
+end
+
+
+
+--Renk Menüsü Bitiş
+	
+	
+	
+	
+-- Silah Menü	
+function silahhack()
+MN3=gg.multiChoice({
+ '💀⫸ Kafadan [🛡️]',
+ '✨⫸ Sihirli Mermi [🛡️]',
+ '🏹⫸ Less Recoill [🛡️]',
+ '🔫⫸ No Recoil[🏡]',
+ '🎯⫸ Antishake[🎮]',
+ '🎯⫸ Super Aimbot[🎮]',
+ '🎯⫸ Ultra Aimbot[🎮]',
+ '💢⫸ 360 AimBot',
+ '🔙⫸ Geri'
+   },nil,"😈[ABG] - Silah Menüsü 🇹🇷")
+ if MN3 == nil then 
+else
+if MN3[1] == true then kafa() end
+if MN3[2] == true then magic() end
+if MN3[3] == true then nolessrecoil() end
+if MN3[4] == true then sekmememenu() end
+if MN3[5] == true then antishake() end
+if MN3[6] == true then superaim() end
+if MN3[7] == true then ultraaim() end
+if MN3[8] == true then AIMBOT360() end
+if MN3[9] == true then HOME() end
+end
+PUBGMH = -1
+end
+-- Silah Hile Kodları
+
+function AIMBOT360()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("3.5;1;0.5;200;20::", gg.TYPE_FLOAT)
+  gg.getResults(200)
+  gg.editAll("999999999", gg.TYPE_FLOAT)
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("6.0;2.0;1.0::99", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("101", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("-88.82363891602F;15.0F;1", gg.TYPE_FLOAT)
+  gg.searchNumber("1", gg.TYPE_FLOAT)
+  gg.getResults(1000)
+  gg.editAll("20000000000000", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Aimbot activated!")
+end
+
+function anten()
+gg.clearResults() 
+gg.setRanges(gg.REGION_ANONYMOUS) 
+gg.searchNumber("88.50576019287F;87.27782440186F;-100.91194152832F;1F::13", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1) 
+gg.searchNumber("88.50576019287F;87.27782440186F;1F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1) 
+gg.getResults(6) 
+gg.editAll("1.96875;1.96875;999;1.96875;1.96875;999", gg.TYPE_FLOAT) 
+gg.clearResults() 
+gg.toast("📡 [ABG] - Anten Aktif Edildi📡")
+end
+
+function kafa()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("9.20161819458;23;25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("240", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("HeadShot Modu Aktif...")
+end
+
+function sekmememenu()
+MN6=gg.multiChoice({
+	'💯 - Sekmeme [%100]',
+	'🎯 - Sekmeme [%50]',
+
+	},nil,"[ABG] - Script \n Sekmeme Oranını Seçiniz")
+	if MN6 == nil then 
+	  else
+	if MN6[1] == true then norecoil100() end
+	if MN6[2] == true then norecoil50() end
+end
+PUBGMH = -1
+end
+
+function nolessrecoil()
+gg.clearResults()
+  gg.setRanges(gg.REGION_C_DATA)
+  gg.searchNumber("-2.2673448e24;-1.36203639e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("-1.36203639e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(99)
+  gg.editAll("0", gg.TYPE_FLOAT)
+  gg.toast("Less Recoil Aktif Edildi.")
+  gg.clearResults()
+end
+
+function norecoil100()
+gg.clearResults()
+  gg.setRanges(gg.REGION_C_BSS)
+  gg.searchNumber('2048D;4D;1F;1F;1D:30', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  if gg.getResultCount() >= 1 then
+  gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("1,348,759,109;1953067887;1,634,692,166;1,920,287,604::28", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1634692166", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("1634692266", gg.TYPE_DWORD)
+   else
+  end
+  end
+
+function norecoil50()
+gg.clearResults()
+  gg.setRanges(gg.REGION_C_BSS)
+  gg.searchNumber('2048D;4D;1F;1F;1D:30', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  if gg.getResultCount() >= 1 then
+  gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("1,348,759,109;1953067887;1,634,692,166;1,920,287,604::28", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1634692166", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("1634692266", gg.TYPE_DWORD)
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("-2.786982e28;-3.7444097e28;-1.1368837e-13::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-3.7444097e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1)
+gg.editAll("0", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("-2.8111605e28;-3.7444097e28;-1.1144502e28;128.0::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-1.1144502e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1)
+gg.editAll("0", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("-6.1549454e27;1.8638966e-20;-1.1144502e28;0::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-1.1144502e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1)
+gg.editAll("0", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("-1.2382424e28;-1.4239333e28;-1.1144502e28;-1.8331474e27;-    7.1608877e24::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-1.1144502e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(2)
+gg.editAll("90", gg.TYPE_FLOAT)
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("1F;-8.6457681e12F;15F;28F;16F;26F;8F;18F:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("15.0F;28.0F;16.0F;26.0F;8.0F;18.0F:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(500)
+gg.editAll("95", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("909391408;808923191::8", gg.TYPE_DWORD)
+gg.getResults(999)
+gg.editAll("1089886885", gg.TYPE_DWORD)
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("909391408", gg.TYPE_DWORD)
+gg.getResults(999)
+gg.editAll("1089886885", gg.TYPE_DWORD)
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("-1903895931231645695", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("-1903895931231645695", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("2A0", -1, gg.TYPE_QWORD, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("-1903895931231645695", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1401)
+gg.editAll("-1903895931231645696", gg.TYPE_QWORD)
+gg.clearResults()
+   else
+  end
+end
+
+function ultraaim()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_DATA)
+  gg.searchNumber("360;0.0001;1478828288", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("0.0001", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("9999", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("☠️ [ABG] -  AIᴍBᴏᴛ Uʟᴛʀᴀ AKTİF☠️!")
+end
+
+function antishake()
+gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.setVisible(false)
+  gg.searchNumber("0.2~0.3;53;30;1::", gg.TYPE_FLOAT)
+  gg.setVisible(false)
+  gg.searchNumber("0.2~0.3;1::", gg.TYPE_FLOAT)
+  gg.getResults(200)
+  gg.editAll("1.4012985e-45", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("🤳 [ABG] - Anti Shake Aktif 🤳")
+  gg.sleep(200)
+  end
+
+function superaim()
+gg.clearResults()
+gg.setRanges(8)
+gg.setRanges(8)
+gg.searchNumber("360;0.0001;1478828288", 16, false, 536870912, 0, -1)
+gg.searchNumber("0.0001", 16, false, 536870912, 0, -1)
+gg.getResults(100)
+gg.editAll("9999", 16)
+  gg.toast("☢️[ABG] - Süper Aim Aktif Edildi!☢️ ")
+end
+
+function magic()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("300;305", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Magic bullet %100")
+end
+
+-- Silah Hile Kodları
+
+--Oyun Hileler Menüsü
+
+function oyunhilemenu()
+MN5=gg.choice({
+ '📡⫸ Anten',
+ '🏃⫸ Orta Hız[🎮]',
+ '🐎⫸ Flash Hız[🎮]',
+ '🚶⫸ Azıcık Hızlı',
+ '👁️⫸ ESP Player[🎮]',
+ '🎐⫸ Paraşüt',
+ '🎥⫸ IPAD Modu',
+ '🌫️⫸ Sis Kaldırma',
+ '🌑⫸ Siyah Gökyüzü',
+ '🔙⫸ Geri'
+ },nil,"😈[ABG] - Oyun Menüsü 🇹🇷")
+ if MN5 == nil then 
+ else
+if MN5 == 1 then anten() end
+if MN5 == 2 then ortahizmenu() end
+if MN5 == 3 then flash() end
+if MN5 == 4 then minihizmenu() end
+if MN5 == 5 then espmenu() end
+if MN5 == 6 then parasut() end
+if MN5 == 7 then IPAD() end
+if MN5 == 8 then NOFOG() end
+if MN5 == 9 then BLSK() end 
+if MN5 == 10 then HOME() end
+end
+PUBGMH = -1
+end
+
+--Oyun Hileler Menü Kodları
+
+
+
+
+--Oyun Hileler Kodları
+
+function BLSK()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+  gg.searchNumber("100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineAddress("000", -1, gg.TYPE_FLOAT, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("-90", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Black Sky Activated")
+end
+
+function minihizmenu()
+ minihiz=gg.choice({
+   '🏃‍♂️⫸ Mini Hız Aktif Et',
+   '🚶⫸ Mini Hız Kapat',
+   '🔙⫸ Geri',
+ },nil,"😈[ABG]-Mini Hız Menüsü")
+if minihiz == nil then 
+  else
+if minihiz == 1 then minihizacik() end
+if minihiz == 2 then minihizkapali() end
+if minihiz == 3 then HOME() end
+end
+PUBGMH = -1
+end
+
+function minihizacik()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("1;1;1;0.0001;20;0.0005;0.4::50", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(300)
+  gg.editAll("1.06", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Medium Speed activated!")
+end
+
+function minihizkapali()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("1.06;1.06;1.06;0.0001;20;0.0005;0.4::50", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("1.06", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(300)
+  gg.editAll("1", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Medium Speed deactivated!")
+end
+
+function NOFOG()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_DATA)
+  gg.searchNumber("-2.3805679e21;-1.3620439e28;-1.3978205e24:9", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("-1.3620439e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(99)
+  gg.editAll("0", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("No Fog Activated")
+end
+
+function IPAD()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("2.8025969e-45;220;25;178;15;100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("220", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("350", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("iPad Biew Activated")
+end
+
+function espmenu()
+  espp=gg.multiChoice({
+    '✔️⫸ ESP Player [AKTİF]',
+    '❌⫸ ESP Player [KAPALI]',
+    '🔙⫸ Geri'
+  },nil,"😈[ABG]-ESP Menüsü")
+if espp ==  nil then 
+  else
+if espp == 1 then espaktif() end
+if espp == 2 then espkapali() end
+if espp == 3 then oyunhilemenu() end
+end
+PUBGMH = -1
+end
+
+function espaktif()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("-1,901,891,198,734,303,227", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+lol = gg.getResultsCount()
+if lol == 1 then
+gg.toast("Loading...")
+gg.getResults(1)
+gg.editAll("-1,901,891,198,902,075,392", gg.TYPE_QWORD)
+gg.clearResults()
+end
+gg.toast("👁️‍🗨️ [ABG] -  ESP Player AKTİF! 👁️‍🗨️")
+end
+
+function espkapali()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("-1,901,891,198,902,075,392", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+lol = gg.getResultsCount()
+if lol == 1 then
+gg.toast("Loading...")
+gg.getResults(1)
+gg.editAll("-1,901,891,198,734,303,227", gg.TYPE_QWORD)
+gg.clearResults()
+end
+gg.toast("❎ [ABG] -  ESP Player KAPATILDI ❎")
+end
+
+function flash()
+function split(szFullString, szSeparator) local nFindStartIndex = 1 local nSplitIndex = 1 local nSplitArray = {} while true do local nFindLastIndex = string.find (szFullString, szSeparator, nFindStartIndex) if not nFindLastIndex then nSplitArray[nSplitIndex] = string.sub(szFullString, nFindStartIndex, string.len (szFullString)) break end nSplitArray[nSplitIndex] = string.sub (szFullString, nFindStartIndex, nFindLastIndex - 1) nFindStartIndex = nFindLastIndex + string.len (szSeparator) nSplitIndex = nSplitIndex + 1 end return nSplitArray end function xgxc(szpy, qmxg) for x = 1, #(qmxg) do xgpy = szpy + qmxg[x]["offset"] xglx = qmxg[x]["type"] xgsz = qmxg[x]["value"] xgdj = qmxg[x]["freeze"] if xgdj == nil or xgdj == "" then gg.setValues({[1] = {address = xgpy, flags = xglx, value = xgsz}}) else gg.addListItems({[1] = {address = xgpy, flags = xglx, freeze = xgdj, value = xgsz}}) end xgsl = xgsl + 1 xgjg = true end end function xqmnb(qmnb) gg.clearResults() gg.setRanges(qmnb[1]["memory"]) gg.searchNumber(qmnb[3]["value"], qmnb[3]["type"]) if gg.getResultCount() == 0 then gg.toast(qmnb[2]["name"] .. "开启失败") else gg.refineNumber(qmnb[3]["value"], qmnb[3]["type"]) gg.refineNumber(qmnb[3]["value"], qmnb[3]["type"]) gg.refineNumber(qmnb[3]["value"], qmnb[3]["type"]) if gg.getResultCount() == 0 then gg.toast(qmnb[2]["name"] .. "开启失败") else sl = gg.getResults(999999) sz = gg.getResultCount() xgsl = 0 if sz > 999999 then sz = 999999 end for i = 1, sz do pdsz = true for v = 4, #(qmnb) do if pdsz == true then pysz = {} pysz[1] = {} pysz[1].address = sl[i].address + qmnb[v]["offset"] pysz[1].flags = qmnb[v]["type"] szpy = gg.getValues(pysz) pdpd = qmnb[v]["lv"] .. ";" .. szpy[1].value szpd = split(pdpd, ";") tzszpd = szpd[1] pyszpd = szpd[2] if tzszpd == pyszpd then pdjg = true pdsz = true else pdjg = false pdsz = false end end end if pdjg == true then szpy = sl[i].address xgxc(szpy, qmxg) end end if xgjg == true then gg.toast(qmnb[2]["name"] .. "开启成功，一共修改" .. xgsl .. "条数据") else gg.toast(qmnb[2]["name"] .. "未搜索到数据，开启失败") end end end end function SearchWrite(Search, Write, Type) gg.clearResults() gg.setVisible(false) gg.searchNumber(Search[1][1], Type) local count = gg.getResultCount() local result = gg.getResults(count) gg.clearResults() local data = {} local base = Search[1][2] if (count > 0) then for i, v in ipairs(result) do v.isUseful = true end for k=2, #Search do local tmp = {} local offset = Search[k][2] - base local num = Search[k][1] for i, v in ipairs(result) do tmp[#tmp+1] = {} tmp[#tmp].address = v.address + offset tmp[#tmp].flags = v.flags end tmp = gg.getValues(tmp) for i, v in ipairs(tmp) do if ( tostring(v.value) ~= tostring(num) ) then result[i].isUseful = false end end end for i, v in ipairs(result) do if (v.isUseful) then data[#data+1] = v.address end end if (#data > 0) then local t = {} local base = Search[1][2] for i=1, #data do for k, w in ipairs(Write) do offset = w[2] - base t[#t+1] = {} t[#t].address = data[i] + offset t[#t].flags = Type t[#t].value = w[1] if (w[3] == true) then local item = {} item[#item+1] = t[#t] item[#item].freeze = true gg.addListItems(item) end end end gg.setValues(t) gg.toast("开启成功，一共修改"..#t.."条数据") gg.addListItems(t) else gg.toast("未搜索到数据，开启失败", false) return false end else gg.toast("Not Found") return false end end
+     qmnb = {
+{["memory"] = gg.REGION_BAD},
+{["name"] ="房区防闪开启中"},
+{["value"] =5.2806111e-40, ["type"] = gg.TYPE_FLOAT},
+{["lv"] = 4.7592633e21, ["offset"] = -44, ["type"] = gg.TYPE_FLOAT},
+{["lv"] = 3.0230535e23, ["offset"] = 4, ["type"] = gg.TYPE_FLOAT},
+{["lv"] = 2.2963078e-41, ["offset"] = 8, ["type"] = gg.TYPE_FLOAT},
+ }
+qmxg = {
+{["value"] =99999, ["offset"] = 160, ["type"] = gg.TYPE_FLOAT},
+}
+xqmnb(qmnb)
+qmnb = {
+{["memory"] = gg.REGION_BAD},
+{["name"] ="山区防闪开启中"},
+{["value"] =6.50000238419, ["type"] = gg.TYPE_FLOAT
+},
+{["lv"] = 2.2960275e-41, ["offset"] = -4, ["type"] = gg.TYPE_FLOAT},
+{["lv"] = 4.7961557e21, ["offset"] = -8, ["type"] = gg.TYPE_FLOAT},
+{["lv"] = 5.8013756e-42, ["offset"] = -12, ["type"] = gg.TYPE_FLOAT},
+ }
+qmxg = {
+{["value"] =99999, ["offset"] = 148, ["type"] = gg.TYPE_FLOAT},
+}
+xqmnb(qmnb)
+end
+
+function ortahiz()
+  ortahizmenu=gg.multiChoice({
+    '✔️⫸ Orta Hız [AKTİF]',
+    '❌⫸ Orta Hız [KAPALI]',
+    '🔙⫸ Geri'
+  },nil,"😈 [ABG]-Orta Hız Menüsü🇹🇷")
+if ortahizmenu == nil then
+  else
+if ortahizmenu == 1 then ortahizaktif() end
+if ortahizmenu == 2 then ortahizkapali() end
+if ortahizmenu == 3 then oyunhilemenu() end
+end
+PUBGMH = -1
+end
+
+function ortahizaktif()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("1;1;1;0.0001;20;0.0005;0.4::50", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(300)
+gg.editAll("1.06", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("🏃 Orta hız Aktif Edildi! ✔️ ")
+end
+
+function ortahizkapali()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("1.06;1.06;1.06;0.0001;20;0.0005;0.4::50", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1.06", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(300)
+gg.editAll("1", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("🏃 Orta hız Kapatıldı ! ❎ ")
+end
+
+function parasut()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_BSS)
+  gg.searchNumber("2048D;4D;1F;1F;1D:30", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("3000;5000;1024;1000::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(6284)
+  gg.editAll("999999", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Fast Parachute activated!")
+end
+
+--Oyun Hileler Kodları
+
+
+--Diğer Oyun Hileleri Menü
+
+function digermenu()
+  digerhack=gg.choice({
+    '📂⫸ Sit-Scop Menü',
+    '🎁⫸ FlareGun',
+    '👻⫸ Görünmezlik',
+    '💥⫸ One Shot',
+    '🔙⫸ Geri'
+  },nil,"😈[ABG] Diğer Hileler Menüsü🇹🇷")
+if digerhack == nil then
+  else
+if digerhack == 1 then sitscopemenu() end
+if digerhack == 2 then flareanten() end
+if digerhack == 3 then gorunmez() end
+if digerhack == 4 then onekill() end
+if digerhack == 5 then HOME() end
+end
+PUBGMH = -1
+end
+
+--Diğer Oyun Hileleri Menü
+
+
+--Diğer Oyun Hileleri Kodları
+
+function sitscopemenu()
+  sitscope=gg.choice({
+    '📂⫸ Sit Scope Yukarı',
+    '📂⫸ Sit Scope Sağ',
+    '📂⫸ Sit Scope Sol',
+    '📂⫸ Stand Scope',
+    '📂⫸ Stand Scope Sağ',
+    '📂⫸ Stand Scope Sol',
+    '🔙⫸ Geri'
+  },nil,"😈[ABG]-Sit-Scop Menüsü🇹🇷")
+if sitscope == nil then
+  else
+end
+  PUBGMH = -1
+  end
+
+function flareanten()
+gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("0.7576~0.7579", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("0.7576~0.7579", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("99999", gg.TYPE_FLOAT)
+  gg.toast(" 💝 Flare Gun Anten Aktif Edildi! 💝")
+end
+
+function gorunmez()
+  gg.clearResults()
+  gg.setRanges(4)
+  gg.searchNumber("1E~200000E;1E;1E;0E;0F;0E;0F;-120D;-120D;0D;0F;-120D;-120D;-120D;-120D::93", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.toast("Görünmezlik 18%...")
+  gg.searchNumber("0", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(1500)
+  gg.editAll("1", gg.TYPE_DWORD)
+  gg.toast("Görünmezlik 32%...")
+  gg.clearResults()
+  gg.setRanges(4)
+  gg.searchNumber("-120;1E~300000E;-120D;-120D;-120D;0E;0F;1E~300000E;0E;0F;0D;0F;0.01E~100000E::101", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.toast("Görünmezlik 47%...")
+  gg.searchNumber("0", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(1000)
+  gg.editAll("1", gg.TYPE_DWORD)
+  gg.toast("Görünmezlik 64%...")
+  gg.clearResults()
+  gg.setRanges(4)
+  gg.searchNumber("1078034432D;0F;-1074790400D;-123;0F;1074266112D;-120;-120;0F;1072693,248D;0D;0.01E~1.9E::73", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.toast("Görünmezlik 81%...")
+  gg.searchNumber("0", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(2000)
+  gg.editAll("16777216", gg.TYPE_DWORD)
+  gg.toast("👻 Görünmezlik Aktif 👻")
+  gg.clearResults()
+  
+end
+
+function onekill()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("71500", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("71500", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("500000", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("AKM - Hile Aktif.")
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("88000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("88000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("500000", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("M416 - Hile Aktif.")
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("90000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("90000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("500000", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("M16 - Hile Aktif")
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("40000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("40000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(800)
+  gg.editAll("500000", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("冲锋枪子弹开启成功")
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("91000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("91000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("500000", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("AWM - Hile Aktif.")
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("76000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("76000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("500000", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("98K - Aktif Edildi.")
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("79000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(105)
+  gg.editAll("500000", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("M24 - Aktif Edildi.")
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("33000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("33000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("500000", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("VSS - Aktif Edildi.")
+  end
+
+--Diğer Oyun Hileleri Kodları
+
+
+function exit()
+  print ("🔰 ARAP BÜKME İŞLEMİ TAMAMLANDI 🔰\n 💎 t.me/arapbukengenc 💎\n 🎥 YouTube ARAP BÜKEN GENÇ 🎥\n🔥 [ABG] - Bizi tercih ettiğiniz için teşekkürler.❤️")
+os.exit()
+end
+
+-- Menüye Dönme Döngüsü
+ while (true) do
+  if gg.isVisible(true) then
+    PUBGMH = 1
+    gg.setVisible(false)
+  end
+  gg.clearResults()
+  if PUBGMH == 1 then
+    HOME()
+  end
+ end
 
