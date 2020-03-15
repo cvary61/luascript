@@ -1,6 +1,6 @@
-Password﻿ = '3152'
+Password = '0061'
 PS = gg.prompt({'🔒 Şifre Giriniz: '},{[1]=''},{[1]='text'})
-if not PS the﻿n os.exit() 
+if not PS then os.exit() 
 end 
 if PS[1] == Password then 
 gg.alert('✔️ Şifre Doğrulandı❕','Devam ↪️')
