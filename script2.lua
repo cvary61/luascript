@@ -2344,7 +2344,7 @@ MN5=gg.choice({
  '🎥⫸ IPAD Modu',
  '🌫️⫸ Sis Kaldırma',
  '🌑⫸ Siyah Gökyüzü',
- ':fish:⫸ Balıklama İnme',
+ '🐟⫸ Balıklama İnme',
  '🔙⫸ Geri'
  },nil,"😈[ABG] - Oyun Menüsü 🇹🇷")
  if MN5 == nil then 
