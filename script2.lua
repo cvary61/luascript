@@ -73,29 +73,47 @@ function antibantr()
 	end
 
 function koreantiban()
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("16384;4449", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber("4448", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(99900000)
-gg.editAll("2225", gg.TYPE_DWORD)
-if gg.getResultCount() == 0 then
-gg.alert("ᴠᴀʟᴜᴇ ɴᴏᴛ ғᴏᴜɴᴅ\nᴀɴᴛɪ-ʙᴀɴ ɴᴏᴛ ᴀᴄᴛɪᴠᴀᴛᴇᴅ")
-os.print("ʀᴇsᴛᴀʀᴛ ᴛʜᴇ ɢᴀᴍᴇ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ")
-gg.processKill()
-os.exit()
-else
-gg.alert("ᴠᴀʟᴜᴇ ғᴏᴜɴᴅ!\nᴀɴᴛɪ-ʙᴀɴ ᴀᴄᴛɪᴠᴀᴛᴇᴅ!")
-gg.getResults(99900000)
-gg.editAll("1337", gg.TYPE_DWORD)
-gg.getResults(99900000)
-for i, i in ipairs((gg.getResults(99900000))) do
-if i.flags == gg.TYPE_DWORD then
-gg.addListItems((gg.getResults(99900000)))
-end
-end
-end
-gg.toast("☬ Bypass Activated ☬")
+  gg.setVisible(false)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("2.2958874e-41;16384D;16384D;16384D;16384D;16384D::24", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  if gg.getResultCount() == 0 then
+    gg.alert("�� Value Not Detected ��\nPlease Restart Your Game")
+  else
+    gg.alert(" TELEGRAM @arapbukengenc ")
+    gg.searchNumber("2.2958874e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    resultsCount = gg.getResultCount()
+    results = gg.getResults(resultsCount)
+    do
+      for _FORV_3_ = 1, resultsCount do
+        gg.addListItems({})
+        gg.addListItems({})
+        gg.addListItems({})
+        gg.addListItems({})
+        gg.addListItems({})
+        gg.addListItems({})
+        gg.addListItems({})
+        gg.addListItems({})
+      end
+    end
+  end
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("4588", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(22)
+  gg.editAll("1358", gg.TYPE_DWORD)
+  gg.addListItems(gg.getResults(22))
+  do
+    do
+      for _FORV_3_, _FORV_4_ in ipairs(gg.getResults(22)) do
+        if _FORV_4_.flags == gg.TYPE_DWORD then
+        end
+      end
+    end
+  end
+  gg.clearResults()
+  gg.setVisible(false)
+  gg.toast("KORE BYPASS ✔️")
 end
 
 function globalantiban()
