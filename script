@@ -1,4 +1,7 @@
-gg.alert('GÜNCELLENİYORUZ')
+gg.alert([[
+GÜNCELLENİYORUZ
+Şifre 18 Mart 16.00'da. 
+@arapbukengenc telegram kanalında.]])
 os.exit()
 Password = '1157'
 PS = gg.prompt({'🔒 Şifre Giriniz: '},{[1]=''},{[1]='text'})
