@@ -2676,14 +2676,14 @@ MN3=gg.multiChoice({
 else
 if MN3[1] == true then kafa() end
 if MN3[2] == true then aimbotsafe() end
-if MN3[2] == true then magic() end
-if MN3[3] == true then nolessrecoil() end
-if MN3[4] == true then sekmememenu() end
-if MN3[5] == true then antishake() end
-if MN3[6] == true then superaim() end
-if MN3[7] == true then ultraaim() end
-if MN3[8] == true then AIMBOT360() end
-if MN3[9] == true then HOME() end
+if MN3[3] == true then magic() end
+if MN3[4] == true then nolessrecoil() end
+if MN3[5] == true then sekmememenu() end
+if MN3[6] == true then antishake() end
+if MN3[7] == true then superaim() end
+if MN3[8] == true then ultraaim() end
+if MN3[9] == true then AIMBOT360() end
+if MN3[10] == true then HOME() end
 end
 PUBGMH = -1
 end
