@@ -1,3 +1,5 @@
+gg.alert('GÜNCELLENİYORUZ')
+os.exit()
 Password = '1157'
 PS = gg.prompt({'🔒 Şifre Giriniz: '},{[1]=''},{[1]='text'})
 if not PS then os.exit() 
