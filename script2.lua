@@ -60,7 +60,7 @@ end
 function antibanmenu()
   antibanmenu1=gg.choice({
     '🔐 Obb Şifreleme',
-    'Log Temizleme',
+    'Log Temizleme [Root]',
     'Geri'
   })
   if antibanmenu1 == nil then
@@ -708,13 +708,13 @@ if exmenu == nil then
 if exmenu == 1 then exynos7420() end
 if exmenu == 2 then exynos7570() end
 if exmenu == 3 then exynos7870() end
-if exmenu == 3 then exynos7880() end
-if exmenu == 4 then exynos7885() end
-if exmenu == 5 then exynos8890() end
-if exmenu == 6 then exynos8895() end
-if exmenu == 7 then exynos9610() end
-if exmenu == 8 then exynos9810() end
-if exmenu == 8 then wallmenu() end
+if exmenu == 4 then exynos7880() end
+if exmenu == 5 then exynos7885() end
+if exmenu == 6 then exynos8890() end
+if exmenu == 7 then exynos8895() end
+if exmenu == 8 then exynos9610() end
+if exmenu == 9 then exynos9810() end
+if exmenu == 10 then wallmenu() end
 end
  PUBGMH = -1
  end
@@ -770,7 +770,7 @@ end
 	if wallsdmn == 18 then wh810() end
 	if wallsdmn == 19 then wh820() end
 	if wallsdmn == 20 then wh835() end
-	if wallsdmn == 22 then WH855()	end
+	if wallsdmn == 21 then WH855()	end
 	if wallsdmn == 22 then wallmenu() end
 	end
 	PUBGMH = -1
@@ -2925,14 +2925,16 @@ gg.editAll("9999", 16)
 end
 
 function magic()
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("90.775703430176;0;8;15;16;18;28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.editAll("1000", gg.TYPE_FLOAT)
-gg.clearResults(81337545225)
-gg.toast(" Magic Bullet 100% ")
-end--function
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("1;20.51941871643;2.04908943176;-86.45767974854;-92.2311706543;16.0", 16, false, 536870912, 0, -1)
+  gg.searchNumber("16", 16, false, 536870912, 0, -1)
+  gg.getResults(100)
+  gg.editAll("100", 16)
+  gg.clearResults()
+  gg.toast("Magic Bullet activated!")
+  gg.clearResults()
+end
 
 
 -- Silah Hile Kodları
