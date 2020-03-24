@@ -2672,7 +2672,7 @@ MN3=gg.multiChoice({
  '🔫⫸ No Recoil',
  '🎯⫸ Antishake',
  '🎯⫸ Super Aimbot',
- '🎯⫸ Ultra Aimbot',
+ '🎯⫸ 100M Aimbot',
  '💢⫸ 360 AimBot',
  '🔙⫸ Geri'
    },nil,"😈[ABG] - Silah Menüsü 🇹🇷")
@@ -2891,15 +2891,13 @@ gg.clearResults()
 end
 
 function ultraaim()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_DATA)
-  gg.searchNumber("360;0.0001;1478828288", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("0.0001", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(100)
-  gg.editAll("9999", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("☠️ [ABG] -  AIᴍBᴏᴛ Uʟᴛʀᴀ AKTİF☠️!")
-end
+gg.setRanges(8)
+gg.searchNumber("2015175168", 16, false, 536870912, 0, -1)
+gg.getResults(10)
+gg.editAll("0", 16)
+gg.clearResults(81337545225)
+gg.toast(" AimBot 100M ")
+end--function
 
 function antishake()
 gg.clearResults()
