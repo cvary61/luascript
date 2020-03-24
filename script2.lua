@@ -1765,7 +1765,7 @@ if CLRSNAP6251[4] == true then
 crl6254()
 end
 if CLRSNAP6251[5] == true then
-COLORHACK()
+renkmenu()
 end
 end
 PUBGMH = -1
