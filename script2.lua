@@ -15,17 +15,18 @@ HH = gg.alert([[
 ]],
 "Devam Et➡️")
 HH = gg.alert([[
-█░█ ▀█ ░ ▄█
-▀▄▀ █▄ ▄ ░█
+█░█ ▀█ ░ ▀█
+▀▄▀ █▄ ▄ █▄
 Yenilikler;
-+Kafan Vruma Güncellendi
-+Aimbot Safe Eklendi
-+AntiBan Güncellendi
-+Anten Güncellendi
-+Magic Güncellendi
-+WallHack Güncellendi
-+ESP Güncellendi]],"Devam Et ➡️")
-HH = gg.alert("              ╔═.✵.══════════╗\n               [ABG] - Script Alfa v2.0\n              ╚══════════.✵.═╝\nHile kullanımındaki tüm sorumluluk size aittir.\nHileler güvenli kodlardan oluşmakta ve ban yemenizi en az saviyede tasarlanmıştır.\nHile ile alkalı bilgi ve öneriler için iletişime geçebilirsiniz.\n\nTelegram: @arapbukengenc\n\nCoder: CVaRy","Başlat 🔘")
++Exynos 7870 Düzeltildi
++AntiBan Menü Güncellendi
++Cimen Kaldırma
++Log Temizleme / Obb Geri Eklendi
++ESP Güncellendi
++Wallhack Eklemesi Yapıldı
++Exynos 7870 Tamamen Aktif Edildi
+]],"Devam Et ➡️")
+HH = gg.alert("              ╔═.✵.══════════╗\n               [ABG] - Script Alfa v2.2\n              ╚══════════.✵.═╝\nHile kullanımındaki tüm sorumluluk size aittir.\nHileler güvenli kodlardan oluşmakta ve ban yemenizi en az saviyede tasarlanmıştır.\nHile ile alkalı bilgi ve öneriler için iletişime geçebilirsiniz.\n\nTelegram: @arapbukengenc\n\nCoder: CVaRy","Başlat 🔘")
 
 function HOME()
 MN=gg.choice({
@@ -44,7 +45,7 @@ MN=gg.choice({
 ]])
  if MN == nil then
 else
-if MN == 1 then antibantr() end
+if MN == 1 then antibanmenu() end
 if MN == 2 then wallmenu() end
 if MN == 3 then renkmenu() end
 if MN == 4 then silahhack() end 
@@ -56,544 +57,158 @@ PUBGMH = -1
 end
 
 --AntiBan TR
-function antibantr()
-	antiban1 = gg.multiChoice({
-	"🌐Global (New)",
-	"🇰🇷Kore (New)",
-	"🔙Geri"
-	})
-	if antiban1 == nil then
-	else
-	if antiban1[1] == true then globalantiban() end
-	if antiban1[2] == true then koreantiban() end
-	if antiban1[3] == true then HOME() end
-	end
-	PUBGMH = -1
-	end
-
-function globalantiban()
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("2.2958874e-41;16384D;16384D;16384D;16384D;16384D::24", gg.TYPE_FLOAT, false, gg.SGN_EQUAL, 0, -1)
-if gg.getResultCount() == 0 then
-gg.alert("Failed")
-else
-gg.searchNumber("2.2958874e-41", gg.TYPE_FLOAT, false, gg.SGN_EQUAL, 0, -1)
-resultsCount = gg.getResultCount()
-results = gg.getResults(resultsCount)
-for x = 1, resultsCount do
-
-gg.addListItems({
-[1] = {
-address = results[x].address + 0,
-flags = 4,
-freeze = true,
-value = 70037
-}
-})
-
-gg.addListItems({
-[1] = {
-address = results[x].address + 4,
-flags = 4,
-freeze = true,
-value = 70037
-}
-})
-
-gg.addListItems({
-[1] = {
-address = results[x].address + 8,
-flags = 4,
-freeze = true,
-value = 70037
-}
-})
-
-gg.addListItems({
-[1] = {
-address = results[x].address + 12,
-flags = 4,
-freeze = true,
-value = 70037
-}
-})
-
-gg.addListItems({
-[1] = {
-address = results[x].address + 16,
-flags = 4,
-freeze = true,
-value = 70037
-}
-})
-
-gg.addListItems({
-[1] = {
-address = results[x].address + 20,
-flags = 4,
-freeze = true,
-value = 70032
-}
-})
-
-gg.addListItems({
-[1] = {
-address = results[x].address + 100,
-flags = 4,
-freeze = true,
-value = 16384
-}
-})
-
-end
-gg.alert("Memory Antiban Aktif Edildi. Dosyalar Modlanıyor")
-gg.clearResults()
-end
-io.open(gg.EXT_STORAGE .. "/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini", "w"):write("���z������ �ا����&���z��� ���`�x(��]jע}�azv��'!y�^��+")
-gg.clearResults()
-  gg.setRanges(gg.REGION_C_ALLOC)
-  gg.searchNumber("2.2958874e-41;16384D;16384D;16384D;16384D;16384D::24", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  if gg.getResultCount() == 0 then
+function antibanmenu()
+  antibanmenu1=gg.choice({
+    '🔐 Obb Şifreleme',
+    'Log Temizleme',
+    'Geri'
+  })
+  if antibanmenu1 == nil then
   else
-    gg.searchNumber("2.2958874e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    n = gg.getResultCount()
-    jz = gg.getResults(n)
-    for _FORV_3_ = 1, n do
-      gg.addListItems({
-        [1] = {
-          address = jz[_FORV_3_].address + 0,
-          flags = 4,
-          freeze = true,
-          value = 65586
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = jz[_FORV_3_].address + 4,
-          flags = 4,
-          freeze = true,
-          value = 65586
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = jz[_FORV_3_].address + 8,
-          flags = 4,
-          freeze = true,
-          value = 65586
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = jz[_FORV_3_].address + 12,
-          flags = 4,
-          freeze = true,
-          value = 65586
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = jz[_FORV_3_].address + 16,
-          flags = 4,
-          freeze = true,
-          value = 65586
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = jz[_FORV_3_].address + 20,
-          flags = 4,
-          freeze = true,
-          value = 70032
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = jz[_FORV_3_].address + 100,
-          flags = 4,
-          freeze = true,
-          value = 16384
-        }
-      })
-    end
-  gg.setRanges(gg.REGION_C_ALLOC)
-  gg.searchNumber("1.2F;1.8F:9::1", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1.1F;1.4F:3::1", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1.1D;1.4D:2::10", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.clearResults()
-  gg.searchNumber("5001;1.1;1F::10", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(100)
-  gg.searchNumber("1.2F;1.8F:9::1", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1.1F;1.4F:3::1", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1.1D;1.4D:2::10", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.clearResults()
-  gg.searchNumber("5001;1.1;1F::10", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(100)
-  gg.searchNumber("5001;1.1;1F::10", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.clearResults()
-  gg.searchNumber("5001", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.clearResults()
-  gg.searchNumber("1.5", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.clearResults()
-  gg.searchNumber("1.6", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.clearResults()
-  gg.searchNumber("1.7", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.searchNumber("1.5", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.searchNumber("1.5", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.clearResults()
-  gg.searchNumber("1.5;0.4::60", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.searchNumber("1.5", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.searchNumber("1.5", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.searchNumber("1.5", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.searchNumber("1.5", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.editAll("5", gg.TYPE_DOUBLE)
-  gg.editAll("9", gg.TYPE_DOUBLE)
-  gg.editAll("4.66", gg.TYPE_DOUBLE)
-  gg.editAll("5.5", gg.TYPE_DOUBLE)
-  gg.toast("😬AntiBan")
-end
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("1.2F;1.8F:9::1", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("1.1F;1.4F:3::1", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("1.1D;1.4D:2::10", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.clearResults()
-gg.searchNumber("5001;1.1;1F::10", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
-gg.searchNumber("1.2F;1.8F:9::1", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("1.1F;1.4F:3::1", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("1.1D;1.4D:2::10", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.clearResults()
-gg.searchNumber("5001;1.1;1F::10", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
-gg.searchNumber("5001;1.1;1F::10", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.clearResults()
-gg.searchNumber("5001", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.clearResults()
-gg.searchNumber("1.5", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.clearResults()
-gg.searchNumber("1.6", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.clearResults()
-gg.searchNumber("1.7", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.searchNumber("1.5", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.searchNumber("1.5", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.clearResults()
-gg.searchNumber("1.5;0.4::60", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.searchNumber("1.5", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.searchNumber("1.5", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.searchNumber("1.5", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.searchNumber("1.5", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.editAll("5", gg.TYPE_DOUBLE)
-gg.editAll("9", gg.TYPE_DOUBLE)
-gg.editAll("4.66", gg.TYPE_DOUBLE)
-gg.editAll("5.5", gg.TYPE_DOUBLE)
-gg.toast("Over detection succeeded")
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("16384;4448", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber("4448", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(99900000)
-gg.editAll("2225", gg.TYPE_DWORD)
-if gg.getResultCount() == 0 then
-  gg.alert("ERROR")
-  print("ERROR")
-else
-  gg.alert("✓✓✓✓✓✓✓✓✓✓✓✓")
-  gg.getResults(99900000)
-  gg.editAll("1337", gg.TYPE_DWORD)
-  gg.getResults(99900000)
-  local t = gg.getResults(99900000)
-  do
-    for i, i in ipairs(t) do
-      if i.flags == gg.TYPE_DWORD then
-        i.value = "1337"
-        i.freeze = true
-        gg.addListItems(t)
-        t = nil
-      end
-    end
+    if antibanmenu1 == 1 then obbsifremenu() end
+    if antibanmenu1 == 2 then clearlog() end
+    if antibanmenu1 == 3 then HOME() end
   end
+  PUBGMH = -1
 end
+-- Log Temizleme Kodları
+function clearlog()
+gg.remove("/storage/emulated/0/Android/data/com.tencent.ig/cache")
+gg.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/tbslog")
+gg.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/ca-bundle.pem")
+gg.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/cacheFile.txt")
+gg.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/login-identifier.txt")
+gg.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/vmpcloudconfig.json")
+gg.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/ProgramBinaryCache")
+gg.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp")
+gg.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_res.eifs")
+gg.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/1375135419_47_0.13.0.11098_20190617165748_1981158817_cures.ifs.res")
+gg.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs")
+gg.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo")
+gg.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo")
+gg.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora")
+gg.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir")
+gg.remove("/data/data/com.tencent.ig/app_appcache")
+gg.remove("/data/data/com.tencent.ig/app_bugly")
+gg.remove("/data/data/com.tencent.ig/app_crashrecord")
+gg.remove("/data/data/com.tencent.ig/cache")
+gg.remove("/data/data/com.tencent.ig/code_cache")
+gg.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/cache")
+gg.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/tbslog")
+gg.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/ca-bundle.pem")
+gg.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/cacheFile.txt")
+gg.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/login-identifier.txt")
+gg.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/vmpcloudconfig.json")
+gg.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/ProgramBinaryCache")
+gg.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp")
+gg.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_res.eifs")
+gg.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/1375135419_47_0.13.0.11098_20190617165748_1981158817_cures.ifs.res")
+gg.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs")
+gg.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo")
+gg.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo")
+gg.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora")
+gg.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir")
+gg.remove("/data/data/com.pubg.krmobile/app_appcache")
+gg.remove("/data/data/com.pubg.krmobile/app_bugly")
+gg.remove("/data/data/com.pubg.krmobile/app_crashrecord")
+gg.remove("/data/data/com.pubg.krmobile/cache")
+gg.remove("/data/data/com.pubg.krmobile/code_cache")
+gg.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/cache")
+gg.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/tbslog")
+gg.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/ca-bundle.pem")
+gg.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/cacheFile.txt")
+gg.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/login-identifier.txt")
+gg.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/vmpcloudconfig.json")
+gg.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/ProgramBinaryCache")
+gg.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp")
+gg.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_res.eifs")
+gg.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/1375135419_47_0.13.0.11098_20190617165748_1981158817_cures.ifs.res")
+gg.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs")
+gg.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo")
+gg.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo")
+gg.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora")
+gg.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir")
+gg.remove("/data/data/com.vng.pubgmobile/app_appcache")
+gg.remove("/data/data/com.vng.pubgmobile/app_bugly")
+gg.remove("/data/data/com.vng.pubgmobile/app_crashrecord")
+gg.remove("/data/data/com.vng.pubgmobile/cache")
+gg.remove("/data/data/com.vng.pubgmobile/code_cache")
+gg.remove("/storage/emulated/0/Android/data/com.rekoo.pubgm/cache")
+gg.remove("/storage/emulated/0/Android/data/com.rekoo.pubgm/files/tbslog")
+gg.remove("/storage/emulated/0/Android/data/com.rekoo.pubgm/files/ca-bundle.pem")
+gg.remove("/storage/emulated/0/Android/data/com.rekoo.pubgm/files/cacheFile.txt")
+gg.remove("/storage/emulated/0/Android/data/com.rekoo.pubgm/files/login-identifier.txt")
+gg.remove("/storage/emulated/0/Android/data/com.rekoo.pubgm/files/vmpcloudconfig.json")
+gg.remove("/storage/emulated/0/Android/data/com.rekoo.pubgm/files/ProgramBinaryCache")
+gg.remove("/storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp")
+gg.remove("/storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_res.eifs")
+gg.remove("/storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/1375135419_47_0.13.0.11098_20190617165748_1981158817_cures.ifs.res")
+gg.remove("/storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs")
+gg.remove("/storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo")
+gg.remove("/storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo")
+gg.remove("/storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora")
+gg.remove("/storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir")
+gg.remove("/data/data/com.rekoo.pubgm/app_appcache")
+gg.remove("/data/data/com.rekoo.pubgm/app_bugly")
+gg.remove("/data/data/com.rekoo.pubgm/app_crashrecord")
+gg.remove("/data/data/com.rekoo.pubgm/cache")
+gg.remove("/data/data/com.rekoo.pubgm/code_cache")
+os.toast("Maç Logları Temilendi")
 end
 
-function koreantiban()
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("2.2958874e-41;16384D;16384D;16384D;16384D;16384D::24", gg.TYPE_FLOAT, false, gg.SGN_EQUAL, 0, -1)
-if gg.getResultCount() == 0 then
-gg.alert("Failed")
-else
-gg.searchNumber("2.2958874e-41", gg.TYPE_FLOAT, false, gg.SGN_EQUAL, 0, -1)
-resultsCount = gg.getResultCount()
-results = gg.getResults(resultsCount)
-for x = 1, resultsCount do
+-- Log Temizleme Kodları
 
-gg.addListItems({
-[1] = {
-address = results[x].address + 0,
-flags = 4,
-freeze = true,
-value = 70037
-}
-})
 
-gg.addListItems({
-[1] = {
-address = results[x].address + 4,
-flags = 4,
-freeze = true,
-value = 70037
-}
-})
 
-gg.addListItems({
-[1] = {
-address = results[x].address + 8,
-flags = 4,
-freeze = true,
-value = 70037
-}
-})
-
-gg.addListItems({
-[1] = {
-address = results[x].address + 12,
-flags = 4,
-freeze = true,
-value = 70037
-}
-})
-
-gg.addListItems({
-[1] = {
-address = results[x].address + 16,
-flags = 4,
-freeze = true,
-value = 70037
-}
-})
-
-gg.addListItems({
-[1] = {
-address = results[x].address + 20,
-flags = 4,
-freeze = true,
-value = 70032
-}
-})
-
-gg.addListItems({
-[1] = {
-address = results[x].address + 100,
-flags = 4,
-freeze = true,
-value = 16384
-}
-})
-
-end
-gg.alert("Memory Antiban Success Activating edit libs and modding data")
-gg.clearResults()
-end
-io.open(gg.EXT_STORAGE .. "/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini", "w"):write("���z������ �ا����&���z��� ���`�x(��]jע}�azv��'!y�^��+")
-gg.clearResults()
-  gg.setRanges(gg.REGION_C_ALLOC)
-  gg.searchNumber("2.2958874e-41;16384D;16384D;16384D;16384D;16384D::24", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  if gg.getResultCount() == 0 then
+-- Obb Şifreleme
+function obbsifremenu()
+  obbsifremenu1=gg.choice({
+    "🔐 Obb Şifreleme Aç",
+    "🔓 Obb Şifre Kapat",
+    "Geri",
+  })
+  if obbsifremenu1 == nil then
   else
-    gg.searchNumber("2.2958874e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    n = gg.getResultCount()
-    jz = gg.getResults(n)
-    for _FORV_3_ = 1, n do
-      gg.addListItems({
-        [1] = {
-          address = jz[_FORV_3_].address + 0,
-          flags = 4,
-          freeze = true,
-          value = 65586
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = jz[_FORV_3_].address + 4,
-          flags = 4,
-          freeze = true,
-          value = 65586
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = jz[_FORV_3_].address + 8,
-          flags = 4,
-          freeze = true,
-          value = 65586
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = jz[_FORV_3_].address + 12,
-          flags = 4,
-          freeze = true,
-          value = 65586
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = jz[_FORV_3_].address + 16,
-          flags = 4,
-          freeze = true,
-          value = 65586
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = jz[_FORV_3_].address + 20,
-          flags = 4,
-          freeze = true,
-          value = 70032
-        }
-      })
-      gg.addListItems({
-        [1] = {
-          address = jz[_FORV_3_].address + 100,
-          flags = 4,
-          freeze = true,
-          value = 16384
-        }
-      })
-    end
-  gg.setRanges(gg.REGION_C_ALLOC)
-  gg.searchNumber("1.2F;1.8F:9::1", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1.1F;1.4F:3::1", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1.1D;1.4D:2::10", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.clearResults()
-  gg.searchNumber("5001;1.1;1F::10", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(100)
-  gg.searchNumber("1.2F;1.8F:9::1", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1.1F;1.4F:3::1", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1.1D;1.4D:2::10", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.clearResults()
-  gg.searchNumber("5001;1.1;1F::10", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(100)
-  gg.searchNumber("5001;1.1;1F::10", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.clearResults()
-  gg.searchNumber("5001", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.clearResults()
-  gg.searchNumber("1.5", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.clearResults()
-  gg.searchNumber("1.6", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.clearResults()
-  gg.searchNumber("1.7", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.searchNumber("1.5", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.searchNumber("1.5", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.clearResults()
-  gg.searchNumber("1.5;0.4::60", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.searchNumber("1.5", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.searchNumber("1.5", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.searchNumber("1.5", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.searchNumber("1.5", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.editAll("5", gg.TYPE_DOUBLE)
-  gg.editAll("9", gg.TYPE_DOUBLE)
-  gg.editAll("4.66", gg.TYPE_DOUBLE)
-  gg.editAll("5.5", gg.TYPE_DOUBLE)
-  gg.toast("😬AntiBan")
-end
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("1.2F;1.8F:9::1", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("1.1F;1.4F:3::1", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("1.1D;1.4D:2::10", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.clearResults()
-gg.searchNumber("5001;1.1;1F::10", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
-gg.searchNumber("1.2F;1.8F:9::1", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("1.1F;1.4F:3::1", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("1.1D;1.4D:2::10", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.clearResults()
-gg.searchNumber("5001;1.1;1F::10", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
-gg.searchNumber("5001;1.1;1F::10", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.clearResults()
-gg.searchNumber("5001", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.clearResults()
-gg.searchNumber("1.5", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.clearResults()
-gg.searchNumber("1.6", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.clearResults()
-gg.searchNumber("1.7", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.searchNumber("1.5", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.searchNumber("1.5", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.clearResults()
-gg.searchNumber("1.5;0.4::60", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.searchNumber("1.5", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.searchNumber("1.5", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.searchNumber("1.5", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.searchNumber("1.5", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.editAll("5", gg.TYPE_DOUBLE)
-gg.editAll("9", gg.TYPE_DOUBLE)
-gg.editAll("4.66", gg.TYPE_DOUBLE)
-gg.editAll("5.5", gg.TYPE_DOUBLE)
-gg.toast("Over detection succeeded")
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("16384;4448", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber("4448", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(99900000)
-gg.editAll("2225", gg.TYPE_DWORD)
-if gg.getResultCount() == 0 then
-  gg.alert("ERROR")
-  print("ERROR")
-else
-  gg.alert("✓✓✓✓✓✓✓✓✓✓✓✓")
-  gg.getResults(99900000)
-  gg.editAll("1337", gg.TYPE_DWORD)
-  gg.getResults(99900000)
-  local t = gg.getResults(99900000)
-  do
-    for i, i in ipairs(t) do
-      if i.flags == gg.TYPE_DWORD then
-        i.value = "1337"
-        i.freeze = true
-        gg.addListItems(t)
-        t = nil
-      end
-    end
+    if obbsifremenu1 == 1 then obbsifrelendi() end
+    if obbsifremenu1 == 2 then obbsifrekapat() end
+    if obbsifremenu1 == 3 then antibanmenu() end
   end
+  PUBGMH = -1
 end
+-- Obb Kodlar
+function obbsifrelendi()
+gg.clearResults()
+os.rename("/sdcard/emulated/0/Android/obb/com.vng.pubgmobile/main.11090.com.vng.pubgmobile.obb", "/sdcard/emulated/0/Android/obb/com.vng.pubgmobile/main.11090.com.vng.pubgmobile.obbGILANGFAISAL")
+os.rename("/storage/emulated/0/Android/obb/com.vng.pubgmobile/main.11090.com.vng.pubgmobile.obb", "/storage/emulated/0/Android/obb/com.vng.pubgmobile/main.11090.com.vng.pubgmobile.obbGILANGFAISAL")
+os.rename("/mnt/shell/0/emulated/Android/obb/com.vng.pubgmobile/main.11090.com.vng.pubgmobile.obb", "/mnt/shell/0/emulated/Android/obb/com.vng.pubgmobile/main.11090.com.vng.pubgmobile.obbGILANGFAISAL")
+os.rename("/sdcard/emulated/0/Android/obb/com.tencent.ig/main.11090.com.tencent.ig.obb", "/sdcard/emulated/0/Android/obb/com.tencent.ig/main.11090.com.tencent.ig.obbGILANGFAISAL")
+os.rename("/storage/emulated/0/Android/obb/com.tencent.ig/main.11090.com.tencent.ig.obb", "/storage/emulated/0/Android/obb/com.tencent.ig/main.11090.com.tencent.ig.obbGILANGFAISAL")
+os.rename("/mnt/shell/0/emulated/Android/obb/com.tencent.ig/main.11090.com.tencent.ig.obb", "/mnt/shell/0/emulated/Android/obb/com.tencent.ig/main.11090.com.tencent.ig.obbGILANGFAISAL")
+os.rename("/sdcard/emulated/0/Android/obb/com.pubg.krmobile/main.11090.com.pubg.krmobile.obb", "/sdcard/emulated/0/Android/obb/com.pubg.krmobile/main.11090.com.pubg.krmobile.obbGILANGFAISAL")
+os.rename("/storage/emulated/0/Android/obb/com.pubg.krmobile/main.11090.com.pubg.krmobile.obb", "/storage/emulated/0/Android/obb/com.pubg.krmobile/main.11090.com.pubg.krmobile.obbGILANGFAISAL")
+os.rename("/mnt/shell/0/emulated/Android/obb/com.pubg.krmobile/main.11090.com.pubg.krmobile.obb", "/mnt/shell/0/emulated/Android/obb/com.pubg.krmobile/main.11090.com.pubg.krmobile.obbGILANGFAISAL")
+gg.clearResults()
+gg.toast(" Obb Şifreleme Tamamlandı")
 end
 
 
-
-
+function obbsifrekapat()
+gg.clearResults()
+os.rename("main.11090.com.vng.pubgmobile.obbGILANGFAISAL", "main.11090.com.vng.pubgmobile.obb")
+os.rename("/main.11090.com.vng.pubgmobile.obbGILANGFAISAL", "/main.11090.com.vng.pubgmobile.obb")
+os.rename("com.vng.pubgmobile", "com.vng.pubgmobile")
+os.rename("/storage/emulated/0/Android/obb/com.vng.pubgmobile/main.11090.com.vng.pubgmobile.obbGILANGFAISAL", "/storage/emulated/0/Android/obb/com.vng.pubgmobile/main.11090.com.vng.pubgmobile.obb")
+os.rename("main.11090.com.tencent.ig.obbGILANGFAISAL", "main.11090.com.tencent.ig.obb")
+os.rename("/main.11090.com.tencent.ig.obbGILANGFAISAL", "/main.11090.com.tencent.ig.obb")
+os.rename("com.tencent.ig", "com.tencent.ig")
+os.rename("/storage/emulated/0/Android/obb/com.tencent.ig/main.11090.com.tencent.ig.obbGILANGFAISAL", "/storage/emulated/0/Android/obb/com.tencent.ig/main.11090.com.tencent.ig.obb")
+os.rename("main.11090.com.pubg.krmobile.obb", "main.11090.com.pubg.krmobile.obb")
+os.rename("/main.11090.com.pubg.krmobile.obbGILANGFAISAL", "/main.11090.com.pubg.krmobile.obb")
+os.rename("com.pubg.krmobile", "com.pubg.krmobile")
+os.rename("/storage/emulated/0/Android/obb/com.pubg.krmobile/main.11090.com.pubg.krmobile.obbGILANGFAISAL", "/storage/emulated/0/Android/obb/com.pubg.krmobile/main.11090.com.pubg.krmobile.obb")
+gg.clearResults()
+gg.toast("Obb Şifreleme Kapatıldı")
+end
 --AntiBan TR
 
 
@@ -615,7 +230,7 @@ MN2=gg.choice({
 	if MN2 == 2 then wallsdmenu() end
 	if MN2 == 3 then wallexmenu() end
 	if MN2 == 4 then mediatekmenu() end
-   if MN2 == 5 then kirinmenu() end 
+  if MN2 == 5 then kirinmenu() end 
 	if MN2 == 6 then wallhuawei() end
 	if MN2 == 7 then oppo() end
 	if MN2 == 8 then HOME() end
@@ -736,6 +351,57 @@ end
 PUBGMH = -1
 end
 --Kiri  Wall Başlangıç
+
+function kirin980()
+if w == 1 then
+WHFIX980()
+else
+gg.clearList()
+gg.clearResults(81337545225)
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("0.5;360.0;360.0;752.0;752.0;1.0;1.0;1.0;1.0", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+if gg.getResultsCount() == 0 then
+gg.alert("No Activate")
+else
+gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+_Count = gg.getResultsCount()
+_A = gg.getResults(_Count)
+last_Count = _Count + 1
+w = 1
+_T = "Edit WH Value"
+WHFIX980()
+end--else
+end--else
+end--function
+
+function WHFIX980()
+if w == 0 then
+gg.alert("No Activate")
+else
+gg.setVisible(false)
+_CL = {}
+for Srd_3_ = 1, _Count do
+end--for
+_C_ = gg.choice(_CL, nil, "WH Kirin 980")
+for Srd_3_ = 1, _Count do
+if _C_ == Srd_3_ then
+for Srd_7_, Srd_8_ in ipairs(_A) do
+gg.addListItems(_A)
+end--for
+gg.addListItems(_A)
+Srd_3_ = _Count
+elseif K_2 == _Count + 1 then
+WHK4()
+end--if
+end--for
+end--else
+gg.setVisible(true)
+gg.toast(" WH Kirin 980 ")
+end--function
+
+
+
+
 function kirin650()
 gg.clearResults()
 gg.searchNumber("8.4077908e-45;4.2038954e-45;1.5694543e-43;1.4012985e-45;2.8025969e-45;268.0;480.0;0.5:149", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -1039,6 +705,7 @@ function wallexmenu()
   '📱⫸ Exynos 8890',
   '📱⫸ Exynos 8895',
   '📱⫸ Exynos 9610',
+  '📱⫸ Exynos 9810',
   '🔙⫸ Geri'
   },nil,"[😈]-Exynos Wall Menüsü🇹🇷")
 if exmenu == nil then
@@ -1051,6 +718,7 @@ if exmenu == 4 then exynos7885() end
 if exmenu == 5 then exynos8890() end
 if exmenu == 6 then exynos8895() end
 if exmenu == 7 then exynos9610() end
+if exmenu == 8 then exynos9810() end
 if exmenu == 8 then wallmenu() end
 end
  PUBGMH = -1
@@ -1064,14 +732,18 @@ end
 	  '📱⫸ Snapdragon All Devices',
 	  '📱⫸ Snapdragon All Devices v2',
 	  '📱⫸ Snapdragon 425',
+    '📱⫸ Snapdragon 435',
 	  '📱⫸ Snapdragon 430',
+    '📱⫸ Snapdragon 450',
 	  '📱⫸ Snapdragon 600',
 	  '📱⫸ Snapdragon 610',
 	  '📱⫸ Snapdragon 615',
+    '📱⫸ Snapdragon 625',
 	  '📱⫸ Snapdragon 630',
 	  '📱⫸ Snapdragon 650',
 	  '📱⫸ Snapdragon 660',
 	  '📱⫸ Snapdragon 670',
+    '📱⫸ Snapdragon 675',
 	  '📱⫸ Snapdragon 710',
 	  '📱⫸ Snapdragon 800',
 	  '📱⫸ Snapdragon 810',
@@ -1086,21 +758,25 @@ end
 	if wallsdmn == 1 then wallsnapdrangonall() end
 	if wallsdmn == 2 then wallsnapdrangonallv2() end
 	if wallsdmn == 3 then wh425() end
-	if wallsdmn == 4 then wh430() end
-	if wallsdmn == 5 then wh600() end
-	if wallsdmn == 6 then wh610() end
-	if wallsdmn == 7 then wh615() end
-	if wallsdmn == 8 then wh630() end
-	if wallsdmn == 9 then wh650() end
-	if wallsdmn == 10 then wh660() end
-	if wallsdmn == 11 then wh670() end
-	if wallsdmn == 12 then WH710() end
-	if wallsdmn == 13 then wh800() end
-	if wallsdmn == 14 then wh810() end
-	if wallsdmn == 15 then wh820() end
-	if wallsdmn == 16 then wh835() end
-	if wallsdmn == 17 then WH855()	end
-	if wallsdmn == 18 then wallmenu() end
+	if wallsdmn == 4 then wh435() end
+  if wallsdmn == 5 then wh430() end
+  if wallsdmn == 6 then wh450() end
+	if wallsdmn == 7 then wh600() end
+	if wallsdmn == 8 then wh610() end
+	if wallsdmn == 9 then wh615() end
+  if wallsdmn == 10 then wh625() end
+	if wallsdmn == 11 then wh630() end
+	if wallsdmn == 12 then wh650() end
+	if wallsdmn == 13 then wh660() end
+	if wallsdmn == 14 then wh670() end
+  if wallsdmn == 15 then wh675() end
+	if wallsdmn == 16 then WH710() end
+	if wallsdmn == 17 then wh800() end
+	if wallsdmn == 18 then wh810() end
+	if wallsdmn == 19 then wh820() end
+	if wallsdmn == 20 then wh835() end
+	if wallsdmn == 22 then WH855()	end
+	if wallsdmn == 22 then wallmenu() end
 	end
 	PUBGMH = -1
 	end
@@ -1109,6 +785,70 @@ end
 
 
 --Wall Snapdragon 
+
+function wh450()
+gg.clearResults(81337545225)
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("130", gg.TYPE_FLOAT)
+gg.clearResults(81337545225)
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("130", gg.TYPE_FLOAT)
+gg.clearResults(81337545225)
+gg.clearResults(81337545225)
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("1.1202013e-19;1.1202017e-19;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1)
+gg.editAll("9999", gg.TYPE_FLOAT)
+gg.clearResults(81337545225)
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;0.00999999978F::200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("150", gg.TYPE_FLOAT)
+gg.clearResults(81337545225)
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("150", gg.TYPE_FLOAT)
+gg.clearResults(81337545225)
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("4.7961574e21;3.7615819e-37;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("150", gg.TYPE_FLOAT)
+gg.toast(" WH 450 ")
+end--function
+
+
+
+
+function wh675()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("200")
+gg.getResults(999)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("930")
+gg.getResults(999)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Wallhack 675 ")
+end
+
+
+
+
 function wallsnapdrangonall()
 gg.setRanges(gg.REGION_BAD)
 gg.searchNumber('135,215D;4,140D;3.7615819e-37;2::', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -1211,6 +951,26 @@ function wh430()
 end
 
 
+function wh430()
+gg.clearResults(81337545225)
+gg.setRanges(gg.REGION_VIDEO)
+gg.searchNumber("-5.56955884e-40;4.81460302e21;2.0:61", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(3)
+gg.editAll("138", gg.TYPE_FLOAT)
+gg.clearResults(81337545225)
+gg.setRanges(gg.REGION_VIDEO)
+gg.searchNumber("1.39125666e-19;3.9236357e-44;1.1202056e-19;2.0;0.24022650719:65", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(35)
+gg.editAll("138", gg.TYPE_FLOAT)
+gg.clearResults(81337545225)
+gg.toast(" WH 435 ")
+end--function
+
+
+
+
 function wh600()
 gg.clearResults()
 gg.setRanges(gg.REGION_BAD)
@@ -1260,6 +1020,23 @@ gg.editAll("120", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.toast("🇹🇷 Wallhack 615 🇹🇷")
 end
+
+function wh625()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("135215D;4140D;3.7615819e-37;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast(" Wallhack 625 ")
+end
+
 
 function wh630()
 gg.clearResults()
@@ -1507,43 +1284,63 @@ gg.toast("🇹🇷 Wallhack Exynos 7420 🇹🇷")
 end
 
 function exynos7870()
-	 if w == 1 then
-    WHFIX()
-  else
-    gg.clearList()
-    gg.clearResults()
-    gg.setRanges(4)
-    gg.clearResults()
-    gg.searchNumber("0.5;1", 16, false, 536870912, 0, -1)
-    gg.processResume()
-    gg.clearResults()
-    gg.searchNumber("1", 16, false, 536870912, 0, -1)
-    gg.processResume()
-    gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
-    gg.editAll("1", 16)
-    gg.clearResults()
-    gg.searchNumber("0.5;2.8025969e-45:161", 16, false, 536870912, 0, -1)
-    gg.processResume()
-    gg.clearResults()
-    gg.searchNumber("0.5", 16, false, 536870912, 0, -1)
-    gg.processResume()
-    gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
-    gg.editAll("0.5", 16)
-    gg.clearResults()
-    gg.searchNumber("0.5;1.4012985e-45;1.4012985e-45;2.8025969e-45;2.2958874e-41::", 16, false, 536870912, 0, -1)
-    if gg.getResultCount() == 0 then
-      gg.alert("ERROR\nVALUE NOT FOUND")
-    else
-      gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-      _Count = gg.getResultCount()
-      _A = gg.getResults(_Count)
-      last_Count = _Count + 1
-      w = 1
-      _T = "WALLHACK EXYNOS 7870"
-      WHFIX()
-    end
-  end
-end
+if w == 1 then
+WHFIX7870()
+else
+gg.clearList()
+gg.clearResults(81337545225)
+gg.setRanges(4)
+gg.clearResults(81337545225)
+gg.searchNumber("0.5;1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.clearResults(81337545225)
+gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("1", gg.TYPE_FLOAT)
+gg.clearResults(81337545225)
+gg.searchNumber("0.5;2.8025969e-45:161", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.clearResults(81337545225)
+gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("0.5", gg.TYPE_FLOAT)
+gg.clearResults(81337545225)
+gg.searchNumber("0.5;1.4012985e-45;1.4012985e-45;2.8025969e-45;2.2958874e-41::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+if gg.getResultsCount() == 0 then
+gg.alert("❌\nNo Activate")
+else
+gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+_Count = gg.getResultsCount()
+_A = gg.getResults(_Count)
+last_Count = _Count + 1
+w = 1
+_T = " WH Exynos 7870 "
+WHFIX7870()
+end--else
+end--else
+end--function
+
+function WHFIX7870()
+if w == 0 then
+gg.alert("❌\nNo Activate")
+else
+gg.setVisible(false)
+_CL = {}
+for Srd_3_ = 1, _Count do
+end--for
+_C_ = gg.choice(_CL, nil, " WH Exynos 7870 ")
+for Srd_3_ = 1, _Count do
+if _C_ == Srd_3_ then
+for Srd_7_, Srd_8_ in ipairs(_A) do
+gg.addListItems(_A)
+end--for
+gg.addListItems(_A)
+Srd_3_ = _Count
+elseif K_2 == _Count + 1 then
+HOME()
+end--if
+end--for
+end--else
+gg.setVisible(true)
+end--function
 
 
 
@@ -1562,23 +1359,20 @@ gg.toast("🇹🇷 Wallhack Exynos 7570 🇹🇷")
 end
 
 function exynos7885()
- gg.setRanges(gg.REGION_C_ALLOC)
-gg.clearResults()
-gg.searchNumber("\"3162688022693019688Q;4915678994331860992Q:2293\"", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber("\"4915678994331860992\"", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.getResults(10, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.addListItems({ -- table(2f04c33)
-})
 gg.setRanges(gg.REGION_C_ALLOC)
-gg.clearResults()
-gg.searchNumber("\"1.5694543e-43F;3162688022693019688Q;1.6209256e-12F;4.4841551e-44F;6.7262326e-44F;2.2420775e-44F::177\"", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.processResume()
-gg.refineNumber("\"3162688022693019688\"", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.processResume()
+gg.clearResults(81337545225)
+gg.searchNumber("3162688022693019688Q;4915678994331860992Q:2293", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("4915678994331860992", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("\"36\"", gg.TYPE_QWORD)
-gg.clearResults()
+gg.getResults(10, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.addListItems({})
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.clearResults(81337545225)
+gg.searchNumber("1.5694543e-43F;3162688022693019688Q;1.6209256e-12F;4.4841551e-44F;6.7262326e-44F;2.2420775e-44F::177", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("3162688022693019688", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("36", gg.TYPE_QWORD)
+gg.clearResults(81337545225)
 gg.toast("🇹🇷 Wallhack Exynos 7885 🇹🇷") 
 
 end
@@ -1630,26 +1424,70 @@ function exynos8895()
 end
 
 function exynos9610()
-gg.clearList()
-  gg.clearResults()
-  gg.setRanges(4)
-  gg.searchNumber("0.5;1.098618e-42;2.80259693e-45;1.40129846e-45;4.48415509e-44;2.80259693e-45;2.2958874e-41;7.00649232e-45::", gg.TYPE_FLOAT)
+gg.clearResults(81337545225)
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("0.5;1.098618e-42;2.80259693e-45;1.40129846e-45;4.48415509e-44;2.80259693e-45;2.2958874e-41;7.00649232e-45::", gg.TYPE_FLOAT)
 gg.searchNumber("0.5", gg.TYPE_FLOAT)
 z = gg.getResults(9)
-  x = gg.getResultCount()
-  for _FORV_3_ = 1, x do
-    y = z[_FORV_3_].address
-    gg.addListItems({
-      [1] = {
-        address = y,
-        flags = 16,
-        freeze = true,
-        value = 2
-      }
-    })
+Bydz_4 = gg.getResultsCount()
+for Srd_3_ = 1, Bydz_4 do
+y = z[Srd_3_].address
+addListItems({})
+end--for
   gg.tost("Exynos 9610 Aktif Edildi.")
-  end
 end
+
+
+function exynos9810()
+if w == 1 then
+WHFIX9810()
+else
+gg.clearList()
+gg.clearResults(81337545225)
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("0.5;360.0;736.0;0.5;1.0;1.0;1.0;1.0:85", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+if gg.getResultsCount() == 0 then
+gg.alert("No Activate")
+else
+gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+_Count = gg.getResultsCount()
+_A = gg.getResults(_Count)
+last_Count = _Count + 1
+w = 1
+_T = "Edit WH Value"
+WHFIX9810()
+end--else
+end--else
+end--function
+
+function WHFIX9810()
+if w == 0 then
+gg.alert("No Activate")
+else
+gg.setVisible(false)
+_CL = {}
+for Srd_3_ = 1, _Count do
+end--for
+C = gg.choice(_CL, nil, "WH Exynos 9810")
+for Srd_3_ = 1, _Count do
+if C == Srd_3_ then
+for Srd_7_, Srd_8_ in ipairs(_A) do
+gg.addListItems(_A)
+end--for
+gg.addListItems(_A)
+Srd_3_ = _Count
+elseif K_2 == _Count + 1 then
+WA()
+end--if
+end--for
+end--else
+gg.toast(" WH Exynos 9810 ")
+end--function
+
+
+
+
+
 --Wall Exynos
 
 --Renk Menüsü
@@ -1823,6 +1661,7 @@ end
 function snaprenk()
  snaprenk1 = gg.choice({
  	"📂⫸ Snapdragon 425",
+  "📂⫸ SnapDragon 435",
 	"📂⫸ Snapdragon 600",
 	"📂⫸ Snapdragon 615",
 	"📂⫸ Snapdragon 636",
@@ -1837,22 +1676,139 @@ function snaprenk()
 	},nil,"Snapdragon Renk")
 if snaprenk1 == nil then
 else
-if snaprenk == 1 then snpcolor425() end
-if snaprenk1 == 2 then snpcolor600() end
-if snaprenk1 == 3 then snpcolor615() end
-if snaprenk1 == 4 then snpcolor636() end
-if snaprenk1 == 5 then snpcolor653() end
-if snaprenk1 == 6 then snpcolor660() end
-if snaprenk1 == 7 then snpcolor665() end
-if snaprenk1 == 8 then snpcolor675() end
-if snaprenk1 == 9 then snpcolor710() end
-if snaprenk1 == 10 then snpcolor835() end
-if snaprenk1 == 11 then snpcolor855() end
-if snaprenk1 == 12 then renkmenu() end
+if snaprenk1 == 1 then snpcolor425() end
+if snaprenk1 == 2 then snpcolor435() end
+if snaprenk1 == 3 then snpcolor600() end
+if snaprenk1 == 4 then snpcolor615() end
+if snaprenk1 == 5 then snpcolor625() end
+if snaprenk1 == 6 then snpcolor636() end
+if snaprenk1 == 7 then snpcolor653() end
+if snaprenk1 == 8 then snpcolor660() end
+if snaprenk1 == 9 then snpcolor665() end
+if snaprenk1 == 10 then snpcolor675() end
+if snaprenk1 == 11 then snpcolor710() end
+if snaprenk1 == 12 then snpcolor835() end
+if snaprenk1 == 13 then snpcolor855() end
+if snaprenk1 == 14 then renkmenu() end
 end
 PUBGMH = -1
 end
 -- Snapdragon Renk Kodlar
+
+function snpcolor625()
+CLRSNAP6251 = gg.multiChoice({
+"625 Mavi",
+"625 Yeşil",
+"625 Kırmızı",
+"625 Sarı",
+"Geri"
+})
+if CLRSNAP6251 == nil then
+else
+if CLRSNAP6251[1] == true then
+crl6251()
+end
+if CLRSNAP6251[2] == true then
+crl6252()
+end
+if CLRSNAP6251[3] == true then
+crl6253()
+end
+if CLRSNAP6251[4] == true then
+crl6254()
+end
+if CLRSNAP6251[5] == true then
+COLORHACK()
+end
+end
+PUBGMH = -1
+end
+
+
+
+
+function snpcolor435()
+CLRSNAP4351 = gg.multiChoice({
+"435 Yeşil",
+"435 Kırmızı",
+"435 Sarı",
+"435 Beyaz",
+"🔙 Geri"
+})
+if CLRSNAP4351 == nil then
+else
+if CLRSNAP4351[1] == true then
+crl4351()
+end--if
+if CLRSNAP4351[2] == true then
+crl4352()
+end--if
+if CLRSNAP4351[3] == true then
+crl4353()
+end--if
+if CLRSNAP4351[4] == true then
+crl4354()
+end--if
+if CLRSNAP4351[5] == true then
+renkmenu()
+end--if
+end--else
+PUBGMH = -1
+end--function
+
+function crl4351()
+gg.clearResults(81337545225)
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("200761;92;8204;856124;108;196610:409", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("8204", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+revert = gg.getResults(1000, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("99", gg.TYPE_DWORD)
+gg.clearResults(81337545225)
+gg.toast(" Color 435 Green ")
+end--function
+
+function crl4352()
+gg.clearResults(81337545225)
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("1,661,239,308;8,200;1,194,380,045:9", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(6)
+gg.editAll("7", gg.TYPE_DWORD)
+gg.toast(" Color 435 Red ")
+end--function
+
+function crl4353()
+gg.clearResults(81337545225)
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("284,164,106;1,080,035,849;8,200:41", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(3)
+gg.editAll("6", gg.TYPE_DWORD)
+gg.toast(" Color 435 Yellow ")
+end--function
+
+function crl4354()
+gg.clearResults(81337545225)
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("284,164,106;1,080,035,849;8,200:41", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(3)
+gg.editAll("6", gg.TYPE_DWORD)
+gg.toast(" Color 435 White ")
+end--function
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function snpcolor425()
 	snpcolor425m = gg.multiChoice({
@@ -2605,6 +2561,9 @@ function exynosrenk()
 	"Beyaz",
 	"Siyah",
 	"Kırmızı",
+  "Sarı",
+  "Exynos 7870 Kırmızı",
+  "Exynos 7870 Sarı",
 	"Geri"
 	})
 	if exynosrenk1 == nil then 
@@ -2612,11 +2571,61 @@ function exynosrenk()
 	if exynosrenk1 == 1 then exynosrenkbeyaz() end
 	if exynosrenk1 == 2 then exynosrenksiyah() end
 	if exynosrenk1 == 3 then exynosrenkred() end
-	if exynosrenk1 == 4 then renkmenu() end
+  if exynosrenk1 == 4 then exynosrenksari() end
+  if exynosrenk1 == 5 then exynosrenk7870red() end
+  if exynosrenk1 == 6 then exynosrenk7870sari() end
+	if exynosrenk1 == 8 then renkmenu() end
 	end
 	PUBGMH = -1
 end
 --Exynos Renk Kodları
+
+function exynosrenk7870sari()
+gg.clearResults(81337545225)
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("232;80;6;160;88;6;128;4", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("88", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(25)
+gg.editAll("89", gg.TYPE_DWORD)
+gg.clearResults(81337545225)
+gg.toast(" Color Exynos 7870 Yellow ")
+end--function
+
+
+
+function exynosrenk7870red()
+gg.clearResults(81337545225)
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("24;802824704;32;2::21", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("24", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(5)
+gg.editAll("22", gg.TYPE_DWORD)
+gg.toast(" Color Exynos 7870 Red ")
+end--function
+
+
+
+
+
+function exynosrenksari()
+gg.clearResults(81337545225)
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("1.1210388e-44;360.0;0.5:41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.addListItems({})
+gg.clearResults(81337545225)
+gg.searchNumber("40;32;48;16;802824192:29", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("40", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.addListItems({})
+gg.toast(" Color Exynos Yellow ")
+end--function
+
+
+
 
 function exynosrenkbeyaz()
   gg.clearResults()
@@ -2662,7 +2671,7 @@ end
 function silahhack()
 MN3=gg.multiChoice({
  '💀⫸ Kafadan',
- '🎯⫸ Aimbot Safe [Game]',
+ '🎯⫸ Aimbot 500M [Game]',
  '✨⫸ Sihirli Mermi',
  '🏹⫸ Less Recoill',
  '🔫⫸ No Recoil',
@@ -2676,14 +2685,14 @@ MN3=gg.multiChoice({
 else
 if MN3[1] == true then kafa() end
 if MN3[2] == true then aimbotsafe() end
-if MN3[3] == true then magic() end
-if MN3[4] == true then nolessrecoil() end
-if MN3[5] == true then sekmememenu() end
-if MN3[6] == true then antishake() end
-if MN3[7] == true then superaim() end
-if MN3[8] == true then ultraaim() end
-if MN3[9] == true then AIMBOT360() end
-if MN3[10] == true then HOME() end
+if MN3[2] == true then magic() end
+if MN3[3] == true then nolessrecoil() end
+if MN3[4] == true then sekmememenu() end
+if MN3[5] == true then antishake() end
+if MN3[6] == true then superaim() end
+if MN3[7] == true then ultraaim() end
+if MN3[8] == true then AIMBOT360() end
+if MN3[9] == true then HOME() end
 end
 PUBGMH = -1
 end
@@ -2945,6 +2954,7 @@ MN5=gg.choice({
  '🚶⫸ Azıcık Hızlı',
  '👁️⫸ ESP Player[🎮]',
  '🎐⫸ Paraşüt',
+ 'Duvardan Vurma',
  '🎥⫸ IPAD Modu',
  '🌫️⫸ Sis Kaldırma',
  '🌑⫸ Siyah Gökyüzü',
@@ -2959,6 +2969,7 @@ if MN5 == 3 then flash() end
 if MN5 == 4 then minihizmenu() end
 if MN5 == 5 then esplayer() end
 if MN5 == 6 then parasut() end
+if MN5 == 7 then wallshot() end
 if MN5 == 7 then IPAD() end
 if MN5 == 8 then NOFOG() end
 if MN5 == 9 then BLSK() end 
@@ -2974,6 +2985,27 @@ end
 
 
 --Oyun Hileler Kodları
+
+function wallshot()
+gg.clearResults(81337545225)
+gg.setRanges(gg.REGION_C_BSS)
+gg.searchNumber("1.0e-7;1.0e-7;2;2;1::512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll("0", gg.TYPE_FLOAT)
+gg.clearResults(81337545225)
+gg.clearResults(81337545225)
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("3.5032462e-44F;10.0F;45.0F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("10", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll("9999", gg.TYPE_FLOAT)
+gg.clearResults(81337545225)
+gg.toast(" WallShot ")
+end--function
+
+
+
 
 function baliklama()
 gg.clearResults()
@@ -3060,54 +3092,43 @@ function IPAD()
   gg.getResults(100)
   gg.editAll("350", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.toast("iPad Biew Activated")
+  gg.toast("iPad View Activated")
 end
 
 
 function esplyer()
-	gg.clearResults()
-gg.setRanges(gg.REGION_C_DATA)
-gg.searchNumber("-476053504;-349478012:189", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("-476053504", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.clearResults(81337545225)
+gg.setRanges(8)
+gg.searchNumber("-476053504;-349478012:189", 4, false, 536870912, 0, -1)
+gg.searchNumber("-476053504", 4, false, 536870912, 0, -1)
 gg.getResults(100)
-gg.editAll("-476053503;-476053504", gg.TYPE_DWORD)
-gg.clearResults()
-gg.setRanges(gg.REGION_C_DATA)
-gg.searchNumber("324009984;-348261320:165", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("324009984", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.editAll("-476053503;-476053504", 4)
+gg.clearResults(81337545225)
+gg.setRanges(8)
+gg.searchNumber("324009984;-348261320:165", 4, false, 536870912, 0, -1)
+gg.searchNumber("324009984", 4, false, 536870912, 0, -1)
 gg.getResults(100)
-gg.editAll("324009985", gg.TYPE_DWORD)
-gg.clearResults()
-gg.setRanges(gg.REGION_C_DATA)
-gg.searchNumber("-336586203;-511702015:105", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("-511702015", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.editAll("324009985", 4)
+gg.clearResults(81337545225)
+gg.setRanges(8)
+gg.searchNumber("-336586203;-511702015:105", 4, false, 536870912, 0, -1)
+gg.searchNumber("-511702015", 4, false, 536870912, 0, -1)
 gg.getResults(100)
-gg.editAll("0", gg.TYPE_DWORD)
-gg.clearResults()
-gg.setRanges(gg.REGION_C_DATA)
-gg.searchNumber("-511633406;-352273285;-511633406:809", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("-511633406", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.editAll("0", 4)
+gg.clearResults(81337545225)
+gg.setRanges(8)
+gg.searchNumber("-511633406;-352273285;-511633406:809", 4, false, 536870912, 0, -1)
+gg.searchNumber("-511633406", 4, false, 536870912, 0, -1)
 gg.getResults(100)
-gg.editAll("0", gg.TYPE_DWORD)
-gg.clearResults()
-gg.setRanges(gg.REGION_C_DATA)
-gg.searchNumber("-335545007;-511702015:85", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("-511702015", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.editAll("0", 4)
+gg.clearResults(81337545225)
+gg.setRanges(8)
+gg.searchNumber("-335545007;-511702015:85", 4, false, 536870912, 0, -1)
+gg.searchNumber("-511702015", 4, false, 536870912, 0, -1)
 gg.getResults(100)
-gg.editAll("0", gg.TYPE_DWORD)
-gg.clearResults()
-gg.setRanges(gg.REGION_C_DATA)
-gg.searchNumber("2046820354;-336587221:9", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("2046820354", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
-gg.editAll("2046820353", gg.TYPE_DWORD)
-gg.clearResults()
-gg.setRanges(gg.REGION_C_DATA)
-gg.searchNumber("2015175168", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(6)
-gg.editAll("0", gg.TYPE_FLOAT)
-gg.clearResults()
-end
+gg.editAll("0", 4)
+gg.toast(" ESP Aktif")
+end--function
 
 
 
@@ -3201,6 +3222,8 @@ function digermenu()
     '🎁⫸ FlareGun',
     '👻⫸ Görünmezlik',
     '💥⫸ One Shot',
+    'Cimen Kaldır [Erangel]',
+    'Cimen Kaldır [Sanhok]',
     '🔙⫸ Geri'
   },nil,"😈[ABG] Diğer Hileler Menüsü🇹🇷")
 if digerhack == nil then
@@ -3209,6 +3232,8 @@ if digerhack == 1 then uyari() end
 if digerhack == 2 then flareanten() end
 if digerhack == 3 then gorunmez() end
 if digerhack == 4 then onekill() end
+if digerhack == 5 then cimensil() end
+if digerhack == 6 then ciemsilsanhok() end
 if digerhack == 5 then HOME() end
 end
 PUBGMH = -1
@@ -3218,6 +3243,33 @@ end
 
 
 --Diğer Oyun Hileleri Kodları
+
+function ciemsilsanhok()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("1084086274 ~ 1084087269", gg.TYPE_DWORD)
+gg.getResults(150)
+gg.editAll("0", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("Çimen Sil Sanhok")
+end
+
+
+function cimensil()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("8.0F;1.20000004768F;0.80000001192F;1.5F;0.80000001192F;1.5F::512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8.0", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(300)
+gg.editAll("0", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Çimen Sil Erangel ")
+end
+
+
+
+
+
 
 function sitscopemenu()
   sitscope=gg.choice({
@@ -3236,14 +3288,16 @@ end
   end
 
 function flareanten()
-gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("0.7576~0.7579", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("0.7576~0.7579", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(100)
-  gg.editAll("99999", gg.TYPE_FLOAT)
-  gg.toast(" 💝 Flare Gun Anten Aktif Edildi! 💝")
-end
+gg.clearResults(81337545225)
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("0.7576~0.7579", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.7576~0.7579", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("99999", gg.TYPE_FLOAT)
+gg.clearResults(81337545225)
+gg.toast(" 💝 Flare Gun Anten Aktif Edildi! 💝")
+end--function
+
 
 function gorunmez()
   gg.clearResults()
