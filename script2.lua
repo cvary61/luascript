@@ -61,13 +61,15 @@ function antibanmenu()
   antibanmenu1=gg.choice({
     '🔐 Obb Şifreleme',
     'Log Temizleme [Root]',
+    'Kore AntiBan',
     'Geri'
   })
   if antibanmenu1 == nil then
   else
     if antibanmenu1 == 1 then obbsifremenu() end
     if antibanmenu1 == 2 then clearlog() end
-    if antibanmenu1 == 3 then HOME() end
+    if antibanmenu1 == 3 then koreantiban() end
+    if antibanmenu1 == 4 then HOME() end
   end
   PUBGMH = -1
 end
@@ -205,6 +207,55 @@ gg.clearResults()
 gg.toast("Obb Şifreleme Kapatıldı")
 end
 --AntiBan TR
+
+--Kore Anti ban
+
+function koreantiban()
+  gg.setVisible(false)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("2.2958874e-41;16384D;16384D;16384D;16384D;16384D::24", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  if gg.getResultCount() == 0 then
+    gg.alert("鈿� Value Not Detected 鈿燶nPlease Restart Your Game")
+  else
+    gg.alert(" ARAPBUKENGENC FULL ANTIBAN ")
+    gg.searchNumber("2.2958874e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    resultsCount = gg.getResultCount()
+    results = gg.getResults(resultsCount)
+    do
+      for _FORV_3_ = 1, resultsCount do
+        gg.addListItems({})
+        gg.addListItems({})
+        gg.addListItems({})
+        gg.addListItems({})
+        gg.addListItems({})
+        gg.addListItems({})
+        gg.addListItems({})
+        gg.addListItems({})
+      end
+    end
+  end
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("4588", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(22)
+  gg.editAll("1358", gg.TYPE_DWORD)
+  gg.addListItems(gg.getResults(22))
+  do
+    do
+      for _FORV_3_, _FORV_4_ in ipairs(gg.getResults(22)) do
+        if _FORV_4_.flags == gg.TYPE_DWORD then
+        end
+      end
+    end
+  end
+  gg.clearResults()
+  gg.setVisible(false)
+  gg.toast("ANTIBAN AKTİF")
+end
+--Kore Anti Ban
+
+
 
 
 --Wall Menü
