@@ -2932,14 +2932,14 @@ gg.editAll("9999", 16)
 end
 
 function magic()
-gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(100)
-  gg.editAll("300;305", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("Magic Bullet activated!")
-end
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("90.775703430176;0;8;15;16;18;28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("1000", gg.TYPE_FLOAT)
+gg.clearResults(81337545225)
+gg.toast(" Magic Bullet 100% ")
+end--function
 
 
 -- Silah Hile Kodları
