@@ -2,7 +2,7 @@ gg.alert([[
 Kusura Bakma Rahatsız Ettik
 Script Güncelleniyor :)
 Saat 18:30 tekrar aktif edilicek.]])
-es.exit()
+os.exit()
 
 Password = '8131'
 PS = gg.prompt({'🔒 Şifre Giriniz: '},{[1]=''},{[1]='text'})
