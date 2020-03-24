@@ -1710,14 +1710,15 @@ function snaprenk()
   "📂⫸ SnapDragon 435",
 	"📂⫸ Snapdragon 600",
 	"📂⫸ Snapdragon 615",
+  "📂⫸ Snapdragon 625",
 	"📂⫸ Snapdragon 636",
 	"📂⫸ Snapdragon 653",
 	"📂⫸ Snapdragon 660",
-	"📂⫸ Snapdragon 660",
+	"📂⫸ Snapdragon 665",
 	"📂⫸ Snapdragon 675",
 	"📂⫸ Snapdragon 710",
 	"📂⫸ Snapdragon 835",
-	"📂⫸ Snapdragon 855",
+  "📂⫸ Snapdragon 855",
 	"🔙⫸ Geri"
 	},nil,"Snapdragon Renk")
 if snaprenk1 == nil then
