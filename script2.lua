@@ -88,11 +88,11 @@ gg.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowT
 gg.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo")
 gg.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora")
 gg.remove("/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir")
-gg.remove("/data/data/com.tencent.ig/app_appcache")
 gg.remove("/data/data/com.tencent.ig/app_bugly")
 gg.remove("/data/data/com.tencent.ig/app_crashrecord")
 gg.remove("/data/data/com.tencent.ig/cache")
 gg.remove("/data/data/com.tencent.ig/code_cache")
+gg.remove("/data/data/com.tencent.ig/app_appcache")
 gg.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/cache")
 gg.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/tbslog")
 gg.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/ca-bundle.pem")
@@ -2685,14 +2685,14 @@ MN3=gg.multiChoice({
 else
 if MN3[1] == true then kafa() end
 if MN3[2] == true then aimbotsafe() end
-if MN3[2] == true then magic() end
-if MN3[3] == true then nolessrecoil() end
-if MN3[4] == true then sekmememenu() end
-if MN3[5] == true then antishake() end
-if MN3[6] == true then superaim() end
-if MN3[7] == true then ultraaim() end
-if MN3[8] == true then AIMBOT360() end
-if MN3[9] == true then HOME() end
+if MN3[3] == true then magic() end
+if MN3[4] == true then nolessrecoil() end
+if MN3[5] == true then sekmememenu() end
+if MN3[6] == true then antishake() end
+if MN3[7] == true then superaim() end
+if MN3[8] == true then ultraaim() end
+if MN3[9] == true then AIMBOT360() end
+if MN3[10] == true then HOME() end
 end
 PUBGMH = -1
 end
@@ -2970,11 +2970,11 @@ if MN5 == 4 then minihizmenu() end
 if MN5 == 5 then esplayer() end
 if MN5 == 6 then parasut() end
 if MN5 == 7 then wallshot() end
-if MN5 == 7 then IPAD() end
-if MN5 == 8 then NOFOG() end
-if MN5 == 9 then BLSK() end 
-if MN5 == 10 then baliklama() end
-if MN5 == 11 then HOME() end
+if MN5 == 8 then IPAD() end
+if MN5 == 9 then NOFOG() end
+if MN5 == 10 then BLSK() end 
+if MN5 == 11 then baliklama() end
+if MN5 == 12 then HOME() end
 end
 PUBGMH = -1
 end
@@ -3234,7 +3234,7 @@ if digerhack == 3 then gorunmez() end
 if digerhack == 4 then onekill() end
 if digerhack == 5 then cimensil() end
 if digerhack == 6 then ciemsilsanhok() end
-if digerhack == 5 then HOME() end
+if digerhack == 7 then HOME() end
 end
 PUBGMH = -1
 end
