@@ -3149,7 +3149,7 @@ end
 function digermenu()
   digerhack=gg.choice({
     '📂⫸ Sit-Scop Menü',
-    '⚔⫸ Level 3 Eşya Anteni'
+    '⚔⫸ Level 3 Eşya Anteni',
     '🎁⫸ FlareGun',
     '👻⫸ Görünmezlik',
     '💥⫸ One Shot',
