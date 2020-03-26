@@ -15,18 +15,18 @@ HH = gg.alert([[
 ]],
 "Devam Et➡️")
 HH = gg.alert([[
-█░█ ▀█ ░ ▀█
-▀▄▀ █▄ ▄ █▄
+▀█░█▀ █▀█ ░ █▀▀█ 
+░█▄█░ ░▄▀ ▄ ░░▀▄ 
+░░▀░░ █▄▄ █ █▄▄█
 Yenilikler;
-+Exynos 7870 Düzeltildi
-+AntiBan Menü Güncellendi
-+Cimen Kaldırma
-+Log Temizleme / Obb Geri Eklendi
-+ESP Güncellendi
-+Wallhack Eklemesi Yapıldı
-+Exynos 7870 Tamamen Aktif Edildi
++Buglar Giderildi
++3Lv. İtem Anteni Eklendi
++Less Recoil Güncellendi
++Aimbot 100M Güncellendi
++Wallhackler Temizlendi
++ESP Aktif Edildi ( Sorunsuz )
 ]],"Devam Et ➡️")
-HH = gg.alert("              ╔═.✵.══════════╗\n               [ABG] - Script Alfa v2.2\n              ╚══════════.✵.═╝\nHile kullanımındaki tüm sorumluluk size aittir.\nHileler güvenli kodlardan oluşmakta ve ban yemenizi en az saviyede tasarlanmıştır.\nHile ile alkalı bilgi ve öneriler için iletişime geçebilirsiniz.\n\nTelegram: @arapbukengenc\n\nCoder: CVaRy","Başlat 🔘")
+HH = gg.alert("              ╔═.✵.══════════╗\n               [ABG] - Script Alfa v2.3\n              ╚══════════.✵.═╝\nHile kullanımındaki tüm sorumluluk size aittir.\nHileler güvenli kodlardan oluşmakta ve ban yemenizi en az saviyede tasarlanmıştır.\nHile ile alkalı bilgi ve öneriler için iletişime geçebilirsiniz.\n\nTelegram: @arapbukengenc\n\nCoder: CVaRy","Başlat 🔘")
 
 function HOME()
 MN=gg.choice({
@@ -105,11 +105,6 @@ gg.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/Shad
 gg.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo")
 gg.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora")
 gg.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir")
-gg.remove("/data/data/com.pubg.krmobile/app_appcache")
-gg.remove("/data/data/com.pubg.krmobile/app_bugly")
-gg.remove("/data/data/com.pubg.krmobile/app_crashrecord")
-gg.remove("/data/data/com.pubg.krmobile/cache")
-gg.remove("/data/data/com.pubg.krmobile/code_cache")
 gg.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/cache")
 gg.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/tbslog")
 gg.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/ca-bundle.pem")
@@ -125,11 +120,6 @@ gg.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/Sha
 gg.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo")
 gg.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora")
 gg.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir")
-gg.remove("/data/data/com.vng.pubgmobile/app_appcache")
-gg.remove("/data/data/com.vng.pubgmobile/app_bugly")
-gg.remove("/data/data/com.vng.pubgmobile/app_crashrecord")
-gg.remove("/data/data/com.vng.pubgmobile/cache")
-gg.remove("/data/data/com.vng.pubgmobile/code_cache")
 gg.remove("/storage/emulated/0/Android/data/com.rekoo.pubgm/cache")
 gg.remove("/storage/emulated/0/Android/data/com.rekoo.pubgm/files/tbslog")
 gg.remove("/storage/emulated/0/Android/data/com.rekoo.pubgm/files/ca-bundle.pem")
@@ -145,11 +135,6 @@ gg.remove("/storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/Shadow
 gg.remove("/storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo")
 gg.remove("/storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora")
 gg.remove("/storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir")
-gg.remove("/data/data/com.rekoo.pubgm/app_appcache")
-gg.remove("/data/data/com.rekoo.pubgm/app_bugly")
-gg.remove("/data/data/com.rekoo.pubgm/app_crashrecord")
-gg.remove("/data/data/com.rekoo.pubgm/cache")
-gg.remove("/data/data/com.rekoo.pubgm/code_cache")
 os.toast("Maç Logları Temilendi")
 end
 
@@ -276,7 +261,7 @@ MN2=gg.choice({
 	if MN2 == 2 then wallsdmenu() end
 	if MN2 == 3 then wallexmenu() end
 	if MN2 == 4 then mediatekmenu() end
-  if MN2 == 5 then kirinmenu() end 
+  	if MN2 == 5 then kirinmenu() end 
 	if MN2 == 6 then wallhuawei() end
 	if MN2 == 7 then oppo() end
 	if MN2 == 8 then HOME() end
@@ -758,7 +743,7 @@ if exmenu == nil then
   else
 if exmenu == 1 then exynos7420() end
 if exmenu == 2 then exynos7570() end
-if exmenu == 3 then exynos7870() end
+if exmenu == 3 then uyari() end
 if exmenu == 4 then exynos7880() end
 if exmenu == 5 then exynos7885() end
 if exmenu == 6 then exynos8890() end
@@ -778,18 +763,18 @@ end
 	  '📱⫸ Snapdragon All Devices',
 	  '📱⫸ Snapdragon All Devices v2',
 	  '📱⫸ Snapdragon 425',
-    '📱⫸ Snapdragon 435',
+   		'📱⫸ Snapdragon 435',
 	  '📱⫸ Snapdragon 430',
-    '📱⫸ Snapdragon 450',
+   		 '📱⫸ Snapdragon 450',
 	  '📱⫸ Snapdragon 600',
 	  '📱⫸ Snapdragon 610',
 	  '📱⫸ Snapdragon 615',
-    '📱⫸ Snapdragon 625',
+   		 '📱⫸ Snapdragon 625',
 	  '📱⫸ Snapdragon 630',
 	  '📱⫸ Snapdragon 650',
 	  '📱⫸ Snapdragon 660',
 	  '📱⫸ Snapdragon 670',
-    '📱⫸ Snapdragon 675',
+   		 '📱⫸ Snapdragon 675',
 	  '📱⫸ Snapdragon 710',
 	  '📱⫸ Snapdragon 800',
 	  '📱⫸ Snapdragon 810',
@@ -805,17 +790,17 @@ end
 	if wallsdmn == 2 then wallsnapdrangonallv2() end
 	if wallsdmn == 3 then wh425() end
 	if wallsdmn == 4 then wh435() end
-  if wallsdmn == 5 then wh430() end
-  if wallsdmn == 6 then wh450() end
+  	if wallsdmn == 5 then wh430() end
+  	if wallsdmn == 6 then wh450() end
 	if wallsdmn == 7 then wh600() end
 	if wallsdmn == 8 then wh610() end
 	if wallsdmn == 9 then wh615() end
-  if wallsdmn == 10 then wh625() end
+  	if wallsdmn == 10 then wh625() end
 	if wallsdmn == 11 then wh630() end
 	if wallsdmn == 12 then wh650() end
 	if wallsdmn == 13 then wh660() end
 	if wallsdmn == 14 then wh670() end
-  if wallsdmn == 15 then wh675() end
+  	if wallsdmn == 15 then wh675() end
 	if wallsdmn == 16 then WH710() end
 	if wallsdmn == 17 then wh800() end
 	if wallsdmn == 18 then wh810() end
@@ -871,7 +856,7 @@ gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(30)
 gg.editAll("150", gg.TYPE_FLOAT)
 gg.toast(" WH 450 ")
-end--function
+end
 
 
 
@@ -1012,7 +997,7 @@ gg.getResults(35)
 gg.editAll("138", gg.TYPE_FLOAT)
 gg.clearResults(81337545225)
 gg.toast(" WH 435 ")
-end--function
+end
 
 
 
@@ -1069,18 +1054,19 @@ end
 
 function wh625()
 gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("135215D;4140D;3.7615819e-37;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(20)
-gg.editAll("120", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(20)
-gg.editAll("120", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast(" Wallhack 625 ")
+  gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+  gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("130", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+  gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("130", gg.TYPE_FLOAT)
+  gg.toast("Wallhack 625 Activated")
+  gg.clearResults()
 end
 
 
@@ -1329,69 +1315,6 @@ print("addListItems: ", gg.addListItems(t))
 gg.toast("🇹🇷 Wallhack Exynos 7420 🇹🇷")
 end
 
-function exynos7870()
-if w == 1 then
-WHFIX7870()
-else
-gg.clearList()
-gg.clearResults(81337545225)
-gg.setRanges(4)
-gg.clearResults(81337545225)
-gg.searchNumber("0.5;1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.clearResults(81337545225)
-gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("1", gg.TYPE_FLOAT)
-gg.clearResults(81337545225)
-gg.searchNumber("0.5;2.8025969e-45:161", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.clearResults(81337545225)
-gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("0.5", gg.TYPE_FLOAT)
-gg.clearResults(81337545225)
-gg.searchNumber("0.5;1.4012985e-45;1.4012985e-45;2.8025969e-45;2.2958874e-41::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-if gg.getResultsCount() == 0 then
-gg.alert("❌\nNo Activate")
-else
-gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-_Count = gg.getResultsCount()
-_A = gg.getResults(_Count)
-last_Count = _Count + 1
-w = 1
-_T = " WH Exynos 7870 "
-WHFIX7870()
-end--else
-end--else
-end--function
-
-function WHFIX7870()
-if w == 0 then
-gg.alert("❌\nNo Activate")
-else
-gg.setVisible(false)
-_CL = {}
-for Srd_3_ = 1, _Count do
-end--for
-_C_ = gg.choice(_CL, nil, " WH Exynos 7870 ")
-for Srd_3_ = 1, _Count do
-if _C_ == Srd_3_ then
-for Srd_7_, Srd_8_ in ipairs(_A) do
-gg.addListItems(_A)
-end--for
-gg.addListItems(_A)
-Srd_3_ = _Count
-elseif K_2 == _Count + 1 then
-HOME()
-end--if
-end--for
-end--else
-gg.setVisible(true)
-end--function
-
-
-
-
-
 
 function exynos7570()
 gg.clearResults()
@@ -1482,53 +1405,6 @@ addListItems({})
 end--for
   gg.tost("Exynos 9610 Aktif Edildi.")
 end
-
-
-function exynos9810()
-if w == 1 then
-WHFIX9810()
-else
-gg.clearList()
-gg.clearResults(81337545225)
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("0.5;360.0;736.0;0.5;1.0;1.0;1.0;1.0:85", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-if gg.getResultsCount() == 0 then
-gg.alert("No Activate")
-else
-gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-_Count = gg.getResultsCount()
-_A = gg.getResults(_Count)
-last_Count = _Count + 1
-w = 1
-_T = "Edit WH Value"
-WHFIX9810()
-end--else
-end--else
-end--function
-
-function WHFIX9810()
-if w == 0 then
-gg.alert("No Activate")
-else
-gg.setVisible(false)
-_CL = {}
-for Srd_3_ = 1, _Count do
-end--for
-C = gg.choice(_CL, nil, "WH Exynos 9810")
-for Srd_3_ = 1, _Count do
-if C == Srd_3_ then
-for Srd_7_, Srd_8_ in ipairs(_A) do
-gg.addListItems(_A)
-end--for
-gg.addListItems(_A)
-Srd_3_ = _Count
-elseif K_2 == _Count + 1 then
-WA()
-end--if
-end--for
-end--else
-gg.toast(" WH Exynos 9810 ")
-end--function
 
 
 
@@ -2737,7 +2613,7 @@ if MN3[4] == true then nolessrecoil() end
 if MN3[5] == true then sekmememenu() end
 if MN3[6] == true then antishake() end
 if MN3[7] == true then superaim() end
-if MN3[8] == true then ultraaim() end
+if MN3[8] == true then aimbotsafe100() end
 if MN3[9] == true then AIMBOT360() end
 if MN3[10] == true then HOME() end
 end
@@ -2858,13 +2734,13 @@ end
 
 function nolessrecoil()
 gg.clearResults()
-  gg.setRanges(gg.REGION_C_DATA)
-  gg.searchNumber("-2.2673448e24;-1.36203639e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("-1.36203639e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(99)
-  gg.editAll("0", gg.TYPE_FLOAT)
-  gg.toast("Less Recoil Aktif Edildi.")
-  gg.clearResults()
+gg.setRanges(32)
+gg.setRanges(32)
+gg.searchNumber("1,348,759,109;1953067887;1,634,692,166;1,920,287,604::28", 4, false, 536870912, 0, -1)
+gg.searchNumber("1634692166", 4, false, 536870912, 0, -1)
+gg.getResults(10)
+gg.editAll("1634692266", 4)
+gg.toast("Less Recoil Safe Aktif Edildi")
 end
 
 function norecoil100()
@@ -2942,13 +2818,20 @@ gg.clearResults()
   end
 end
 
-function ultraaim()
-gg.setRanges(8)
-gg.searchNumber("2015175168", 16, false, 536870912, 0, -1)
-gg.getResults(10)
-gg.editAll("0", 16)
-gg.clearResults(81337545225)
-gg.toast(" AimBot 100M ")
+function aimbotsafe100()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("2046820354;-336587221:9", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2046820354", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("2046820353", gg.TYPE_DWORD)
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("2015175168", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(6)
+gg.editAll("0", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Aimbot 100M Safe Aktif")
 end--function
 
 function antishake()
@@ -3143,7 +3026,7 @@ function IPAD()
 end
 
 
-function esplyer()
+function esplayer()
 gg.clearResults(81337545225)
 gg.setRanges(8)
 gg.searchNumber("-476053504;-349478012:189", 4, false, 536870912, 0, -1)
@@ -3266,22 +3149,24 @@ end
 function digermenu()
   digerhack=gg.choice({
     '📂⫸ Sit-Scop Menü',
+    '⚔⫸ Level 3 Eşya Anteni'
     '🎁⫸ FlareGun',
     '👻⫸ Görünmezlik',
     '💥⫸ One Shot',
-    'Cimen Kaldır [Erangel]',
-    'Cimen Kaldır [Sanhok]',
+    '🌱⫸ Cimen Kaldır [Erangel]',
+    '🌱⫸ Cimen Kaldır [Sanhok]',
     '🔙⫸ Geri'
   },nil,"😈[ABG] Diğer Hileler Menüsü🇹🇷")
 if digerhack == nil then
   else
 if digerhack == 1 then uyari() end
-if digerhack == 2 then flareanten() end
-if digerhack == 3 then gorunmez() end
-if digerhack == 4 then onekill() end
-if digerhack == 5 then cimensil() end
-if digerhack == 6 then ciemsilsanhok() end
-if digerhack == 7 then HOME() end
+if digerhack == 2 then itemsv3() end
+if digerhack == 3 then flareanten() end
+if digerhack == 4 then gorunmez() end
+if digerhack == 5 then onekill() end
+if digerhack == 6 then cimensil() end
+if digerhack == 7 then ciemsilsanhok() end
+if digerhack == 8 then HOME() end
 end
 PUBGMH = -1
 end
@@ -3290,6 +3175,51 @@ end
 
 
 --Diğer Oyun Hileleri Kodları
+
+
+function itemsv3()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("7.1689529418945", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(3)
+  gg.editAll("88996", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("7.4993133544922", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("7.4993133544922", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(1)
+  gg.editAll("88996", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("18.46202087402", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(3)
+  gg.editAll("88996", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("3.4779739379883;2.8345839977264;3.1967880725861;3.8841888904572;3.1528658866882::208", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("3.4779739379883", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(3)
+  gg.editAll("88996", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("6.95975875854", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(999)
+  gg.editAll("88996", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("88996", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("0.88996", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("0.88996", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(30)
+  gg.editAll("88996", gg.TYPE_FLOAT)
+  gg.toast("Item Antenna Lv3 Aktif..!")
+  gg.clearResults()
+end
+
+
 
 function ciemsilsanhok()
 gg.clearResults()
