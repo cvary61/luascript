@@ -1,3 +1,8 @@
+gg.alert([[Kuusura bakma kankam
+oyununu böldük küçük bir 
+güncelleme yapıyoruz da :)
+Saat 20.00 da bitmiş olucak]])
+os.exit()
 Password = '0051'
 PS = gg.prompt({'🔒 Şifre Giriniz: '},{[1]=''},{[1]='text'})
 if not PS then os.exit() 
