@@ -1,7 +1,3 @@
-gg.alert([[Kankam kısa bir ara verelim dimi :)
-Hileyi güncelliyoruz. Kısa zaman içinde
-tekrar aktif edilicek...]])
-os.exit()
 Password = '0000'
 PS = gg.prompt({'🔒 Şifre Giriniz: '},{[1]=''},{[1]='text'})
 if not PS then os.exit() 
