@@ -280,6 +280,7 @@ function globalantiban()
     end
     gg.toast("🛡️Antiban Aktif Edildi🛡️")
 end
+	end
 -- Global Antiban Kod Bitiş
 
 -- Global Antiban V2 Kod
