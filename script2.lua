@@ -25,7 +25,20 @@ HH = gg.alert([[
 ║║║╚╣║═╣╚╝║╔╗║╚═╣╔╗╗
 ╚╝╚═╩══╣╔═╩╝╚╩══╩╝╚╝
 ───────║║
-───────╚╝
+───────╚╝ V 0.2
+- ESP Bug Fix
+- High Jump Added
+- Anti Report Added
+- Sit Scope Added
+- 10Min Antiban Added
+- Antiban Update
+- New Head Aimbot Added
+- Fast Shoot Added
+- Antiban V2 Added
+- Aimbot 500m Added
+- Micro Speed Added
+- Speed Car Added
+- Exynos Wall Added
 ]],"Devam Et ➡️")
 -- Update Menu Bitiş
 
@@ -61,7 +74,11 @@ end
 function antibanmenu()
 	antibanmenu1=gg.choice({
 		'🔑Obb Şifreleme',
-		'🛡️Global Antiban',
+		'🛡️Anti Report',
+		'🛡️Anti Log',
+		'🛡️Antiban 10Min',
+		'🛡️Global Antiban V1',
+		'🛡️Global Antiban V2',
 		'🔙Geri'
 	},nil,[[
 	Ａｒａｐ　Ｂｕｋｅｎ　Ｇｅｎｃ　
@@ -71,8 +88,12 @@ function antibanmenu()
 	if antibanmenu1 == nil then
 	else
 		if antibanmenu1 == 1 then obbsifremenu() end
-		if antibanmenu1 == 2 then globalantiban() end
-		if antibanmenu1 == 3 then home() end
+		if antibanmenu1 == 2 then report() end
+		if antibanmenu1 == 3 then antilog() end
+		if antibanmenu1 == 4 then ban10m() end
+		if antibanmenu1 == 5 then globalantiban() end
+		if antibanmenu1 == 6 then globalantibanv2() end
+		if antibanmenu1 == 7 then home() end
 	end
 	PUBGMH = -1
 end
@@ -134,7 +155,7 @@ end
 
 -- Global Antiban Kodu
 function globalantiban()
-  gg.clearResults()
+	gg.clearResults()
   gg.setRanges(gg.REGION_C_ALLOC)
   gg.searchNumber("2.2958874e-41;16384D;16384D;16384D;16384D;16384D::24", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   if gg.getResultCount() == 0 then
@@ -258,9 +279,135 @@ function globalantiban()
       })
     end
     gg.toast("🛡️Antiban Aktif Edildi🛡️")
-  end
 end
--- Globa Antiban Kod Bitiş
+-- Global Antiban Kod Bitiş
+
+-- Global Antiban V2 Kod
+function globalantibanv2()
+  gg.clearResults()
+  gg.setRanges(8)
+  gg.searchNumber("2.2958874e-41;16384D;16384D;16384D;16384D;16384D::24", 16, false, 536870912, 0, -1)
+  gg.getResultsCount()
+  gg.searchNumber("2.2958874e-41", 16, false, 536870912, 0, -1)
+  gg.getResultsCount()
+  gg.getResults(1)
+  gg.addListItems({
+    [1] = {
+      address = 3178624256,
+      flags = 4,
+      freeze = true,
+      value = 70037
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 3178624260,
+      flags = 4,
+      freeze = true,
+      value = 70037
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 3178624264,
+      flags = 4,
+      freeze = true,
+      value = 70037
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 3178624268,
+      flags = 4,
+      freeze = true,
+      value = 70037
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 3178624272,
+      flags = 4,
+      freeze = true,
+      value = 70037
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 3178624276,
+      flags = 4,
+      freeze = true,
+      value = 70032
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 3178624356,
+      flags = 4,
+      freeze = true,
+      value = 16384
+    }
+  })
+  os.remove("/data/data/com.tencent.ig/files")
+  os.remove("/data/data/com.tencent.ig/app_crashrecord")
+  os.remove("/data/data/com.vng.pubgmobile/files")
+  os.remove("/data/data/com.vng.pubgmobile/app_crashrecord")
+  os.remove("/data/data/com.pubg.krmobile/files")
+  os.remove("/data/data/com.pubg.krmobile/app_crashrecord")
+  gg.alert("Bypass Başarılı Yargı Başlasın..!")
+end
+-- Global AntiBan V2 Kod Bitiş
+
+-- Anti Report Kod
+function report()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("909391408;808923191::8", gg.TYPE_DWORD)
+  gg.getResults(999)
+  gg.editAll("1089886885", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("909391408", gg.TYPE_DWORD)
+  gg.getResults(999)
+  gg.editAll("1089886885", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.toast("Anti Report Aktif Edildi")
+end
+-- Anti Report Kod Bitiş
+
+-- Anti Log Kod
+function antilog()
+	gg.clearResults()
+	gg.setRanges(gg.REGION_ANONYMOUS)
+	gg.searchNumber("1,130,852,172;1,852,139,884", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+	gg.getResults(10)
+	gg.editAll("0", gg.TYPE_DWORD)
+	gg.toast("Anti Log 1 Done")
+	gg.clearResults()
+	gg.clearResults()
+	gg.setRanges(gg.REGION_C_ALLOC)
+	gg.searchNumber("1,801,989,935;1,919,905,893;1,768,710,958;1,920,233,061", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+	gg.getResults(10)
+	gg.editAll('0', gg.TYPE_DWORD)
+	gg.toast("Anti Log 2 Done")
+	gg.clearResults()
+end
+-- Anti Log Kod Bitiş
+
+-- 10 Dakika Antiban Kod
+function ban10m()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("16610;8388646;8388805", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(50)
+  gg.editAll("30", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.searchNumber("1954047311D;1970037075D", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(1)
+  gg.editAll("9999999", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.toast("Anti Ban 10M Aktif")
+end
+-- 10 Dakika Antiban Kod Bitiş
 
 
 -- Duvar Hilesi Menüsü
@@ -327,25 +474,27 @@ end
 
 --Snapdragon Duvar Hile Kodlar
 function snapdragontumcihazlarv1()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_ALLOC)
-  gg.searchNumber("2.9427268e-44;2.0;3.0828566e-44;-1.0;3.2229865e-44;3.3631163e-44;3.643376e-44", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(20)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.searchNumber("3.1529215e-43;2.0F;3.1669345e-43F;3.1809475e-43:49", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(20)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("8204", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineAddress("E70", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(20)
-  gg.editAll("8564", gg.TYPE_DWORD)
-  gg.clearResults()
-  gg.toast("Snapdragon Tüm Cihazlar v¹ Aktif")
+	gg.clearResults()
+	gg.setRanges(gg.REGION_BAD)
+	gg.searchNumber('135,215D;4,140D;3.7615819e-37;2::', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+	gg.searchNumber('2', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+	gg.getResults(10)
+	gg.editAll('130', gg.TYPE_FLOAT)
+	gg.clearResults()
+	gg.setRanges(gg.REGION_BAD)
+	gg.searchNumber('194D;3.7615819e-37;2;-1;1;-127::', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+	gg.searchNumber('2', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+	gg.getResults(10)
+	gg.editAll('130', gg.TYPE_FLOAT)
+	gg.clearResults()
+	gg.clearResults()
+	gg.searchNumber("8,196D;8,192D;8,200D::", 4, false, 536870912, 0, -1)
+	gg.searchNumber("8200", 4, false, 536870912, 0, -1)
+	gg.getResults(10)
+	gg.editAll("6", 4)
+	gg.clearResults() gg.toast("HİLE AÇILIYOR...")
+	gg.clearResults()
+	gg.toast("Snapdragon Tüm Cihazlar v¹ Aktif")
 end
 
 function snapdragontumcihazlarv2()
@@ -516,11 +665,33 @@ end
 
 -- Exynos Duvar Hilesi
 function exynosmenu()
-	update()
+	exynosmenu1=gg.choice({
+		'Tüm Cihazlar v¹',
+		'🔙Geri'
+	},nil,[[
+	Ａｒａｐ　Ｂｕｋｅｎ　Ｇｅｎｃ　
+	✩｡:*•.─────  ★  ─────.•*:｡✩
+	Deneme Sürecinde
+	]])
+	if exynosmenu1 == nil then
+	else
+		if exynosmenu1 == 1 then exynosduvarv1() end
+		if exynosduvarv1 == 2 then home() end
+	end
+	PUBGMH = -1
 end
 -- Exynos Duvar Hilesi Kodlar
-
-
+function exynosduvarv1()
+    gg.setRanges(gg.REGION_C_ALLOC)
+    gg.searchNumber('3.8530377e-34;1.2960464e-38;1.4012985e-45;4.2038954e-45;4.2038954e-45;7.0064923e-45;4.2038954e-45;1.4012985e-45;5.1567783e-43;1.4012985e-45;2.8025969e-45;0.5:289', gg.TYPE_FLOAT, false, gg.SIGN_FUZZY_EQUAL, 0, -1)
+    gg.searchNumber('0.5', gg.TYPE_FLOAT, false, gg.SIGN_FUZZY_EQUAL, 0, -1)
+    var = gg.getResults(20)
+    gg.editAll('2', gg.TYPE_FLOAT)
+    var = gg.getResults(100)
+    gg.addListItems(var)
+    gg.clearResults()
+    gg.toast('Wallhack Exynos Aktif')
+end
 -- Exynos Duvar Hilesi Bitiş
 
 --Mediatek Duvar Hilesi
@@ -785,8 +956,10 @@ end
 function silahmenu()
 	silahmenu1=gg.multiChoice({
 		'💀Kafan Vurma %95',
+		'💀Kafan Vurma Aimbot',
 		'✨Sihirli Mermi',
 		'🎯Aimbot 100m',
+		'🎯Aimbot 500m',
 		'🏹Less Recoil',
 		'🏹No Recoil',
 		'✨Yüksek Hasar',
@@ -802,15 +975,17 @@ function silahmenu()
 	if silahmenu1 == nil then
 	else
 		if silahmenu1[1] == true then kafadanvurma() end
-		if silahmenu1[2] == true then sihirlimermi() end
-		if silahmenu1[3] == true then aimbot100() end
-		if silahmenu1[4] == true then lessrecoil() end
-		if silahmenu1[5] == true then norecoil() end
-		if silahmenu1[6] == true then damage() end
-		if silahmenu1[7] == true then antishake() end
-		if silahmenu1[8] == true then superaim() end
-		if silahmenu1[9] == true then aimbot360() end
-		if silahmenu1[10] == true then home() end
+		if silahmenu1[2] == true then kafadan_vuran_aim() end
+		if silahmenu1[3] == true then sihirlimermi() end
+		if silahmenu1[4] == true then aimbot100() end
+		if silahmenu1[5] == true then aimbot500() end
+		if silahmenu1[6] == true then lessrecoil() end
+		if silahmenu1[7] == true then norecoil() end
+		if silahmenu1[8] == true then damage() end
+		if silahmenu1[9] == true then antishake() end
+		if silahmenu1[10] == true then superaim() end
+		if silahmenu1[11] == true then aimbot360() end
+		if silahmenu1[12] == true then home() end
 	end
 	PUBGMH = -1
 end
@@ -823,6 +998,23 @@ function kafadanvurma()
   gg.editAll("200", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.toast("💀Kafan Vurma %95 Aktif Edildi")
+end
+
+function kafadan_vuran_aim()
+	gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber('9.201618;30.5;25', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber('25;30.5', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(10)
+    gg.editAll('251', gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.setRanges(gg.REGION_C_BSS)
+    gg.searchNumber('2048D;1F', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber('1', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(100)
+    gg.editAll('0.07', gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.toast('Aim Head Aktif!')
 end
 
 function sihirlimermi()
@@ -851,6 +1043,52 @@ function aimbot100()
 	gg.editAll("0", gg.TYPE_FLOAT)
 	gg.clearResults()
 	gg.toast("🎯Aimbot 100m Aktif Edildi")
+end
+
+function aimbot500()
+	gg.clearResults()
+	gg.setRanges(gg.REGION_C_DATA)
+	gg.searchNumber("-476053504;-349478012:189", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+	gg.searchNumber("-476053504", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+	gg.getResults(100)
+	gg.editAll("-476053503;-476053504", gg.TYPE_DWORD)
+	gg.clearResults()
+	gg.setRanges(gg.REGION_C_DATA)
+	gg.searchNumber("324009984;-348261320:165", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+	gg.searchNumber("324009984", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+	gg.getResults(100)
+	gg.editAll("324009985", gg.TYPE_DWORD)
+	gg.clearResults()
+	gg.setRanges(gg.REGION_C_DATA)
+	gg.searchNumber("-336586203;-511702015:105", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+	gg.searchNumber("-511702015", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+	gg.getResults(100)
+	gg.editAll("0", gg.TYPE_DWORD)
+	gg.clearResults()
+	gg.setRanges(gg.REGION_C_DATA)
+	gg.searchNumber("-511633406;-352273285;-511633406:809", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+	gg.searchNumber("-511633406", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+	gg.getResults(100)
+	gg.editAll("0", gg.TYPE_DWORD)
+	gg.clearResults()
+	gg.setRanges(gg.REGION_C_DATA)
+	gg.searchNumber("-335545007;-511702015:85", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+	gg.searchNumber("-511702015", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+	gg.getResults(100)
+	gg.editAll("0", gg.TYPE_DWORD)
+	gg.clearResults()
+	gg.setRanges(gg.REGION_C_DATA)
+	gg.searchNumber("2046820354;-336587221:9", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+	gg.searchNumber("2046820354", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+	gg.getResults(100)
+	gg.editAll("2046820353", gg.TYPE_DWORD)
+	gg.clearResults()
+	gg.setRanges(gg.REGION_C_DATA)
+	gg.searchNumber("2015175168", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+	gg.getResults(6)
+	gg.editAll("0", gg.TYPE_FLOAT)
+	gg.clearResults()
+	print("Aktif Edildi")
 end
 
 function lessrecoil()
@@ -979,32 +1217,37 @@ function anten()
 end
 
 function esp()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_DATA)
-  gg.searchNumber("6.1629802e-33;1.6615354e35:97", gg.TYPE_FLOAT)
-  gg.searchNumber("1.6615354e35", gg.TYPE_FLOAT)
-  gg.getResults(2)
-  gg.editAll("1.6615352e35", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_DATA)
-  gg.searchNumber("-3.8685626e25;-1.1149337e28;-3.9107097e21:25", gg.TYPE_FLOAT)
-  gg.searchNumber("-3.8685626e25", gg.TYPE_FLOAT)
-  gg.getResults(1)
-  gg.editAll("0", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_DATA)
-  gg.searchNumber("-2.9525603e20;-1.2811952e23:17", gg.TYPE_FLOAT)
-  gg.searchNumber("-2.9525603e20", gg.TYPE_FLOAT)
-  gg.getResults(100)
-  gg.editAll("0", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_DATA)
-  gg.searchNumber("5.4274438e-21;2.6253291e-27:41", gg.TYPE_FLOAT)
-  gg.searchNumber("2.6253291e-27", gg.TYPE_FLOAT)
-  gg.getResults(100)
-  gg.editAll("2.6253293e-27", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("👁️ESP Aktif Edildi")
+	gg.clearResults(81337545225)
+	gg.setRanges(8)
+	gg.searchNumber("-476053504;-349478012:189", 4, false, 536870912, 0, -1)
+	gg.searchNumber("-476053504", 4, false, 536870912, 0, -1)
+	gg.getResults(100)
+	gg.editAll("-476053503;-476053504", 4)
+	gg.clearResults(81337545225)
+	gg.setRanges(8)
+	gg.searchNumber("324009984;-348261320:165", 4, false, 536870912, 0, -1)
+	gg.searchNumber("324009984", 4, false, 536870912, 0, -1)
+	gg.getResults(100)
+	gg.editAll("324009985", 4)
+	gg.clearResults(81337545225)
+	gg.setRanges(8)
+	gg.searchNumber("-336586203;-511702015:105", 4, false, 536870912, 0, -1)
+	gg.searchNumber("-511702015", 4, false, 536870912, 0, -1)
+	gg.getResults(100)
+	gg.editAll("0", 4)
+	gg.clearResults(81337545225)
+	gg.setRanges(8)
+	gg.searchNumber("-511633406;-352273285;-511633406:809", 4, false, 536870912, 0, -1)
+	gg.searchNumber("-511633406", 4, false, 536870912, 0, -1)
+	gg.getResults(100)
+	gg.editAll("0", 4)
+	gg.clearResults(81337545225)
+	gg.setRanges(8)
+	gg.searchNumber("-335545007;-511702015:85", 4, false, 536870912, 0, -1)
+	gg.searchNumber("-511702015", 4, false, 536870912, 0, -1)
+	gg.getResults(100)
+	gg.editAll("0", 4)
+	gg.toast(" ESP Aktif")
 end
 
 function ipad()
@@ -1056,8 +1299,195 @@ end
 -- Oyun Hileleri Bitiş
 
 -- Diğer Hileler 
+
+-- On off Bölümü
+on = "[💚]"
+off = "[❤️]"
+ortahiz = off
+fastshot = off
+-- On Off Bölümü
 function digermenu()
-	update()
+	digermenu1=gg.choice({
+		'💝 Flare Gun Anten',
+		'🤳🏼 Sit Scope',
+		'🤸‍♂️ Yüksek Zıplama',
+	ortahiz..'🏃🏽 Orta Hız Koşma',
+		'🏎️ Hızlı Araba',
+		'🔙Geri'
+
+	},nil,[[
+	Ａｒａｐ　Ｂｕｋｅｎ　Ｇｅｎｃ　
+	✩｡:*•.─────  ★  ─────.•*:｡✩
+	🎮 Ｄｉğｅｒ　Ｈｉｌｅ　Ｍｅｎü 🎮
+	💚 - ʜɪʟᴇ ᴀᴋᴛɪꜰ ᴅᴇᴍᴇᴋᴛɪʀ
+	❤️ - ʜɪʟᴇ ᴋᴀᴘᴀʟɪ ᴅᴇᴍᴇᴋᴛɪʀ
+	]])
+	if digermenu1 == nil then 
+	else
+		if digermenu1 == 1 then flareanten() end
+		if digermenu1 == 2 then sitscope() end
+		if digermenu1 == 3 then yuksekziplama() end
+		if digermenu1 == 4 then
+			if ortahiz == off then
+				ortahiz = on
+			else
+				ortahiz = off
+			end
+			ortahizkosma()
+		end
+		if digermenu1 == 5 then hizliaraba() end
+		if digermenu1 == 6 then
+			if fastshot == off then
+				fastshot = on
+			else
+				fastshot = off
+			end
+			fastshotkod()
+		end
+		if digermenu1 == 7 then home() end
+	end
+	PUBGMH = -1
+end
+-- Diğer Hileler Kodları
+function flareanten()
+	gg.clearResults(81337545225)
+	gg.setRanges(gg.REGION_BAD)
+	gg.searchNumber("0.7576~0.7579", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+	gg.searchNumber("0.7576~0.7579", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+	gg.getResults(100)
+	gg.editAll("99999", gg.TYPE_FLOAT)
+	gg.clearResults(81337545225)
+	gg.toast(" 💝 Flare Gun Anten Aktif Edildi! 💝")
+	flareanten()
+end
+
+function sitscope()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("-4767057191653227520", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("-4767057191653227520", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("-4767057191653227520", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(1401)
+  gg.editAll("-4767057191527907328", gg.TYPE_QWORD)
+  gg.clearResults()
+  gg.toast("Sit Scope Aktif Edildi")
+end
+
+-- Orta Hız Koşma Kodlaması
+function ortahizkosma()
+	if ortahiz == on then
+	function ortahizkosma_aktif()
+		gg.clearResults()
+  		gg.setRanges(gg.REGION_ANONYMOUS)
+  		gg.searchNumber("1;1;1;0.0001;20;0.0005;0.4::50", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  		gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  		gg.getResults(300)
+  		gg.editAll("1.06", gg.TYPE_FLOAT)
+  		gg.clearResults()
+  		gg.toast("Orta Hız Koşma Aktif")
+	end
+	digermenu()
+	else -- Hack off
+		function ortahizkosma_kapat()
+			gg.clearResults()
+ 			gg.setRanges(gg.REGION_ANONYMOUS)
+  			gg.searchNumber("1.06;1.06;1.06;0.0001;20;0.0005;0.4::50", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  			gg.searchNumber("1.06", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  			gg.getResults(300)
+  			gg.editAll("1", gg.TYPE_FLOAT)
+  			gg.clearResults()
+  			gg.toast("Orta Hız Koşma Kapatılıdı")
+		end
+	end
+	digermenu()
+end
+
+function yuksekziplama()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("1;35;443;55;0.57357645035", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(500)
+  gg.editAll("3", gg.TYPE_FLOAT)
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("3;35;443;55;0.57357645035", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("443", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(500)
+  gg.editAll("2500", gg.TYPE_FLOAT)
+  gg.toast("High Jump")
+end
+
+function hizliaraba()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("0.647058857;0.30000001192;0.94117647409::9", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("0.647058857;0.30000001192::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("0.647058857;0.30000001192::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("0.647058857;0.30000001192::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(50)
+  gg.editAll("50.241295", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("1000;10;4D;4D;50;5;2;0.03::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("0.03", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("0.03", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("0.03", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(280)
+  gg.editAll("-0.23", gg.TYPE_FLOAT)
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("0.76000005007;0.96078431606;1;0.74509805441::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("0.74509805441", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(9999)
+  gg.editAll("99999", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.clearResults()
+end
+
+function fastshotkod()
+	if fastshot == on then
+		function hizli_ates_aktif()
+			gg.clearResults()
+    		gg.setRanges(gg.REGION_ANONYMOUS)
+    		gg.searchNumber('1868784978;1850305641;28518', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+   			gg.searchNumber('1868784978', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    		gg.getResults(1000)
+    		gg.editAll('1868756421', gg.TYPE_DWORD)
+   			gg.clearResults()
+    		gg.searchNumber('1750294898;1415932769;1819307365', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    		gg.searchNumber('1750294898;1415932769;1819307365', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    		gg.getResults(1000)
+    		gg.editAll('120000', gg.TYPE_DWORD)
+    		gg.clearResults()
+    		gg.toast('Hızlı Ateş Etme Aktif')
+		end
+		digermenu()
+	else
+		function hizli_ates_kapat()
+			gg.clearResults()
+    		gg.setRanges(gg.REGION_ANONYMOUS)
+    		gg.searchNumber('1868756421;1850305641;28518', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    		gg.searchNumber('1868756421', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    		gg.getResults(1000)
+    		gg.editAll('1868784978', gg.TYPE_DWORD)
+    		gg.clearResults()
+    		gg.searchNumber('120000', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    		gg.searchNumber('120000', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    		gg.getResults(1000)
+    		gg.editAll('1750294898', gg.TYPE_DWORD)
+    		gg.clearResults()
+    		gg.searchNumber('120000', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    		gg.searchNumber('120000', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    		gg.getResults(1000)
+    		gg.editAll('1415932769', gg.TYPE_DWORD)
+    		gg.clearResults()
+    		gg.searchNumber('120000', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    		gg.searchNumber('120000', gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    		gg.getResults(1000)
+    		gg.editAll('1819307365', gg.TYPE_DWORD)
+    		gg.clearResults()
+    		gg.toast('Hızlı Ateş Etme Kapatıldı')
+		end
+		digermenu()
+	end
 end
 -- Diğer Hileler Bitiş
 
