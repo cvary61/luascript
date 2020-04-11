@@ -25,33 +25,109 @@ HH = gg.alert([[
 ║║║╚╣║═╣╚╝║╔╗║╚═╣╔╗╗
 ╚╝╚═╩══╣╔═╩╝╚╩══╩╝╚╝
 ───────║║
-───────╚╝ V 0.2
-- ESP Bug Fix
-- High Jump Added
-- Anti Report Added
-- Sit Scope Added
-- 10Min Antiban Added
-- Antiban Update
-- New Head Aimbot Added
-- Fast Shoot Added
-- Antiban V2 Added
-- Aimbot 500m Added
-- Micro Speed Added
-- Speed Car Added
-- Exynos Wall Added
+───────╚╝ V 0.3
+- On / Off Bug Fixed
+- Speed Car Fix
+- Safe and Brutal Menu
+- FastShoot Added
+- Jump Update
+- Exynos 7870 Update
+- HeadShot %60 Added
+- Less Recoil Update
+- Less Recoil %60 Added
+- Exynos Wallhack Added
 ]],"Devam Et ➡️")
 -- Update Menu Bitiş
+PUBGMH = 0
+tercih = 0
+function tercih0()
+   tercih1=gg.alert([[
+Nasıl bir oyun tarzı istiyorsun ?
+      ]],"【𝗦𝗔𝗙𝗘】","【𝗕𝗥𝗨𝗧𝗔𝗟】")
+   if tercih1 == nil then
+   else
+      if tercih1 == 1 then safemenu() 
+         tercih = 1
+      end
+      if tercih1 == 2 then home() 
+         tercih = 2
+      end
+   end
+end
 
+function safemenu()
+   safemenu1=gg.choice({
+      '🛡️Antiban\n╚❑[Lᴏʙɪ]',
+      '🖼️Duvar Hilesi\n╚❑[Oʏᴜɴ]',
+      '🎨Renk Hilesi\n╚❑[Oʏᴜɴ]',
+      '🔫Silah Hilesi\n╚❑[Lᴏʙɪ]',
+      '👾Oyun Hileleri\n╚❑[Lᴏʙɪ+Oʏᴜɴ]',
+      '➾Brutal Moda Geç',
+      '🔒Çıkış'
+   },nil,[[
+   Ａｒａｐ　Ｂｕｋｅｎ　Ｇｅｎｃ　
+   ✩｡:*•.─────🆂🅰🅵🅴─────.•*:｡✩
+   ]])
+   if safemenu1 == nil then
+   else
+      if safemenu1 == 1 then antibanmenu() end
+      if safemenu1 == 2 then duvarmenu() end
+      if safemenu1 == 3 then renkmenu() end
+      if safemenu1 == 4 then safesilahmenu() end
+      if safemenu1 == 5 then safeoyunmenu() end
+      if safemenu1 == 6 then tercih = 2
+         home() 
+      end
+      if safemenu1 == 7 then exit() end
+   end
+   PUBGMH = -1
+end
+
+function safesilahmenu() -- Safe Silah Menü
+   safesilahmenu1=gg.multiChoice({
+      '💀Kafadan Vurma %60\n╚❑[Lᴏʙɪ]',
+      '🎯Aimbot 100M\n╚❑[Lᴏʙɪ]',
+      '🏹Less Recoil %60\n╚❑[Lᴏʙɪ]',
+      '🔙Geri'
+   },nil,[[
+   Ａｒａｐ　Ｂｕｋｅｎ　Ｇｅｎｃ
+   ✩｡:*•.─────🆂🅰🅵🅴─────.•*:｡✩
+   🔫 Ｓｉｌａｈ　Ｍｅｎüｓü 🔫
+   ]])
+   if safesilahmenu1 == nil then
+   else
+      if safesilahmenu1[1] == true then kafadanvurma_60() end
+      if safesilahmenu1[2] == true then aimbot100() end
+      if safesilahmenu1[3] == true then lessrecoil_60() end
+      if safesilahmenu1[4] == true then safemenu() end
+   end
+   PUBGMH = -1
+end -- Safe Silah Menüsü Bitiş
+
+function safeoyunmenu()
+   safeoyunmenu1=gg.choice({
+      'Anten\n╚❑[Lᴏʙɪ+Oʏᴜɴ]',
+      'ESP\n╚❑[Oʏᴜɴ]',
+      'IPad Modu\n╚❑[Oʏᴜɴ]',
+      'Siyah Gökyüzü\n╚❑[Oʏᴜɴ]',
+      'Sis kaldırma\n╚❑[Oʏᴜɴ]',
+      '🔙Geri'
+   },nil,[[
+   Ａｒａｐ　Ｂｕｋｅｎ　Ｇｅｎｃ
+   ✩｡:*•.─────🆂🅰🅵🅴─────.•*:｡✩
+   ]])
+end
 
 -- Menü
 function home()
 	home1=gg.choice({
-		'🛡️ AntiBan',
-		'🖼️ Duvar Hilesi',
-		'🎨 Renk Hilesi',
-		'🔫 Silah Hileleri',
-		'👾 Oyun Hileleri',
-		'🎮 Diğer Hileler',
+		'🛡️ AntiBan\n╚❑[Lᴏʙɪ]',
+		'🖼️ Duvar Hilesi\n╚❑[Oʏᴜɴ]',
+		'🎨 Renk Hilesi\n╚❑[Oʏᴜɴ]',
+		'🔫 Silah Hileleri\n╚❑[Lᴏʙɪ]',
+		'👾 Oyun Hileleri\n╚❑[Lᴏʙɪ+Oʏᴜɴ]',
+		'🎮 Diğer Hileler\n╚❑[Lᴏʙɪ+Oʏᴜɴ]',
+      '➾Safe Mod Geç',
 		'🔒 Çıkış'
 	},nil,[[
 	Ａｒａｐ　Ｂｕｋｅｎ　Ｇｅｎｃ　
@@ -65,7 +141,10 @@ function home()
 		if home1 == 4 then silahmenu() end
 		if home1 == 5 then oyunmenu() end
 		if home1 == 6 then digermenu() end
-		if home1 == 7 then exit() end
+      if home1 == 7 then tercih = 1
+      safemenu() 
+      end
+		if home1 == 8 then exit() end
 	end
 	PUBGMH = -1
 end
@@ -93,7 +172,11 @@ function antibanmenu()
 		if antibanmenu1 == 4 then ban10m() end
 		if antibanmenu1 == 5 then globalantiban() end
 		if antibanmenu1 == 6 then globalantibanv2() end
-		if antibanmenu1 == 7 then home() end
+		if antibanmenu1 == 7 and tercih == 1 then
+         safemenu()
+      else
+         home()
+      end
 	end
 	PUBGMH = -1
 end
@@ -280,7 +363,7 @@ function globalantiban()
     end
     gg.toast("🛡️Antiban Aktif Edildi🛡️")
 end
-	end
+end
 -- Global Antiban Kod Bitiş
 
 -- Global Antiban V2 Kod
@@ -430,7 +513,11 @@ function duvarmenu()
 		if duvarmenu1 == 2 then exynosmenu() end
 		if duvarmenu1 == 3 then mediatekmenu() end
 		if duvarmenu1 == 4 then kirinmenu() end
-		if duvarmenu1 == 5 then home() end
+		if duvarmenu1 == 5 and tercih == 1 then 
+         safemenu()
+      else
+         home()
+       end
 	end
 	PUBGMH = -1
 end
@@ -667,7 +754,10 @@ end
 -- Exynos Duvar Hilesi
 function exynosmenu()
 	exynosmenu1=gg.choice({
-		'Tüm Cihazlar v¹',
+      'Exynos 7570',
+		'Exynos 7870',
+      'Exynos 7880',
+      'Exynos 7885',
 		'🔙Geri'
 	},nil,[[
 	Ａｒａｐ　Ｂｕｋｅｎ　Ｇｅｎｃ　
@@ -676,23 +766,107 @@ function exynosmenu()
 	]])
 	if exynosmenu1 == nil then
 	else
-		if exynosmenu1 == 1 then exynosduvarv1() end
-		if exynosduvarv1 == 2 then home() end
+      if exynosmenu1 == 1 then exynos7570() end
+		if exynosmenu1 == 2 then exynos7870() end
+      if exynosmenu1 == 3 then exynos7880() end
+      if exynosmenu1 == 4 then exynos7885() end
+		if exynosmenu1 == x then duvarmenu() end
 	end
 	PUBGMH = -1
 end
 -- Exynos Duvar Hilesi Kodlar
-function exynosduvarv1()
-    gg.setRanges(gg.REGION_C_ALLOC)
-    gg.searchNumber('3.8530377e-34;1.2960464e-38;1.4012985e-45;4.2038954e-45;4.2038954e-45;7.0064923e-45;4.2038954e-45;1.4012985e-45;5.1567783e-43;1.4012985e-45;2.8025969e-45;0.5:289', gg.TYPE_FLOAT, false, gg.SIGN_FUZZY_EQUAL, 0, -1)
-    gg.searchNumber('0.5', gg.TYPE_FLOAT, false, gg.SIGN_FUZZY_EQUAL, 0, -1)
-    var = gg.getResults(20)
-    gg.editAll('2', gg.TYPE_FLOAT)
-    var = gg.getResults(100)
-    gg.addListItems(var)
+function exynos7570() -- Exynos 7570 Wallhack Code
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("360;0;0;0;-640;1;1;1;0;0;0;0;1;360;640;0.5;0;0;0;0.5;1;1;0;0;0;0;0;1;1;1;1;1,098618e-48:373", gg.TYPE_FLOAT)
+  gg.searchNumber("0.5", gg.TYPE_FLOAT)
+  t = gg.getResults(10)
+  gg.editAll("50", gg.TYPE_FLOAT)
+  print("addListItems: ", gg.addListItems(t))
+  gg.toast("Exynos 7570 Wallhack Aktif Edildi")
+end -- Exynos 7570 Wallhack Code End
+
+function exynos7870() -- Exynos 7870 Wallhack
+   gg.searchNumber("0.5;0;1;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+   gg.processResume()
+   gg.refineNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+   revert = gg.getResults(99999, nil, nil, nil, nil, nil, nil, nil, nil)
+   gg.editAll("2", gg.TYPE_FLOAT)
+   gg.refineNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+   revert = gg.getResults(99999, nil, nil, nil, nil, nil, nil, nil, nil)
+  gg.editAll("1", gg.TYPE_FLOAT)
+  gg.refineNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.addListItems((gg.getResults(99999, nil, nil, nil, nil, nil, nil, nil, nil)))
+  gg.toast('Wallhack Exynos 7870 Aktif')
+end -- Exynos 7870 Wallhack
+
+function exynos7880() -- Exynos 7880 Wallhack
+  if w == 1 then -- Exynos 7880 WallHack Code
+    WHFIX7880()
+  else
+    gg.clearList()
     gg.clearResults()
-    gg.toast('Wallhack Exynos Aktif')
-end
+    gg.setRanges(gg.REGION_C_ALLOC)
+    gg.clearResults()
+    gg.setRanges(gg.REGION_C_ALLOC)
+    gg.searchNumber("0.5;2.8025969e-45;4D;2D;14D;5D;-1D", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(100)
+    gg.editAll("0", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.searchNumber("0.5;2.8025969e-45;4D;2D;14D;5D;-1D", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    if gg.getResultCount() == 0 then
+      gg.alert("Value Not Found")
+    else
+      gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+      _Count = gg.getResultCount()
+      _A = gg.getResults(_Count)
+      last_Count = _Count + 1
+      w = 1
+      _T = "WH Exynos 7880"
+      WHFIX7880()
+    end
+  end -- Exynos 7880 Wallhack Code End
+  function WHFIX7880()  -- Exynos 7880 Wallhack Code Fix 
+  if w == 0 then
+    gg.alert("Value Not Found")
+  else
+    gg.setVisible(false)
+    _CL = {}
+    for _NZX_3_ = 1, _Count do
+    end
+    _C_ = gg.choice(_CL, nil, "WH Exynos 7880")
+    for _NZX_3_ = 1, _Count do
+      if _C_ == _NZX_3_ then
+        for _NZX_7_, _NZX_8_ in ipairs(_A) do
+          gg.addListItems(_A)
+        end
+        gg.addListItems(_A)
+        _NZX_3_ = _Count
+      elseif K_2 == _Count + 1 then
+        DDVGaming()
+      end
+    end
+  end
+  gg.setVisible(true)
+  end -- Exynos 7880 Wallhack Code Fix End
+end -- Exynos 7880 Wallhack
+
+function exynos7885() -- Exynos 7885 Wallhack
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("\"3162688022693019688Q;4915678994331860992Q:2293\"", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("\"4915678994331860992\"", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+  revert = gg.getResults(10, nil, nil, nil, nil, nil, nil, nil, nil)
+  for _NZX_3_, _NZX_4_ in ipairs((gg.getResults(10, nil, nil, nil, nil, nil, nil, nil, nil))) do
+    if _NZX_4_.flags == gg.TYPE_QWORD then
+    end
+  end
+  gg.addListItems((gg.getResults(10, nil, nil, nil, nil, nil, nil, nil, nil)))
+  gg.toast("Exynos 7885 Wallhack Aktif Edildi")
+end -- Exynos 7885 Wallhack Code End
+
+
 -- Exynos Duvar Hilesi Bitiş
 
 --Mediatek Duvar Hilesi
@@ -729,7 +903,11 @@ function renkmenu()
 		if renkmenu1 == 2 then exynosrenkmenu() end
 		if renkmenu1 == 3 then mediatekrenkmenu() end
 		if renkmenu1 == 4 then kirinrenkmenu() end
-		if renkmenu1 == 5 then home() end
+		if renkmenu1 == 5 and tercih == 1 then 
+         safemenu()
+      else
+         home()
+      end
 	end
 	PUBGMH = -1
 end
@@ -937,8 +1115,125 @@ end
 
 -- Exynos Renk Hilesi
 function exynosrenkmenu()
-	update()
+	exynosrenkmenu1=gg.choice({
+      'Pembe',
+      'Yeşil',
+      'Beyaz',
+      'Sarı',
+      'Kırmızı Karışık',
+      'Parlak Kırmızı',
+      'Exynos 7870 Kırmızı',
+      'Exynos 7870 Sarı',
+      '🔙Geri',
+   },nil,[[
+   Ａｒａｐ　Ｂｕｋｅｎ　Ｇｅｎｃ　
+   ✩｡:*•.─────  ★  ─────.•*:｡✩
+   🎨 Ｅｘｙｎｏｓ　Ｒｅｎｋ 🎨
+   ]])
+   if exynosrenkmenu1 == nil then
+   else
+      if exynosrenkmenu1 == 1 then exynospembe() end
+      if exynosrenkmenu1 == 2 then exynosyesil() end
+      if exynosrenkmenu1 == 3 then exynosbeyaz() end
+      if exynosrenkmenu1 == 4 then exynossari() end
+      if exynosrenkmenu1 == 5 then exynos_kirmizi_mix() end
+      if exynosrenkmenu1 == 6 then exynos_kirmizi_parlak() end
+      if exynosrenkmenu1 == 7 then exynos7870_kirmizi() end
+      if exynosrenkmenu1 == 8 then exynos7870_sari() end
+      if exynosrenkmenu1 == 9 then renkmenu() end
+   end
+   PUBGMH = -1
 end
+
+-- Exynos Renk Kodları
+
+function exynospembe() -- Exynos All Code Pembe
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("56;64;3:21", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("56", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("38", gg.TYPE_DWORD)
+  gg.toast(" Exynos Pembe Aktif")
+end -- Exynos All Code Pembe
+
+function exynosyesil() -- Exynos All Code Yeşil
+  gg.clearResults()
+  gg.setRanges(4)
+  gg.setRanges(4)
+  gg.searchNumber("40D;32D;16D;2D::53", 4, false, 536870912, 0, -1)
+  gg.refineNumber("40", 4, false, 536870912, 0, -1)
+  gg.getResults(4)
+  gg.editAll("35", 4)
+  gg.toast("Exynos Yeşil Aktif")
+end -- Exynos All Code Yeşil
+
+function exynosbeyaz() -- Exynos All Code Beyaz
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("573.70306396484;0.05499718338;1::50", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(1)
+  gg.editAll("999", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Exynos Beyaz Aktif Edildi")
+end
+
+function exynossari() -- Exynos All Code Sarı
+  gg.clearResults()
+  gg.setRanges(4)
+  gg.setRanges(4)
+  gg.searchNumber("40D;32D;16D;2D::53", 4, false, 536870912, 0, -1)
+  gg.refineNumber("40", 4, false, 536870912, 0, -1)
+  gg.getResults(4)
+  gg.editAll("36", 4)
+  gg.toast("Exynos Sarı Aktif Edildi")
+end -- Exynos All Code Sarı
+
+function exynos_kirmizi_mix() -- Exynos All Code kırmızı mix
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("24;802824704;32;2::21", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("24", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(5)
+  gg.editAll("19", gg.TYPE_DWORD)
+  gg.toast("Exynos Kırmız Mix Aktif Edildi")
+end -- Exynos All Code kırmızı mix
+
+function exynos_kirmizi_parlak() -- Exynos All Code kırmızı
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("24;802824704;32;2::21", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("24", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(5)
+  gg.editAll("22", gg.TYPE_DWORD)
+  gg.toast("Exynos Parlak Kırmızı Aktif Edildi")
+end -- Exynos All Code kırmızı
+
+function exynos7870_kirmizi() -- Exynos 7870 Kırmızı
+  gg.processResume()
+  gg.processResume()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("24;802824704;32;2::21", 4, false, 536870912, 0, -1)
+  gg.refineNumber("24", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  revert = gg.getResults(99999, nil, nil, nil, nil, nil, nil, nil, nil)
+  gg.editAll("22", gg.TYPE_DWORD)
+  gg.processResume()
+  gg.toast(" Exynos 7870 Kırmızı Aktif Edildi")
+end -- Exynos 7870 Kırmızı
+
+function exynos7870_sari() -- Exynos 7870 Sarı
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("232;80;6;160;88;6;128;4", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("88", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(25)
+  gg.editAll("89", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.toast("Exynos 7870 Sarı Aktif Edildi")
+end
+
+
 -- Exynos Renk Hilesi Bitiş
 
 -- Mediatek Renk Hilesi
@@ -956,37 +1251,39 @@ end
 --Silah Hileleri
 function silahmenu()
 	silahmenu1=gg.multiChoice({
-		'💀Kafan Vurma %95',
-		'💀Kafan Vurma Aimbot',
-		'✨Sihirli Mermi',
-		'🎯Aimbot 100m',
-		'🎯Aimbot 500m',
-		'🏹Less Recoil',
-		'🏹No Recoil',
-		'✨Yüksek Hasar',
-		'🎯Anti Shake',
-		'🎯Super Aimbot',
-		'🎯360° Aimbot',
+		'💀Kafan Vurma %95\n╚❑[Lᴏʙɪ+Oʏᴜɴ]',
+		'💀Kafan Vurma %60\n╚❑[Lᴏʙɪ+Oʏᴜɴ]',
+		'✨Sihirli Mermi\n╚❑[Lᴏʙɪ]',
+		'🎯Aimbot 100m\n╚❑[Lᴏʙɪ+Oʏᴜɴ]',
+		'🎯Aimbot 500m\n╚❑[Lᴏʙɪ+Oʏᴜɴ]',
+		'🏹Less Recoil %85\n╚❑[Lᴏʙɪ]',
+      '🏹Less Recoil %60\n╚❑[Lᴏʙɪ]',
+		'🏹No Recoil\n╚❑[Lᴏʙɪ+Oʏᴜɴ]',
+		'✨Yüksek Hasar\n╚❑[Lᴏʙɪ]',
+		'🎯Anti Shake\n╚❑[Lᴏʙɪ+Oʏᴜɴ]',
+		'🎯Super Aimbot\n╚❑[Lᴏʙɪ+Oʏᴜɴ]',
+		'🎯360° Aimbot\n╚❑[Lᴏʙɪ+Oʏᴜɴ]',
 		'🔙Geri'
 	},nil,[[
 	Ａｒａｐ　Ｂｕｋｅｎ　Ｇｅｎｃ　
-	✩｡:*•.─────  ★  ─────.•*:｡✩
+	✩｡:*•.─────🅱🆁🆄🆃🅰🅻─────.•*:｡✩
 	🔫 Ｓｉｌａｈ　Ｍｅｎüｓü 🔫
 	]])
 	if silahmenu1 == nil then
 	else
 		if silahmenu1[1] == true then kafadanvurma() end
-		if silahmenu1[2] == true then kafadan_vuran_aim() end
+		if silahmenu1[2] == true then kafadanvurma_60() end
 		if silahmenu1[3] == true then sihirlimermi() end
 		if silahmenu1[4] == true then aimbot100() end
 		if silahmenu1[5] == true then aimbot500() end
 		if silahmenu1[6] == true then lessrecoil() end
-		if silahmenu1[7] == true then norecoil() end
-		if silahmenu1[8] == true then damage() end
-		if silahmenu1[9] == true then antishake() end
-		if silahmenu1[10] == true then superaim() end
-		if silahmenu1[11] == true then aimbot360() end
-		if silahmenu1[12] == true then home() end
+      if silahmenu1[7] == true then lessrecoil_60() end
+		if silahmenu1[8] == true then norecoil() end
+		if silahmenu1[9] == true then damage() end
+		if silahmenu1[10] == true then antishake() end
+		if silahmenu1[11] == true then superaim() end
+		if silahmenu1[12] == true then aimbot360() end
+		if silahmenu1[13] == true then home() end
 	end
 	PUBGMH = -1
 end
@@ -998,24 +1295,22 @@ function kafadanvurma()
   gg.getResults(10)
   gg.editAll("200", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.toast("💀Kafan Vurma %95 Aktif Edildi")
+  gg.toast("💀Kafadan Vurma %95 Aktif Edildi")
 end
 
-function kafadan_vuran_aim()
-	gg.clearResults()
-    gg.setRanges(gg.REGION_ANONYMOUS)
-    gg.searchNumber('9.201618;30.5;25', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.searchNumber('25;30.5', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.getResults(10)
-    gg.editAll('251', gg.TYPE_FLOAT)
-    gg.clearResults()
-    gg.setRanges(gg.REGION_C_BSS)
-    gg.searchNumber('2048D;1F', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.searchNumber('1', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.getResults(100)
-    gg.editAll('0.07', gg.TYPE_FLOAT)
-    gg.clearResults()
-    gg.toast('Aim Head Aktif!')
+function kafadanvurma_60()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("-88.66608428955;26:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("26", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(2)
+  gg.editAll("-460", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("-88.73961639404;28:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(2)
+  gg.editAll("-560", gg.TYPE_FLOAT) gg.clearResults()  gg.setRanges(gg.REGION_ANONYMOUS)  gg.searchNumber("9.201618;30.5;25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1) gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)  gg.getResults(10)  gg.editAll("100", gg.TYPE_FLOAT)  gg.clearResults()  
+  gg.toast('Kafadan Vurma %60 Aktif!')
 end
 
 function sihirlimermi()
@@ -1093,15 +1388,26 @@ function aimbot500()
 end
 
 function lessrecoil()
-	gg.clearResults()
-	gg.setRanges(32)
-	gg.setRanges(32)
-	gg.searchNumber("1,348,759,109;1953067887;1,634,692,166;1,920,287,604::28", 4, false, 536870912, 0, -1)
-	gg.searchNumber("1634692166", 4, false, 536870912, 0, -1)
-	gg.getResults(10)
-	gg.editAll("1634692266", 4)
-	gg.toast("🏹Less Recoil Aktif Edildi")
+  gg.clearResults()
+  gg.setRanges(8)
+  gg.searchNumber("-2 220 275 582 962 234 864", 32, false, gg.SIGN_EQUAL, 0, -1) 
+  gg.refineAddress("EBC", -1, 32, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("-2 220 275 586 956 263 424", 32)
+  gg.clearResults()
+	gg.toast("🏹Less Recoil %85 Aktif Edildi")
 end
+function lessrecoil_60()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_DATA)
+  gg.searchNumber("-309056968;-298841599;-309061065", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("-298841599", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(5)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.toast('🎯 ʟᴇss ʀᴇᴄᴏɪʟ 60%')
+end
+
 
 function norecoil()
  gg.clearResults()
@@ -1176,16 +1482,16 @@ end
 -- Oyun Hileleri 
 function oyunmenu()
 	oyunmenu1=gg.choice({
-		'📡Anten',
-		'👁️ESP',
-		'🎥IPad Modu',
-		'🌫️Sis Kaldırma',
-		'🌑Siyah Gökyüzü',
-		'🐟Balıklama İnme',
+		'📡Anten\n╚❑[Lᴏʙɪ+Oʏᴜɴ]',
+		'👁️ESP\n╚❑[Oʏᴜɴ]',
+		'🎥IPad Modu\n╚❑[Oʏᴜɴ]',
+		'🌫️Sis Kaldırma\n╚❑[Oʏᴜɴ]',
+		'🌑Siyah Gökyüzü\n╚❑[Oʏᴜɴ]',
+		'🐟Balıklama İnme\n╚❑[ᴀᴅᴀ+Oʏᴜɴ]',
 		'🔙Geri'
 	},nil,[[
 	Ａｒａｐ　Ｂｕｋｅｎ　Ｇｅｎｃ　
-	✩｡:*•.─────  ★  ─────.•*:｡✩
+   ✩｡:*•.─────🅱🆁🆄🆃🅰🅻─────.•*:｡✩
 	👾 Ｏｙｕｎ　Ｍｅｎüｓü 👾
 	]])
 	if oyunmenu1 == nil then
@@ -1309,16 +1615,16 @@ fastshot = off
 -- On Off Bölümü
 function digermenu()
 	digermenu1=gg.choice({
-		'💝 Flare Gun Anten',
-		'🤳🏼 Sit Scope',
-		'🤸‍♂️ Yüksek Zıplama',
-	ortahiz..'🏃🏽 Orta Hız Koşma',
-		'🏎️ Hızlı Araba',
+		'💝 Flare Gun Anten\n╚❑[Oʏᴜɴ]',
+		'🤳🏼 Sit Scope\n╚❑[Oʏᴜɴ]',
+      '🤸‍♂️ Yüksek Zıplama\n╚❑[Oʏᴜɴ]',
+	ortahiz..'🏃🏽 Orta Hız Koşma\n╚❑[Oʏᴜɴ]',
+		'🏎️ Hızlı Araba (Jeep)\n╚❑[Oʏᴜɴ]',
+		fastshot..'Hızlı Ateş Etme\n╚❑[Oʏᴜɴ]',
 		'🔙Geri'
-
 	},nil,[[
 	Ａｒａｐ　Ｂｕｋｅｎ　Ｇｅｎｃ　
-	✩｡:*•.─────  ★  ─────.•*:｡✩
+	✩｡:*•.─────🅱🆁🆄🆃🅰🅻─────.•*:｡✩
 	🎮 Ｄｉğｅｒ　Ｈｉｌｅ　Ｍｅｎü 🎮
 	💚 - ʜɪʟᴇ ᴀᴋᴛɪꜰ ᴅᴇᴍᴇᴋᴛɪʀ
 	❤️ - ʜɪʟᴇ ᴋᴀᴘᴀʟɪ ᴅᴇᴍᴇᴋᴛɪʀ
@@ -1351,6 +1657,13 @@ function digermenu()
 end
 -- Diğer Hileler Kodları
 function flareanten()
+  gg.clearResults(81337545225)
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("0.7576~0.7579", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("0.7576~0.7579", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("99999", gg.TYPE_FLOAT)
+  gg.clearResults(81337545225)
 	gg.clearResults(81337545225)
 	gg.setRanges(gg.REGION_BAD)
 	gg.searchNumber("0.7576~0.7579", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -1359,7 +1672,6 @@ function flareanten()
 	gg.editAll("99999", gg.TYPE_FLOAT)
 	gg.clearResults(81337545225)
 	gg.toast(" 💝 Flare Gun Anten Aktif Edildi! 💝")
-	flareanten()
 end
 
 function sitscope()
@@ -1376,8 +1688,7 @@ end
 
 -- Orta Hız Koşma Kodlaması
 function ortahizkosma()
-	if ortahiz == on then
-	function ortahizkosma_aktif()
+	if ortahiz == on then -- ortahizkosma_aktif
 		gg.clearResults()
   		gg.setRanges(gg.REGION_ANONYMOUS)
   		gg.searchNumber("1;1;1;0.0001;20;0.0005;0.4::50", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -1386,10 +1697,7 @@ function ortahizkosma()
   		gg.editAll("1.06", gg.TYPE_FLOAT)
   		gg.clearResults()
   		gg.toast("Orta Hız Koşma Aktif")
-	end
-	digermenu()
-	else -- Hack off
-		function ortahizkosma_kapat()
+	else -- Hack off ( ortahizkosma_kapat )
 			gg.clearResults()
  			gg.setRanges(gg.REGION_ANONYMOUS)
   			gg.searchNumber("1.06;1.06;1.06;0.0001;20;0.0005;0.4::50", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -1398,49 +1706,34 @@ function ortahizkosma()
   			gg.editAll("1", gg.TYPE_FLOAT)
   			gg.clearResults()
   			gg.toast("Orta Hız Koşma Kapatılıdı")
-		end
-	end
-	digermenu()
+   end
 end
 
 function yuksekziplama()
+  gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("1;35;443;55;0.57357645035", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(500)
-  gg.editAll("3", gg.TYPE_FLOAT)
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("3;35;443;55;0.57357645035", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("443", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(500)
-  gg.editAll("2500", gg.TYPE_FLOAT)
-  gg.toast("High Jump")
+  gg.searchNumber('443.0', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.sleep(140)
+  gg.refineNumber('443.0', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.sleep(140)
+  gg.refineNumber('443.0', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll('500', gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Yüksek Zıplama Aktif")
 end
 
 function hizliaraba()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("0.647058857;0.30000001192;0.94117647409::9", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("0.647058857;0.30000001192::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("0.647058857;0.30000001192::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("0.647058857;0.30000001192::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(50)
-  gg.editAll("50.241295", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("1000;10;4D;4D;50;5;2;0.03::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("0.03", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("0.03", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("0.03", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(280)
-  gg.editAll("-0.23", gg.TYPE_FLOAT)
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("0.76000005007;0.96078431606;1;0.74509805441::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("0.74509805441", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(9999)
-  gg.editAll("99999", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.clearResults()
+ gg.clearResults()  
+  gg.setRanges(gg.REGION_ANONYMOUS)  
+  gg.searchNumber("1000;10;4D;4D;50;5;2;0.01::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)  
+  gg.searchNumber("0.01", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)  
+  gg.searchNumber("0.01", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1) 
+  gg.searchNumber("0.01", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)  
+  gg.getResults(280)  
+  gg.editAll("-0.24", gg.TYPE_FLOAT) 
+  gg.clearResults() 
+  gg.toast("Hızlı Jepp Aktif")
 end
 
 function fastshotkod()
@@ -1523,8 +1816,13 @@ while (true) do
     gg.setVisible(false)
   end
   gg.clearResults()
-  if PUBGMH == 1 then
-    home()
+  if PUBGMH == 1 and tercih == 0 then
+   tercih0()
+end
+  if PUBGMH == 1 and tercih == 1 then
+    safemenu()
+ end
+    if PUBGMH == 1 and tercih == 2 then
+      home()
   end
  end
-
