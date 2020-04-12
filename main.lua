@@ -550,7 +550,6 @@ function snapdragonmenu()
 	snapdragonmenu1=gg.multiChoice({
 	'🖼️Snapdragon Tüm İşlemciler v¹',
 	'🛠️Snapdragon Fix Blink',
-	'🖼️Snapdragon Tüm Cihazlar v³',
 	'🖼️Snapdragon 400',
 	'🖼️Snapdragon 410',
 	'🖼️Snapdragon 415',
