@@ -1361,7 +1361,7 @@ end
 -- Exynos Duvar Hilesi
 function exynosmenu()
 	exynosmenu1=gg.choice({
-      'Exynos 7420'
+      'Exynos 7420',
       'Exynos 7570',
 		  'Exynos 7870',
       'Exynos 7880',
@@ -2449,7 +2449,8 @@ function flashhiz_komut() -- Flash Speed Hack
     gg.editAll('1', gg.TYPE_FLOAT)
     gg.clearResults()
     gg.toast('Flash Speed Katıldı')
-end -- Flash Speed Hack
+  end -- Flash Speed Hack
+end
 
 function flareanten()
   gg.clearResults(81337545225)
