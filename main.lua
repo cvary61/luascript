@@ -1196,7 +1196,7 @@ end
 
 --Mediatek Duvar Hilesi
 function mediatekmenu()
-	mediatekmenu1==gg.choice({
+	mediatekmenu1=gg.choice({
     'Mediatek P22',
     '🔙Geri'
   },nil,[[
