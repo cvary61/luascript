@@ -26,12 +26,8 @@ HH = gg.alert([[
 ║║║╚╣║═╣╚╝║╔╗║╚═╣╔╗╗
 ╚╝╚═╩══╣╔═╩╝╚╩══╩╝╚╝
 ───────║║
-───────╚╝ V 0.4.6.7
-- Yüksek Zıplama Yenilendi
-- Duvardan Vurma Eklendi
-- Snapdragon 435 Eklendi
-- Snapdragon 425 V1-V2
-- Exynos 7870 V2 Eklendi
+───────╚╝ V 0.4.6.8
+- Mediatek P22 Eklendi
 ]],"Devam Et ➡️")
 -- Update Menu Bitiş
 PUBGMH = 0
@@ -1200,8 +1196,36 @@ end
 
 --Mediatek Duvar Hilesi
 function mediatekmenu()
-	update()
+	mediatekmenu1==gg.choice({
+    'Mediatek P22',
+    '🔙Geri'
+  },nil,[[
+  TEST EDİLİYOR
+  ]])
+  if mediatekmenu1 == nil then
+  else
+    if mediatekmenu1 == 1 then mediatekp22() end
+    if mediatekmenu1 == 2 the duvarmenu() end
+  end
+  PUBGMH = -1
 end
+
+-- Mediatek Kodlar
+function mediatekp22()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("\"2.0F;6.0F;5.0F;1.0F;0.0F;0.0F;3.0F;4.0F::569\"", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("\"3\"", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  revert = gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)
+  for _NZX_3_, _NZX_4_ in ipairs((gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil))) do
+    if _NZX_4_.flags == gg.TYPE_FLOAT then
+    end
+  end
+  gg.addListItems((gg.getResults(200, nil, nil, nil, nil, nil, nil, nil, nil)))
+  gg.clearResults()
+  gg.toast("WH Mediatek P22 Aktif Edildi")
+end
+-- Mediatek Kodlar
 --Mediatek Duvar Hilesi Bitiş
 
 -- Kirin Duvar Hilesi
@@ -1567,8 +1591,63 @@ end
 
 -- Mediatek Renk Hilesi
 function mediatekrenkmenu()
-	update()
+	mediatekrenkmenu1=gg.choice({
+    'Mediatek P22 Yeşil',
+    'Mediatek P22 Sarı',
+    'Mediatek P22 Beyaz',
+    '🔙Geri'
+  },nil,[[
+  TEST EDİLİYOR
+  ]])
+  if mediatekrenkmenu1 == nil then
+  else
+    if mediatekrenkmenu1 == 1 then mediatekp22yesil() end
+    if mediatekrenkmenu1 == 2 then mediatekp22sari() end
+    if mediatekrenkmenu1 == 3 then mediatekp22beyaz() end
+    if mediatekrenkmenu1 == 4 then renkmenu() end
+  end
+  PUBGMH = -1
 end
+-- Mediatek renk Kodları
+function mediatekp22yesil()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("38D;14D;24D;48D;41D;16D::209", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("48", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  revert = gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
+  gg.editAll("33", gg.TYPE_DWORD)
+  gg.toast("C Mediatek P22 Yeşil")
+  gg.clearResults()
+end
+
+function mediatekp22sari()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("34D;35D;36D;89D;38D;39D;97D;40D:121", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("40", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(4)
+  gg.editAll("37", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("40D;58D;17D;47D;19D;55D;98D;100D;42D;9D;46D;55D:789 ", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("55", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(12)
+  gg.editAll("36", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.toast("C.Mediatek P22 Sarı")
+end
+
+function mediatekp22beyaz()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("74D;48D;49D;18D;50D;19D;51D;20D;59D;22D::121", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("49", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  revert = gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
+  gg.editAll("44", gg.TYPE_DWORD)
+  gg.toast("C Mediatek P22 Beyaz")
+end
+-- mediatek renk kodları
+
 -- Mediatek Renk Hilesi Bitiş
 
 -- Kirin Renk Hilesi
