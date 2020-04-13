@@ -1205,7 +1205,7 @@ function mediatekmenu()
   if mediatekmenu1 == nil then
   else
     if mediatekmenu1 == 1 then mediatekp22() end
-    if mediatekmenu1 == 2 the duvarmenu() end
+    if mediatekmenu1 == 2 then duvarmenu() end
   end
   PUBGMH = -1
 end
