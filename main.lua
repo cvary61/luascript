@@ -1,19 +1,6 @@
 -- Script ArapBükenGenç Telegram kanalına Aittir... !!
-gg.sleep(300)
-gg.toast("■□□□□□□10%  ")
-gg.sleep(300)
-gg.toast("■■□□□□□20%  ")
-gg.sleep(300)
-gg.toast("■■■□□□□40%  ")
-gg.sleep(300)
-gg.toast("■■■■□□□60%  ")
-gg.sleep(300)
-gg.toast("■■■■■□□80%  ")
-gg.sleep(300)
-gg.toast("■■■■■■□90%  ")
-gg.sleep(300)
-gg.toast("■■■■■■■100%")
-gg.sleep(600)
+
+
 -- Logo
 gg.setVisible(true)
 HH = gg.alert([[
@@ -39,14 +26,8 @@ HH = gg.alert([[
 ║║║╚╣║═╣╚╝║╔╗║╚═╣╔╗╗
 ╚╝╚═╩══╣╔═╩╝╚╩══╩╝╚╝
 ───────║║
-───────╚╝ V 0.4.5
-SAfe Menu Bug Fix
-- All Snapdragon Wall+Color
-- Exynos Wallhack Added
-- Flash Speed / On - Off
-- Fly Car
-- Fast Shoot Bug Fix
-
+───────╚╝ V 0.4.6
+- Wallhack Downgrade
 ]],"Devam Et ➡️")
 -- Update Menu Bitiş
 PUBGMH = 0
@@ -547,272 +528,139 @@ end
 
 -- Snapdragon Duvar Hilesi 
 function snapdragonmenu()
-	snapdragonmenu1=gg.multiChoice({
-	'🖼️Snapdragon Tüm İşlemciler v¹',
-	'🛠️Snapdragon Fix Blink',
-	'🖼️Snapdragon 400',
-	'🖼️Snapdragon 410',
-	'🖼️Snapdragon 415',
-	'🖼️Snapdragon 425',
-	'🖼️Snapdragon 430',
-	'🖼️Snapdragon 435',
-	'🖼️Snapdragon 439',
-  '🖼️Snapdragon 450',
-  '🖼️Snapdragon 600',
-  '🖼️Snapdragon 610',
-  '🖼️Snapdragon 615',
-  '🖼️Snapdragon 616',
-  '🖼️Snapdragon 625',
-  '🖼️Snapdragon 626',
-  '🖼️Snapdragon 630',
-  '🖼️Snapdragon 632',
-  '🖼️Snapdragon 636',
-  '🖼️Snapdragon 650',
-  '🖼️Snapdragon 652',
-  '🖼️Snapdragon 653',
-  '🖼️Snapdragon 660',
-  '🖼️Snapdragon 665',
-  '🖼️Snapdragon 670',
-  '🖼️Snapdragon 675',
-  '🖼️Snapdragon 710',
-  '🖼️Snapdragon 712',
-  '🖼️Snapdragon 800',
-  '🖼️Snapdragon 801',
-  '🖼️Snapdragon 805',
-  '🖼️Snapdragon 808',
-  '🖼️Snapdragon 810',
-  '🖼️Snapdragon 815',
-  '🖼️Snapdragon 820',
-  '🖼️Snapdragon 821',
-  '🖼️Snapdragon 835',
-  '🖼️Snapdragon 845',
-  '🖼️Snapdragon 855',
-	'🔙Geri'
-	},nil,[[
-	Ａｒａｐ　Ｂｕｋｅｎ　Ｇｅｎｃ　
-	✩｡:*•.─────  ★  ─────.•*:｡✩
-	🖼️ Ｓｎａｐｄｒａｇｏｎ　Ｄｕｖａｒ 🖼️
-	]])
-	if snapdragonmenu1 == nil then
-	else
-    if snapdragonmenu1[1] == true then snapdragonalldevices() end
-    if snapdragonmenu1[2] == true then snapdragonfixblink() end
-    if snapdragonmenu1[3] == true then snapdragon400() end
-    if snapdragonmenu1[4] == true then snapdragon410() end
-    if snapdragonmenu1[5] == true then snapdragon415() end
-    if snapdragonmenu1[6] == true then snapdragon425() end
-    if snapdragonmenu1[7] == true then snapdragon430() end
-    if snapdragonmenu1[8] == true then snapdragon435() end
-    if snapdragonmenu1[9] == true then snapdragon439() end
-    if snapdragonmenu1[10] == true then snapdragon450() end
-    if snapdragonmenu1[11] == true then snapdragon600() end
-    if snapdragonmenu1[12] == true then snapdragon610() end
-    if snapdragonmenu1[13] == true then snapdragon615() end
-    if snapdragonmenu1[14] == true then snapdragon616() end
-    if snapdragonmenu1[15] == true then snapdragon625() end
-    if snapdragonmenu1[16] == true then snapdragon626() end
-    if snapdragonmenu1[17] == true then snapdragon630() end
-    if snapdragonmenu1[18] == true then snapdragon632() end
-    if snapdragonmenu1[19] == true then snapdragon636() end
-    if snapdragonmenu1[20] == true then snapdragon650() end
-    if snapdragonmenu1[21] == true then snapdragon652() end
-    if snapdragonmenu1[22] == true then snapdragon653() end
-    if snapdragonmenu1[23] == true then snapdragon660() end
-    if snapdragonmenu1[24] == true then snapdragon665() end
-    if snapdragonmenu1[25] == true then snapdragon670() end
-    if snapdragonmenu1[26] == true then snapdragon675() end
-    if snapdragonmenu1[27] == true then snapdragon710() end
-    if snapdragonmenu1[28] == true then snapdragon712() end
-    if snapdragonmenu1[29] == true then snapdragon800() end
-    if snapdragonmenu1[30] == true then snapdragon801() end
-    if snapdragonmenu1[31] == true then snapdragon805() end
-    if snapdragonmenu1[32] == true then snapdragon808() end
-    if snapdragonmenu1[33] == true then snapdragon810() end
-    if snapdragonmenu1[34] == true then snapdragon815() end
-    if snapdragonmenu1[35] == true then snapdragon820() end
-    if snapdragonmenu1[36] == true then snapdragon821() end
-    if snapdragonmenu1[37] == true then snapdragon835() end
-    if snapdragonmenu1[38] == true then snapdragon845() end
-    if snapdragonmenu1[39] == true then snapdragon855() end
-		if snapdragonmenu1[40] == true then duvarmenu() end
-	end
-	PUBGMH = -1
+  snapdragonmenu1=gg.choice({
+  '🖼️Snapdragon Tüm Cihazlar v¹',
+  '🖼️Snapdragon Tüm Cihazlar v²',
+  '🖼️Snapdragon Tüm Cihazlar v³',
+  '🖼️Snapdragon 425~450',
+  '🖼️Snapdragon 625~636',
+  '🖼️Snapdragon 660~835',
+  '🖼️Snapdragon 665~675',
+  '🖼️Snapdragon 710~855',
+  '🛠️Fix Blink 430~835',
+  '🛠️Fix Blink 845~855',
+  '🔙Geri'
+  },nil,[[
+  Ａｒａｐ　Ｂｕｋｅｎ　Ｇｅｎｃ　
+  ✩｡:*•.─────  ★  ─────.•*:｡✩
+  🖼️ Ｓｎａｐｄｒａｇｏｎ　Ｄｕｖａｒ 🖼️
+  ]])
+  if snapdragonmenu1 == nil then
+  else
+    if snapdragonmenu1 == 1 then snapdragontumcihazlarv1() end
+    if snapdragonmenu1 == 2 then snapdragontumcihazlarv2() end
+    if snapdragonmenu1 == 3 then snapdragontumcihazlarv3() end
+    if snapdragonmenu1 == 4 then snapdragon425_450() end
+    if snapdragonmenu1 == 5 then snapdragon625_636() end
+    if snapdragonmenu1 == 6 then snapdragon660_835() end
+    if snapdragonmenu1 == 7 then snapdragon665_675() end
+    if snapdragonmenu1 == 8 then snapdragon710_855() end
+    if snapdragonmenu1 == 9 then fixblink430_835() end
+    if snapdragonmenu1 == 10 then fixblink845_855() end
+    if snapdragonmenu1 == 11 then duvarmenu() end
+  end
+  PUBGMH = -1
+end
+--Snapdragon Duvar Hile Kodlar
+function snapdragontumcihazlarv1()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber('135,215D;4,140D;3.7615819e-37;2::', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber('2', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll('130', gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber('194D;3.7615819e-37;2;-1;1;-127::', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber('2', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll('130', gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.clearResults()
+  gg.searchNumber("8,196D;8,192D;8,200D::", 4, false, 536870912, 0, -1)
+  gg.searchNumber("8200", 4, false, 536870912, 0, -1)
+  gg.getResults(10)
+  gg.editAll("6", 4)
+  gg.clearResults() gg.toast("HİLE AÇILIYOR...")
+  gg.clearResults()
+  gg.toast("Snapdragon Tüm Cihazlar v¹ Aktif")
 end
 
---Snapdragon Duvar Hile Kodlar
-function snapdragonalldevices()
+function snapdragontumcihazlarv2()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+  gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("130", gg.TYPE_FLOAT)
+  gg.clearResults()
   gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("130", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Snapdragon Tüm Cihazlar v² Aktif Edildi")
+  gg.clearResults()
+end
+
+function snapdragontumcihazlarv3()
+  gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
   gg.searchNumber("5.6447121e21;-8.3252823e-40;4.9252852e21::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("-8.3252823e-40", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(100)
   gg.editAll("6444", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
+  gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
   gg.searchNumber("4.9068373e21;-3.5875931e-39;4.8699618e21::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("-3.5875931e-39", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(100)
   gg.editAll("6444", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
+  gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
   gg.searchNumber("5.0544113e21;-3.4039221e-39;4.8699607e21::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("-3.4039221e-39", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(100)
   gg.editAll("6444", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
+  gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
   gg.searchNumber("5.6447206e21;-1.0161992e-39;4.9068396e21::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("-1.0161992e-39", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(100)
   gg.editAll("6444", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
+  gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
   gg.searchNumber("4.7223665e21;-8.3246237e-40;4.8330515e21::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("-8.3246237e-40", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(100)
   gg.editAll("6444", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
+  gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
   gg.searchNumber("4.7408149e21;-5.5695588e-40;4.814603e21::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("-5.5695588e-40", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(6)
   gg.editAll("6444", gg.TYPE_FLOAT)
-  gg.toast("Wallhack Snapdragon Tüm İşlemciler Aktif")
+  gg.toast("Snapdragon Tüm Cihazlar v³ Aktif Edildi")
 end
 
-function snapdragonfixblink()
+function snapdragon425_450()
   gg.clearResults()
-  gg.setRanges(131072)
-  gg.searchNumber("6.50000333786;1.1202013e-19;3.7615819e-37;2::", 16, false, 536870912, 0, -1)
-  gg.searchNumber("2", 16, false, 536870912, 0, -1)
-  gg.getResults(1)
-  gg.editAll("99999", 16)
-  gg.clearResults()
-  gg.toast("Wallhack Fix Blink")
-end
-
-function snapdragon400()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_ALLOC)
-  gg.searchNumber("228;1,073,741,824;1,073,741,824;229;-1,082,130,432:29", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1,073,741,824", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(30)
-  gg.editAll("1,123,024,896", gg.TYPE_DWORD)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_ALLOC)
-  gg.searchNumber("3.3631163e-44;2.0;3.5032462e-44;-1.0;3.643376e-44;3.7835059e-44;-1.0;3.9236357e-44;4.0637655e-44;1.0;-127.0:129", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+  gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(100)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 400 👍")
-end
-
-function snapdragon410()
-  gg.clearResults()
-  gg.setRanges(1)
-  gg.searchNumber("3.1949605e-43;3.1809475e-43;2.0;3.2089735e-43", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(100)
-  gg.editAll("150", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(131072)
-  gg.searchNumber("8204;8205;1,194,344,451", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("8204", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(100)
-  gg.editAll("15", gg.TYPE_DWORD)
-  gg.clearResults()
-  gg.setRanges(131072)
-  gg.searchNumber("1,669,693,440;8205", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("8205", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(100)
-  gg.editAll("8204", gg.TYPE_DWORD)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 410 👍")
-end
-
-function snapdragon415()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_HEAP)
-  gg.searchNumber("228;1,073,741,824;1,073,741,824;229;-1,082,130,432:29", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1,073,741,824", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(30)
-  gg.editAll("1,123,024,896", gg.TYPE_DWORD)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_HEAP)
-  gg.searchNumber("3.3631163e-44;2.0;3.5032462e-44;-1.0;3.643376e-44;3.7835059e-44;-1.0;3.9236357e-44;4.0637655e-44;1.0;-127.0:129", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(100)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.searchNumber("3.1809475e-43;3.1949605e-43;2.0;3.2089735e-43:53", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(100)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 415 👍")
-end
-
-function snapdragon425()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_ALLOC)
-  gg.searchNumber("2.9427268e-44;2.0;3.0828566e-44;-1.0;3.2229865e-44;3.3631163e-44;3.643376e-44", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(100)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.searchNumber("3.1529215e-43;2.0F;3.1669345e-43F;3.1809475e-43:49", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(100)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 425 👍")
-end
-
-function snapdragon430()
-  gg.clearResults()
-  gg.searchNumber("3.2229865e-43F;2.0F;-1.0F;-1.0F;2.0F:145", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(360)
-  gg.editAll("150", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 430 👍")
-end
-
-function snapdragon435()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_VIDEO)
-  gg.searchNumber("-5.56955884e-40;4.81460302e21;2.0:61", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(3)
-  gg.editAll("138", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_VIDEO)
-  gg.searchNumber("1.39125666e-19;3.9236357e-44;1.1202056e-19;2.0;0.24022650719:65", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(35)
-  gg.editAll("138", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 435 👍")
-end
-
-function snapdragon439()
+  gg.getResults(10)
+  gg.editAll("130", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(30)
-  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.getResults(10)
+  gg.editAll("130", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;-1.0F;-127.0F::520", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(20)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 439 👍")
+  gg.toast("Snapdragon 425~450 Aktif Edildi")
 end
 
-function snapdragon450()
+function snapdragon625_636()
   gg.clearResults()
   gg.setRanges(gg.REGION_BAD)
   gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -826,534 +674,81 @@ function snapdragon450()
   gg.getResults(10)
   gg.editAll("130", gg.TYPE_FLOAT)
   gg.clearResults()
+  gg.toast("Snapdragon 625~636 Aktif Edildi")
+end
+
+function snapdragon660_835()
   gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("1.1202013e-19;1.1202017e-19;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1)
+  gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+  gg.searchNumber("2;1.8947657e-40;5.8013756e-42", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("2.718519e-43;3.7615819e-37;2;-1;1;-127", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Snapdragon 660~835 Aktif Edildi")
+end
+
+function snapdragon665_675()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+  gg.searchNumber("6.03209094e21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(6281913639784)
+  gg.editAll("0", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+  gg.searchNumber("-2.57741948e-39", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(6281913639784)
+  gg.editAll("0", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Snapdragon 665~675 Aktif Edildi")
+end
+
+function snapdragon710_855()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_VIDEO or gg.REGION_BAD)
+  gg.searchNumber("-2 145 644 340", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineAddress("7E0", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("1 168 777 216", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.searchNumber("-2 147 483 636", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineAddress("4F8", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("1 168 777 216", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.toast("Snapdragon 710~855 Aktif Edildi")
+end
+
+function fixblink430_835()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_VIDEO)
+  gg.searchNumber("5.2806111e-40;6.50000333786;3.7615819e-37;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(999)
   gg.editAll("9999", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;0.00999999978F::200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(30)
-  gg.editAll("150", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(30)
-  gg.editAll("150", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("4.7961574e21;3.7615819e-37;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(30)
-  gg.editAll("150", gg.TYPE_FLOAT)
-  gg.toast("😆 Wallhack 450 👍")
-end
-
-function snapdragon600()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("4,140D;4.7408166e21F;4.7223665e21;0D;0D;0D;0D;0D;0D;-0.0F;2.0F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(30)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("2.718519e-43;2.0F;-1.0F;1.0F;-127F;0.24022650719F;-0.0", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(30)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 600 👍")
-end
-
-function snapdragon610()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("4,140D;4.7408166e21F;4.7223665e21;0D;0D;0D;0D;0D;0D;-0.0F;2.0F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(30)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("2.718519e-43;2.0F;-1.0F;1.0F;-127F;0.24022650719F;-0.0", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(30)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 610 👍")
-end
-
-function snapdragon615()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_HEAP)
-  gg.searchNumber("3.3631163e-44;2.0;3.5032462e-44;-1.0;3.643376e-44;3.7835059e-44;-1.0;3.9236357e-44;4.0637655e-44;1.0;-127.0:129", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(100)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.searchNumber("3.1809475e-43;3.1949605e-43;2.0;3.2089735e-43:53", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(100)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 615 👍")
-end
-
-function snapdragon616()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("4,140D;4.7408166e21F;4.7223665e21;0D;0D;0D;0D;0D;0D;-0.0F;2.0F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(30)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("2.718519e-43;2.0F;-1.0F;1.0F;-127F;0.24022650719F;-0.0", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(30)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 616 👍")
-end
-
-function snapdragon625()
-  gg.clearResults()
-  gg.setRanges(131072)
-  gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", 16, false, 536870912, 0, -1)
-  gg.searchNumber("2", 16, false, 536870912, 0, -1)
-  gg.getResults(10)
-  gg.editAll("130", 16)
-  gg.clearResults()
-  gg.setRanges(131072)
-  gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", 16, false, 536870912, 0, -1)
-  gg.searchNumber("2", 16, false, 536870912, 0, -1)
-  gg.getResults(10)
-  gg.editAll("130", 16)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 625 👍")
-end
-
-function snapdragon626()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("1,900,553;178;37;2F::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(20)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("2.25;3.75000071526;331,813D;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(20)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("720,918;1,081,081,860;397,358;50,331,648;2F::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(20)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("671,236,101;1,074,790,406;178;12;2F::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(20)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 626 👍")
-end
-
-function snapdragon630()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("2;1.8947657e-40;5.8013756e-42", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineAddress("504")
-  gg.getResults(20)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.searchNumber("2.718519e-43;3.7615819e-37;2;-1;1;-127", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineAddress("900")
-  gg.getResults(20)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 630 👍")
-end
-
-function snapdragon632()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("2;1.8947657e-40;5.8013756e-42", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineAddress("504")
-  gg.getResults(20)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.searchNumber("2.718519e-43;3.7615819e-37;2;-1;1;-127", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineAddress("900")
-  gg.getResults(20)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 632 👍")
-end
-
-function snapdragon636()
-  gg.clearResults()
-  gg.setRanges(131072)
-  gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", 16, false, 536870912, 0, -1)
-  gg.searchNumber("2", 16, false, 536870912, 0, -1)
-  gg.getResults(10)
-  gg.editAll("130", 16)
-  gg.clearResults()
-  gg.setRanges(131072)
-  gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", 16, false, 536870912, 0, -1)
-  gg.searchNumber("2", 16, false, 536870912, 0, -1)
-  gg.getResults(10)
-  gg.editAll("130", 16)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 636 👍")
-end
-
-function snapdragon650()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;-1.0F;1.0F;-127.0F;0.00999999978F::200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(30)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(30)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 650 👍")
-end
-
-function snapdragon652()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;-1.0F;1.0F;-127.0F;0.00999999978F::200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(30)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(30)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 652 👍")
-end
-
-function snapdragon653()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;-1.0F;1.0F;-127.0F;0.00999999978F::200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(30)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(30)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 653 👍")
-end
-
-function snapdragon660()
-  gg.clearResults()
-  gg.setRanges(131072)
-  gg.searchNumber("2;1.8947657e-40;5.8013756e-42", 16, false, 536870912, 0, -1)
-  gg.refineNumber("2", 16, false, 536870912, 0, -1)
-  gg.getResults(10)
-  gg.editAll("120", 16)
-  gg.clearResults()
-  gg.searchNumber("2.718519e-43;3.7615819e-37;2;-1;1;-127", 16, false, 536870912, 0, -1)
-  gg.refineNumber("2", 16, false, 536870912, 0, -1)
-  gg.getResults(10)
-  gg.editAll("120", 16)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 660 👍")
-end
-
-function snapdragon665()
-  gg.clearResults()
-  gg.setRanges(131072)
-  gg.searchNumber("95D;2;9.2194229e-41::100", 16, false, 536870912, 0, -1)
-  gg.refineNumber("2", 16, false, 536870912, 0, -1)
-  gg.getResults(999)
-  gg.editAll("120", 16)
-  gg.clearResults()
-  gg.searchNumber("2;-1;0;1;-127;0.24022650719;0.69314718246;0.00999999978::30", 16, false, 536870912, 0, -1)
-  gg.refineNumber("2", 16, false, 536870912, 0, -1)
-  gg.getResults(999)
-  gg.editAll("120", 16)
-  gg.clearResults()
-  gg.toast("😆 Wallhack SD 665 👍")
-end
-
-function snapdragon670()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineAddress("200")
-  gg.getResults(999)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineAddress("930")
-  gg.getResults(999)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 670 👍")
-end
-
-function snapdragon675()
-  gg.clearResults()
-  gg.setRanges(131072)
-  gg.searchNumber("1.4912565e-19;2.0;1.6623113e-19:9", 16, false, 536870912, 0, -1)
-  gg.searchNumber("2", 16, false, 536870912, 0, -1)
-  gg.getResults(20)
-  gg.editAll("138", 16)
-  gg.clearResults()
-  gg.setRanges(131072)
-  gg.searchNumber("2;-1;0;1;-127;0.24022650719;0.69314718246;0.00999999978::29", 16, false, 536870912, 0, -1)
-  gg.searchNumber("2", 16, false, 536870912, 0, -1)
-  gg.getResults(20)
-  gg.editAll("138", 16)
-  gg.clearResults()
-  gg.setRanges(131072)
-  gg.searchNumber("1,081,081,865;8,200;1,446,128;348,401:21", 4, false, 536870912, 0, -1)
-  gg.searchNumber("8200", 4, false, 536870912, 0, -1)
-  gg.getResults(2)
-  gg.editAll("7", 4)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 675 👍")
-end
-
-function snapdragon710()
-  gg.clearResults()
-  gg.setRanges(131072)
-  gg.searchNumber("1.4912565e-19;2.0;1.6623113e-19:9", 16, false, 536870912, 0, -1)
-  gg.searchNumber("2", 16, false, 536870912, 0, -1)
-  gg.getResults(20)
-  gg.editAll("138", 16)
-  gg.clearResults()
-  gg.setRanges(131072)
-  gg.searchNumber("2;-1;0;1;-127;0.24022650719;0.69314718246;0.00999999978::29", 16, false, 536870912, 0, -1)
-  gg.searchNumber("2", 16, false, 536870912, 0, -1)
-  gg.getResults(20)
-  gg.editAll("138", 16)
-  gg.clearResults()
-  gg.setRanges(131072)
-  gg.searchNumber("1,081,081,865;8,200;1,446,128;348,401:21", 4, false, 536870912, 0, -1)
-  gg.searchNumber("8200", 4, false, 536870912, 0, -1)
-  gg.getResults(2)
-  gg.editAll("7", 4)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 710 👍")
-end
-
-function snapdragon712()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("95D;2;9.2194229e-41::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("1.1202011e-19;1.1202015e-19;3.7615819e-37;255.0;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(999)
-  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.editAll("9999", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.searchNumber("2;-1;0;1;-127;0.24022650719;0.69314718246;0.00999999978::30", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.toast("🛠️Fix Blink 430~835 Aktif Edildi")
+end
+
+function fixblink845_855()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_VIDEO)
+  gg.searchNumber("6.50000333786;1.1202013e-19;3.7615819e-37;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(999)
-  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.editAll("9999", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.toast("😆 Wallhack 712 👍")
-end
-
-function snapdragon800()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("5.1097599e21;2.0;1.6623071e-19;3.6734297e-39;1.66433e10::17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(30)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.searchNumber("2.0;-1.0;0.0;1.0;-127.0::17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(30)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 800 👍")
-end
-
-function snapdragon801()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_ALLOC)
-  gg.searchNumber("3.15292154e-43;2.0;2.0;3.1949605e-43:73", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  revert = gg.getResults(3000, nil, nil, nil, nil, nil, nil, nil, nil)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.searchNumber("3.15292154e-43;2.0;2.0;3.1949605e-43;4.34402524e-44;2.0;4.62428493e-44;4.76441478e-44:241", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  revert = gg.getResults(3000, nil, nil, nil, nil, nil, nil, nil, nil)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.toast("😆 Wallhack 801 👍")
-end
-
-function snapdragon805()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("4,140D;4.7408166e21F;4.7223665e21;0D;0D;0D;0D;0D;0D;-0.0F;2.0F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(30)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("2.718519e-43;2.0F;-1.0F;1.0F;-127F;0.24022650719F;-0.0", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(30)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 805 👍")
-end
-
-function snapdragon808()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("4,140D;4.7408166e21F;4.7223665e21;0D;0D;0D;0D;0D;0D;-0.0F;2.0F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(30)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("2.718519e-43;2.0F;-1.0F;1.0F;-127F;0.24022650719F;-0.0", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(30)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 808 👍")
-end
-
-function snapdragon810()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("2;1.8947657e-40;5.8013756e-42", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.searchNumber("2.718519e-43;3.7615819e-37;2;-1;1;-127", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 810 👍")
-end
-
-function snapdragon815()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.editAll("130", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.editAll("130", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 815 👍")
-end
-
-function snapdragon820()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("2;1.8947657e-40;5.8013756e-42", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.searchNumber("2.718519e-43;3.7615819e-37;2;-1;1;-127", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 820 👍")
-end
-
-function snapdragon821()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("135,215D;4,140D;3.7615819e-37;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.editAll("130", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("194D;3.7615819e-37;2;-1;1;-127::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.editAll("130", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 821 👍")
-end
-
-function snapdragon835()
-  gg.clearResults()
-  gg.setRanges(131072)
-  gg.searchNumber("2;1.8947657e-40;5.8013756e-42", 16, false, 536870912, 0, -1)
-  gg.refineNumber("2", 16, false, 536870912, 0, -1)
-  gg.getResults(10)
-  gg.editAll("120", 16)
-  gg.clearResults()
-  gg.searchNumber("2.718519e-43;3.7615819e-37;2;-1;1;-127", 16, false, 536870912, 0, -1)
-  gg.refineNumber("2", 16, false, 536870912, 0, -1)
-  gg.getResults(10)
-  gg.editAll("120", 16)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 835 👍")
-end
-
-function snapdragon845()
-  gg.clearResults()
-  gg.setRanges(131072)
-  gg.searchNumber("2.0;-1.0;0.0;1.0;-127.0;0.24022650719;0.69314718246;0.00999999978::29", 16, false, 536870912, 0, -1)
-  gg.searchNumber("2", 16, false, 536870912, 0, -1)
-  gg.getResults(30)
-  gg.editAll("120", 16)
-  gg.clearResults()
-  gg.searchNumber("2.4382593e-43;1.3312335e-43;2::", 16, false, 536870912, 0, -1)
-  gg.searchNumber("2", 16, false, 536870912, 0, -1)
-  gg.getResults(30)
-  gg.editAll("120", 16)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 845 👍")
-end
-
-function snapdragon855()
-  gg.clearResults()
-  gg.setRanges(131072)
-  gg.searchNumber("95D;2;9.2194229e-41::100", 16, false, 536870912, 0, -1)
-  gg.searchNumber("2", 16, false, 536870912, 0, -1)
-  gg.getResults(100)
-  gg.editAll("120", 16)
-  gg.clearResults()
-  gg.searchNumber("2;-1;0;1;-127;0.24022650719;0.69314718246;0.00999999978::30", 16, false, 536870912, 0, -1)
-  gg.searchNumber("2", 16, false, 536870912, 0, -1)
-  gg.getResults(100)
-  gg.editAll("120", 16)
-  gg.clearResults()
-  gg.toast("😆 Wallhack 855 👍")
+  gg.toast("🛠️Fix Blink 845~855 Aktif Edildi")
 end
 -- Snapdragon Duvar Hilesi Bitiş
 
