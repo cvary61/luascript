@@ -26,8 +26,12 @@ HH = gg.alert([[
 ║║║╚╣║═╣╚╝║╔╗║╚═╣╔╗╗
 ╚╝╚═╩══╣╔═╩╝╚╩══╩╝╚╝
 ───────║║
-───────╚╝ V 0.4.6
-- Wallhack Downgrade
+───────╚╝ V 0.4.6.7
+- Yüksek Zıplama Yenilendi
+- Duvardan Vurma Eklendi
+- Snapdragon 435 Eklendi
+- Snapdragon 425 V1-V2
+- Exynos 7870 V2 Eklendi
 ]],"Devam Et ➡️")
 -- Update Menu Bitiş
 PUBGMH = 0
@@ -532,6 +536,9 @@ function snapdragonmenu()
   '🖼️Snapdragon Tüm Cihazlar v¹',
   '🖼️Snapdragon Tüm Cihazlar v²',
   '🖼️Snapdragon Tüm Cihazlar v³',
+  '🖼️Snapdragon 425 v¹',
+  '🖼️Snapdragon 425 v²',
+  '🖼️Snapdragon 435 v²',
   '🖼️Snapdragon 425~450',
   '🖼️Snapdragon 625~636',
   '🖼️Snapdragon 660~835',
@@ -550,18 +557,74 @@ function snapdragonmenu()
     if snapdragonmenu1 == 1 then snapdragontumcihazlarv1() end
     if snapdragonmenu1 == 2 then snapdragontumcihazlarv2() end
     if snapdragonmenu1 == 3 then snapdragontumcihazlarv3() end
-    if snapdragonmenu1 == 4 then snapdragon425_450() end
-    if snapdragonmenu1 == 5 then snapdragon625_636() end
-    if snapdragonmenu1 == 6 then snapdragon660_835() end
-    if snapdragonmenu1 == 7 then snapdragon665_675() end
-    if snapdragonmenu1 == 8 then snapdragon710_855() end
-    if snapdragonmenu1 == 9 then fixblink430_835() end
-    if snapdragonmenu1 == 10 then fixblink845_855() end
-    if snapdragonmenu1 == 11 then duvarmenu() end
+    if snapdragonmenu1 == 4 then snapdragon425v1() end
+    if snapdragonmenu1 == 5 then snapdragon425v2() end
+    if snapdragonmenu1 == 6 then snapdragon435v2() end
+    if snapdragonmenu1 == 7 then snapdragon425_450() end
+    if snapdragonmenu1 == 8 then snapdragon625_636() end
+    if snapdragonmenu1 == 9 then snapdragon660_835() end
+    if snapdragonmenu1 == 10 then snapdragon665_675() end
+    if snapdragonmenu1 == 11 then snapdragon710_855() end
+    if snapdragonmenu1 == 12 then fixblink430_835() end
+    if snapdragonmenu1 == 13 then fixblink845_855() end
+    if snapdragonmenu1 == 14 then duvarmenu() end
   end
   PUBGMH = -1
 end
 --Snapdragon Duvar Hile Kodlar
+
+-- Update
+function snapdragon425v1()
+    gg.clearResults()
+    gg.setRanges(gg.REGION_C_ALLOC)
+    gg.searchNumber("227;1,073,741,824;1,073,741,824;-1,082,130,432;1,073,741,824:49", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("1,073,741,824", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(100)
+    gg.editAll("1,123,024,896", gg.TYPE_DWORD, false, 536870912, 0, -1)
+    gg.clearResults()
+    gg.toast("Snapdragon 425 Aktif")
+end
+
+function snapdragon425v2()
+    gg.clearResults()
+    gg.setRanges(gg.REGION_C_ALLOC)
+    gg.searchNumber("3.2229865e-43F;2.0F;-1.0F;-1.0F;2.0F:145", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(360)
+    gg.editAll("150", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.setRanges(gg.REGION_C_ALLOC)
+    gg.searchNumber("27;15;26;23;1,073,741,824;24;-1,082,130,432:61", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("1,073,741,824", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(100)
+    gg.editAll("1,123,024,896", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    gg.clearResults()
+    gg.toast("Snapdragon 425 Aktif")
+end
+
+function snapdragon435v2()
+    gg.clearResults()
+    gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber("4,141D;4.7408155e21;-5.5693206e-40;4.814603e21;3.7615819e-37;2:", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(4)
+    gg.editAll("120", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.searchNumber("-1.0285578e-38;3.7615819e-37;2;-1;1;-127::300", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(4)
+    gg.editAll("120", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.searchNumber("304.00009155273;3.7615819e-37;2;-1;1;-127::240", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(4)
+    gg.editAll("120", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.toast("Snapdragon 435 Active")
+end
+
+
+-- Update
 function snapdragontumcihazlarv1()
   gg.clearResults()
   gg.setRanges(gg.REGION_BAD)
@@ -758,6 +821,7 @@ function exynosmenu()
       'Exynos 7420',
       'Exynos 7570',
 		  'Exynos 7870',
+      'Exynos 7870 V2',
       'Exynos 7880',
       'Exynos 7885',
       'Exynos 8890',
@@ -775,17 +839,145 @@ function exynosmenu()
       if exynosmenu1 == 1 then exynos7420() end
       if exynosmenu1 == 2 then exynos7570() end
 		  if exynosmenu1 == 3 then exynos7870() end
-      if exynosmenu1 == 4 then exynos7880() end
-      if exynosmenu1 == 5 then exynos7885() end
-      if exynosmenu1 == 6 then exynos8890() end
-      if exynosmenu1 == 7 then exynos8895() end
-      if exynosmenu1 == 8 then exynos9610() end
-      if exynosmenu1 == 9 then exynos9810() end
-		  if exynosmenu1 == 10 then duvarmenu() end
+      if exynosmenu1 == 4 then exynos7870v2() end
+      if exynosmenu1 == 5 then exynos7880() end
+      if exynosmenu1 == 6 then exynos7885() end
+      if exynosmenu1 == 7 then exynos8890() end
+      if exynosmenu1 == 8 then exynos8895() end
+      if exynosmenu1 == 9 then exynos9610() end
+      if exynosmenu1 == 10 then exynos9810() end
+		  if exynosmenu1 == 11 then duvarmenu() end
 	end
 	PUBGMH = -1
 end
 -- Exynos Duvar Hilesi Kodlar
+
+-- Update
+function exynos7870v2()
+    gg.setRanges(gg.REGION_C_ALLOC)
+    gg.searchNumber("3.6734198e-40;1.4012985e-45;2.8025969e-45;4.2038954e-45;4.2038954e-45;4.2038954e-45;3.1389086e-43;1.4012985e-45;2.8025969e-45;1.9618179e-44;0.5:381", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(2)
+    gg.editAll("0", gg.TYPE_FLOAT)
+    gg.getResults(22)
+    gg.addListItems({
+      [1] = {
+        ["address"] = 3231755612,
+        ["flags"] = 16,
+        ["freeze"] = true,
+        ["value"] = 0
+      },
+      [2] = {
+        ["address"] = 3231846696,
+        ["flags"] = 16,
+        ["value"] = 0
+      },
+      [3] = {
+        ["address"] = 3231846700,
+        ["flags"] = 16,
+        ["value"] = 0.5
+      },
+      [4] = {
+        ["address"] = 3231846704,
+        ["flags"] = 16,
+        ["value"] = 0.5
+      },
+      [5] = {
+        ["address"] = 3231846708,
+        ["flags"] = 16,
+        ["value"] = 0.5
+      },
+      [6] = {
+        ["address"] = 3231846712,
+        ["flags"] = 16,
+        ["value"] = 0.5
+      },
+      [7] = {
+        ["address"] = 3231846740,
+        ["flags"] = 16,
+        ["value"] = 0.5
+      },
+      [8] = {
+        ["address"] = 3231846744,
+        ["flags"] = 16,
+        ["value"] = 0.5
+      },
+      [9] = {
+        ["address"] = 3231846748,
+        ["flags"] = 16,
+        ["value"] = 0.5
+      },
+      [10] = {
+        ["address"] = 3231846752,
+        ["flags"] = 16,
+        ["value"] = 0.5
+      },
+      [11] = {
+        ["address"] = 3231846756,
+        ["flags"] = 16,
+        ["value"] = 0.5
+      },
+      [12] = {
+        ["address"] = 3231872132,
+        ["flags"] = 16,
+        ["value"] = 0.5
+      },
+      [13] = {
+        ["address"] = 3231872396,
+        ["flags"] = 16,
+        ["value"] = 0.5
+      },
+      [14] = {
+        ["address"] = 3231872660,
+        ["flags"] = 16,
+        ["value"] = 0.5
+      },
+      [15] = {
+        ["address"] = 3231872924,
+        ["flags"] = 16,
+        ["value"] = 0.5
+      },
+      [16] = {
+        ["address"] = 3231873188,
+        ["flags"] = 16,
+        ["value"] = 0.5
+      },
+      [17] = {
+        ["address"] = 3231873452,
+        ["flags"] = 16,
+        ["value"] = 0.5
+      },
+      [18] = {
+        ["address"] = 3231873716,
+        ["flags"] = 16,
+        ["value"] = 0.5
+      },
+      [19] = {
+        ["address"] = 3232003024,
+        ["flags"] = 16,
+        ["value"] = 0.5
+      },
+      [20] = {
+        ["address"] = 3232003052,
+        ["flags"] = 16,
+        ["value"] = 0.5
+      },
+      [21] = {
+        ["address"] = 3232003312,
+        ["flags"] = 16,
+        ["value"] = 0.5
+      },
+      [22] = {
+        ["address"] = 3232003340,
+        ["flags"] = 16,
+        ["value"] = 0.5
+      }
+    })
+    gg.clearResults()
+    gg.toast("Exynos 7870 Aktif Edildi")
+end
+-- Update
+
 function exynos7420()
   gg.searchNumber("0.5;1.098618e-42;2.24207754e-44;2.69049305e-43;1.68155816e-44:645", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.refineNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -1761,6 +1953,7 @@ function digermenu()
 		'🏎️ Hızlı Araba (Jeep)\n╚❑[Oʏᴜɴ]',
     '🏎️ Ucan Araba\n╚❑[Oʏᴜɴ]',
 		fastshot..'Hızlı Ateş Etme\n╚❑[Oʏᴜɴ]',
+    'Duvardan Vurma',
 		'🔙Geri'
 	},nil,[[
 	Ａｒａｐ　Ｂｕｋｅｎ　Ｇｅｎｃ　
@@ -1793,11 +1986,23 @@ function digermenu()
 			end
 			fastshotkod()
 		end
-		if digermenu1 == 9 then home() end
+    if digermenu1 == 9 then wallshot() end
+		if digermenu1 == 10 then home() end
 	end
 	PUBGMH = -1
 end
 -- Diğer Hileler Kodları
+
+function wallshot()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_BSS)
+gg.searchNumber("1.0e-7;1;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(2)
+gg.editAll("-10", gg.TYPE_FLOAT)
+gg.toast("Duvardan Vurma Aktif Edildi")
+end
+
 
 function flycar()
     gg.clearResults()
@@ -1900,17 +2105,14 @@ function ortahizkosma()
 end
 
 function yuksekziplama()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber('443.0', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.sleep(140)
-  gg.refineNumber('443.0', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.sleep(140)
-  gg.refineNumber('443.0', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(100)
-  gg.editAll('500', gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("Yüksek Zıplama Aktif")
+    gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("1.0F; -0.70710676908F; 0.70710670948F; 64.0F; 1.793662e-43F;1.4012985e-45F; 1D; 1D ::512", gg.TYPE_FLOAT, false)
+    gg.searchNumber("1.4012985e-45", gg.TYPE_FLOAT, false)
+    gg.getResults(30)
+    gg.editAll("999.0", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.toast("Yüksek Zıplama Aktif")
 end
 
 function hizliaraba()
