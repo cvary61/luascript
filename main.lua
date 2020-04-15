@@ -26,8 +26,11 @@ HH = gg.alert([[
 ║║║╚╣║═╣╚╝║╔╗║╚═╣╔╗╗
 ╚╝╚═╩══╣╔═╩╝╚╩══╩╝╚╝
 ───────║║
-───────╚╝ V 0.4.6.8
-- Mediatek P22 Eklendi
+───────╚╝ V 0.4.6.9
+- Sihirli Mermi Güncellendi
+- Kafan Vurma %95 Güncellendi
+- Anten Güncellendi
+- 10 Dakika Ban Fix Eklendi
 ]],"Devam Et ➡️")
 -- Update Menu Bitiş
 PUBGMH = 0
@@ -481,17 +484,22 @@ end
 
 -- 10 Dakika Antiban Kod
 function ban10m()
+gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("1954047316;1970037078", 4, false, 536870912, 0, -1)
+  gg.searchNumber("1954047316;1970037078", 4, false, 536870912, 0, -1)
+  gg.getResults(10)
+  gg.editAll("9", 4)
   gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("16610;8388646;8388805", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(50)
-  gg.editAll("30", gg.TYPE_DWORD)
+  gg.toast("10 Dakika Ban Aktif")
+  gg.alert("30 Kilden Fazla Alma  ! ! !")
   gg.clearResults()
-  gg.searchNumber("1954047311D;1970037075D", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1)
-  gg.editAll("9999999", gg.TYPE_DWORD)
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("1232364871;1231974243", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("1232364871;1231974243", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("0", gg.TYPE_DWORD)
   gg.clearResults()
-  gg.toast("Anti Ban 10M Aktif")
 end
 -- 10 Dakika Antiban Kod Bitiş
 
@@ -1697,13 +1705,12 @@ function silahmenu()
 end
 -- Silah Hile Kodları
 function kafadanvurma()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("9.201618;30.5;25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.editAll("200", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("💀Kafadan Vurma %95 Aktif Edildi")
+	gg.clearResults()
+	gg.setRanges(32)
+	gg.searchNumber("30.5;25", 16, false, 536870912, 0, -1)
+	gg.getResults(10)
+	gg.editAll("300", 16)
+	gg.toast("💀Kafadan Vurma %95 Aktif Edildi")
 end
 
 function kafadanvurma_60()
@@ -1916,19 +1923,33 @@ function oyunmenu()
 end
 -- Oyun Hile Kodları
 function anten()
-	gg.clearResults()
+  gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("88.50576019287F;87.27782440186F;-100.91194152832F;1F::13", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("88.50576019287F;87.27782440186F;1F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(6)
-  gg.editAll("1.96875;1.96875;999;1.96875;1.96875;999", gg.TYPE_FLOAT)
+  gg.searchNumber("18.38613319397F;0.53447723389F;3.42665576935F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("18.38613319397", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(1)
+  gg.editAll("8888", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.searchNumber("88.50576019287F;87.27782440186F;-100.91194152832F;1F::13", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("88.50576019287F;87.27782440186F;1F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(6)
-  gg.editAll("1.96875;1.96875;999;1.96875;1.96875;999", gg.TYPE_FLOAT)
   gg.clearResults()
-	gg.toast("📡Anten Aktif Edildi")
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("7.13142681122;0.53447723389;22.6400718689", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("22.6400718689", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("9621", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.clearResults()
+  gg.searchNumber("0.53446006775F;-1.68741035461F:501", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("-1.68741035461", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(1995)
+  gg.editAll("9999", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("18.38612365723F;0.54026412964F:5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("18.38612365723F;0.54026412964F:5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(1995)
+  gg.editAll("9999", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("📡Anten Aktif Edildi")
 end
 
 function esp()
