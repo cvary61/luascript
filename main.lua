@@ -26,11 +26,10 @@ HH = gg.alert([[
 ║║║╚╣║═╣╚╝║╔╗║╚═╣╔╗╗
 ╚╝╚═╩══╣╔═╩╝╚╩══╩╝╚╝
 ───────║║
-───────╚╝ V 0.4.6.9
-- Sihirli Mermi Güncellendi
-- Kafan Vurma %95 Güncellendi
-- Anten Güncellendi
-- 10 Dakika Ban Fix Eklendi
+───────╚╝ V 0.4.6.10
+- Anten Düzeltildi
+- Kutu Anteni Eklendi
+- Ucan Araba Güncellendi
 ]],"Devam Et ➡️")
 -- Update Menu Bitiş
 PUBGMH = 0
@@ -1925,30 +1924,18 @@ end
 function anten()
   gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("18.38613319397F;0.53447723389F;3.42665576935F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("18.38613319397", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1)
-  gg.editAll("8888", gg.TYPE_FLOAT)
+  gg.searchNumber("0.98900693655~0.98900723457;0.14786802232~0.14786840975;1.1920926e-7::9", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResultCount()
+  gg.searchNumber("0.98900693655~0.98900723457", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("16000", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("7.13142681122;0.53447723389;22.6400718689", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("22.6400718689", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.editAll("9621", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.clearResults()
-  gg.searchNumber("0.53446006775F;-1.68741035461F:501", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("-1.68741035461", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1995)
-  gg.editAll("9999", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.searchNumber("18.38612365723F;0.54026412964F:5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("18.38612365723F;0.54026412964F:5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1995)
-  gg.editAll("9999", gg.TYPE_FLOAT)
-  gg.clearResults()
+  gg.searchNumber("88.50576019287F;87.27782440186F;-100.91194152832F;1F::13", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("88.50576019287F;87.27782440186F;1F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(6)
+  gg.editAll("1.96875;1.96875;999;1.96875;1.96875;999", gg.TYPE_FLOAT)
   gg.toast("📡Anten Aktif Edildi")
 end
 
@@ -2054,6 +2041,7 @@ function digermenu()
     '🏎️ Ucan Araba\n╚❑[Oʏᴜɴ]',
 		fastshot..'Hızlı Ateş Etme\n╚❑[Oʏᴜɴ]',
     'Duvardan Vurma',
+    'Kutu Anteni',
 		'🔙Geri'
 	},nil,[[
 	Ａｒａｐ　Ｂｕｋｅｎ　Ｇｅｎｃ　
@@ -2087,7 +2075,8 @@ function digermenu()
 			fastshotkod()
 		end
     if digermenu1 == 9 then wallshot() end
-		if digermenu1 == 10 then home() end
+    if digermenu1 == 10 then kutuanteni() end
+		if digermenu1 == 11 then home() end
 	end
 	PUBGMH = -1
 end
@@ -2103,21 +2092,31 @@ gg.editAll("-10", gg.TYPE_FLOAT)
 gg.toast("Duvardan Vurma Aktif Edildi")
 end
 
+function kutuanteni()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("14.79005432129", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("14.79005432129", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(30)
+  gg.editAll("99999", gg.TYPE_FLOAT)
+  gg.setVisible(false)
+  gg.toast("Kutu Anteni")
+end
 
 function flycar()
-    gg.clearResults()
-    gg.setRanges(gg.REGION_ANONYMOUS)
-    gg.searchNumber('0.76000005007;0.96078431606;1;0.74509805441::', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.searchNumber('0.74509805441', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.getResults(9999)
-    gg.editAll('99999', gg.TYPE_FLOAT)
-    gg.clearResults()
-    gg.setRanges(gg.REGION_ANONYMOUS)
-    gg.searchNumber('45F;15F;20F;2500F', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.searchNumber('45', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.getResults(999)
-    gg.editAll('550', gg.TYPE_FLOAT)
-    gg.toast('Ucan Jeep Aktif Edildi')
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("0.76000005007;0.96078431606;1;0.74509805441::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("0.74509805441", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(9999)
+  gg.editAll("99999", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("45F;15F;20F;2500F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("45", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(999)
+  gg.editAll("500", gg.TYPE_FLOAT)
+  gg.toast('Ucan Jeep Aktif Edildi')
 end
 
 function flashhiz_komut() -- Flash Speed Hack
