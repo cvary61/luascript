@@ -90,6 +90,7 @@ function Main()
   SN = gg.choice({
     "Bypass Adım 1",
     "Bypass Adım 2",
+      "10Min Antiban",
     "Kapat"
   },nil,[[@arapbukengenc ücretsiz hiledir.
   satışı yoktur. Diğer ğcretsiz hileler için
