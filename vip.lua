@@ -100,7 +100,10 @@ function Main()
   if SN == 2 then
     b()
   end
- if SN == 3 then
+  if SN == 3 then
+    10min()
+    end
+ if SN == 4 then
     c()
   end
   XGCK = -1
@@ -138,6 +141,24 @@ function b()
 })
 gg.clearResults()
 gg.toast("İşlem Tamam")
+end
+
+funciton 10min()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("16384;4448", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("4448", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(99900000)
+gg.editAll("2225", gg.TYPE_DWORD)
+gg.getResultsCount()
+gg.getResults(99900000)
+gg.editAll("1337", gg.TYPE_DWORD)
+gg.getResults(99900000)
+gg.getResults(99900000)
+gg.addListItems({[1] = {address = 2867203428,flags = 4,freeze = true,value = 1337}})
+gg.clearResults()
+gg.checkGG()
+gg.toast("VIP 10 Min Aktif Edildi")
 end
 
 function c()
