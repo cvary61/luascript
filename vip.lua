@@ -144,7 +144,7 @@ gg.clearResults()
 gg.toast("İşlem Tamam")
 end
 
-funciton 10min()
+function 10min()
 gg.clearResults()
 gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber("16384;4448", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
