@@ -27,9 +27,7 @@ HH = gg.alert([[
 ╚╝╚═╩══╣╔═╩╝╚╩══╩╝╚╝
 ───────║║
 ───────╚╝ V 0.4.6.10
-- Anten Düzeltildi
-- Kutu Anteni Eklendi
-- Ucan Araba Güncellendi
+- Kafadan Vurma Safe %100
 ]],"Devam Et ➡️")
 -- Update Menu Bitiş
 PUBGMH = 0
@@ -1704,11 +1702,23 @@ function silahmenu()
 end
 -- Silah Hile Kodları
 function kafadanvurma()
-	gg.clearResults()
-	gg.setRanges(32)
-	gg.searchNumber("30.5;25", 16, false, 536870912, 0, -1)
-	gg.getResults(10)
-	gg.editAll("300", 16)
+  gg.clearResults() 
+  gg.setRanges(32) 
+  gg.searchNumber("30.5;25", 16, false, 536870912, 0, -1) 
+  gg.getResults(10) 
+  gg.editAll("135", 16) 
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_DATA) 
+  gg.searchNumber("2046820354;-336587221:9", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2046820354", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100) 
+  gg.editAll("2046820353", gg.TYPE_DWORD) 
+  gg.clearResults() 
+  gg.setRanges(gg.REGION_C_DATA) 
+  gg.searchNumber("2015175168", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(6) 
+  gg.editAll("0", gg.TYPE_FLOAT) 
+  gg.clearResults() 
 	gg.toast("💀Kafadan Vurma %95 Aktif Edildi")
 end
 
