@@ -92,9 +92,7 @@ function Main()
     "Bypass Adım 2",
       "10Min Antiban",
     "Kapat"
-  },nil,[[@arapbukengenc ücretsiz hiledir.
-  satışı yoktur. Diğer ğcretsiz hileler için
-  tegram kanslımıza katıl.]])
+  },nil,[[@arapbukengenc vip hiledir. ]])
   if SN == 1 then
     a()
   end
