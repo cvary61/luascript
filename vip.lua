@@ -102,7 +102,7 @@ function Main()
     b()
   end
   if SN == 3 then
-    10min()
+    min10()
     end
  if SN == 4 then
     c()
@@ -144,7 +144,7 @@ gg.clearResults()
 gg.toast("İşlem Tamam")
 end
 
-function 10min()
+function min10()
 gg.clearResults()
 gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber("16384;4448", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
